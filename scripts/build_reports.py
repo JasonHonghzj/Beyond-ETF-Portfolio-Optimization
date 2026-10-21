@@ -47,9 +47,8 @@ SCREENED = ["2317", "2330", "2395", "2357", "3231", "2207", "2603", "3034",
             "3045", "2002", "6669", "1216", "2303", "3711", "2308", "2412",
             "2382", "2454", "2881", "2885", "2886", "6505"]
 AUTHORS_ZH = ["蘇柏諺", "洪稚鈞", "佘梓平", "黃纓婷", "陳依琪", "林岱融"]
-# Only this English rendering has been supplied by its author. Preserve the
-# other verified names in Chinese rather than inventing their romanizations.
-AUTHORS_EN = ["蘇柏諺", "Zhi-Jun Hong", "佘梓平", "黃纓婷", "陳依琪", "林岱融"]
+# User-provided English names, with given names before surnames.
+AUTHORS_EN = ["Bo-Yan Su", "Zhi-Jun Hong", "Tzu-Ping She", "Ying-Ting Huang", "I-Chi Chen", "Tai-Jung Lin"]
 RULES = "https://www.usenix.org/conference/osdi24/requirements-authors"
 TEMPLATE = "https://www.usenix.org/conferences/author-resources/paper-templates"
 # Keep colors consistent across related panels, with line styles and markers

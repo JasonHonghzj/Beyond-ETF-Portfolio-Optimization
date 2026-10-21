@@ -2,3 +2,5 @@
 
 # Preserve the checked byte content of source data, output CSVs, and manifests.
 # Avoid platform newline conversion invalidating the recorded SHA-256 hashes.
+
+*.pdf binary

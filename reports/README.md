@@ -7,7 +7,7 @@ The project was completed in **Spring 2024**, using data ending **2023-11-30**. 
 | 版本 / Version | PDF | 可編輯內容 / Editable narrative | 作者 / Authors |
 |---|---|---|---|
 | 繁體中文・署名課程版 | [report_zh.pdf](report_zh/report_zh.pdf) | [content.md](report_zh/content.md) | 蘇柏諺、洪稚鈞、佘梓平、黃纓婷、陳依琪、林岱融 |
-| English・署名課程版 | [report_en.pdf](report_en/report_en.pdf) | [content.md](report_en/content.md) | 蘇柏諺、Zhi-Jun Hong、佘梓平、黃纓婷、陳依琪、林岱融 |
+| English・署名課程版 | [report_en.pdf](report_en/report_en.pdf) | [content.md](report_en/content.md) | Bo-Yan Su, Zhi-Jun Hong, Tzu-Ping She, Ying-Ting Huang, I-Chi Chen, Tai-Jung Lin |
 | 繁體中文・匿名版 | [report_zh_anonymous.pdf](report_zh/report_zh_anonymous.pdf) | 由同一份中文內容產生 | 不列作者 |
 | English・匿名版 | [report_en_anonymous.pdf](report_en/report_en_anonymous.pdf) | Generated from the same English narrative | Authors omitted |
 
@@ -15,9 +15,18 @@ The project was completed in **Spring 2024**, using data ending **2023-11-30**. 
 
 Each of the four reports has 11 body pages and one reference page. The PDFs use the equivalent OSDI 2024 layout described above, with embedded fonts and color figures supported by line styles and markers. The signed correlation matrix uses the luminance-monotonic cividis scale from −1 to 1 for grayscale readability.
 
-署名課程版的六位作者依指定順序列名；英文版僅將第二位洪稚鈞寫為 Zhi-Jun Hong，其餘姓名保留中文，未自行推定英文拼音。[OSDI 2024 作者要求](https://www.usenix.org/conference/osdi24/requirements-authors)採雙盲審查，因此另產生匿名版，移除作者、課程、Spring 2024 及可識別的原專題名稱等資訊，保留方法與數據。兩類版本分別支援署名留存與匿名版面檢視；不表示實際投稿或保證獲會議接受。
+署名課程版的六位作者依指定順序列名，洪稚鈞／Zhi-Jun Hong 排第二位；英文姓名均依本人提供的拼音採「名字在前、姓氏在後」，對照如下。[OSDI 2024 作者要求](https://www.usenix.org/conference/osdi24/requirements-authors)採雙盲審查，因此另產生匿名版，移除作者、課程、Spring 2024 及可識別的原專題名稱等資訊，保留方法與數據。兩類版本分別支援署名留存與匿名版面檢視；不表示實際投稿或保證獲會議接受。
 
-The attributed course versions list all six authors in the specified order. Only the second author is rendered as Zhi-Jun Hong in English; the other names remain in Chinese because official English forms were not provided. The [OSDI 2024 author requirements](https://www.usenix.org/conference/osdi24/requirements-authors) call for double-blind review, so separate anonymous versions remove author, course, Spring 2024, and identifying original-title details while retaining methods and data. These versions do not imply an actual submission or guarantee conference acceptance.
+The attributed course versions list all six authors in the specified order, with Zhi-Jun Hong second. English names use the supplied spellings with given names before surnames, as shown below. The [OSDI 2024 author requirements](https://www.usenix.org/conference/osdi24/requirements-authors) call for double-blind review, so separate anonymous versions remove author, course, Spring 2024, and identifying original-title details while retaining methods and data. These versions do not imply an actual submission or guarantee conference acceptance.
+
+| 中文姓名 / Chinese name | 英文姓名 / English name |
+|---|---|
+| 蘇柏諺 | Bo-Yan Su |
+| 洪稚鈞 | Zhi-Jun Hong |
+| 佘梓平 | Tzu-Ping She |
+| 黃纓婷 | Ying-Ting Huang |
+| 陳依琪 | I-Chi Chen |
+| 林岱融 | Tai-Jung Lin |
 
 ## 重建 / Rebuild
 

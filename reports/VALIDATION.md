@@ -4,7 +4,9 @@
 
 本次新增署名／匿名四份版本、調整作者順序及相關矩陣色階後，**四份共 48 頁的版面、字型、作者與匿名資訊檢查均通過**。全部頁面已渲染核對，六組圖另以灰階檢視線型、標記及色階；下列記錄適用於本次四份最終 PDF。
 
-All four attributed/anonymous versions passed the fresh 48-page review after revising the author order and correlation color scale. Anonymization and grayscale figure readability were also checked.
+All four attributed/anonymous versions passed the fresh 48-page review after revising the author order and correlation color scale. Anonymization and grayscale figure readability were also checked. The English byline now uses the supplied spellings in given-name–surname order; all four PDFs were regenerated and their author order, metadata, anonymity, and source/output hashes passed renewed checks.
+
+英文署名現依提供的拼音統一為「名字在前、姓氏在後」。四份 PDF 已重新產生並通過作者順序、metadata、匿名資訊及雜湊核對；以相同解析度逐頁比較，僅英文署名版第一頁的作者列發生視覺變更，已目視確認，其餘 47 頁相同。
 
 ## 產出與版面 / Outputs and layout
 
@@ -16,7 +18,7 @@ All four attributed/anonymous versions passed the fresh 48-page review after rev
 | 文字 | 本文、表格、圖說 10 pt / 12 pt；標題 11 或 14 pt；未縮小文字以塞入頁面 |
 | 字型 | 全部實際使用的 Times New Roman、PMingLiU 及 Times 項目符號均內嵌；可擷取文字最小 10 pt |
 | 文字邊界 | 全部 48 頁逐字幾何檢查通過，邊界容差 0.5 pt，無文字越界 |
-| 作者及年代 | 署名兩版皆六位同序：蘇柏諺、洪稚鈞、佘梓平、黃纓婷、陳依琪、林岱融；英文第二位為 Zhi-Jun Hong，其餘保留中文；署名版列 Spring 2024 |
+| 作者及年代 | 中文署名順序為蘇柏諺、洪稚鈞、佘梓平、黃纓婷、陳依琪、林岱融；英文對應為 Bo-Yan Su, Zhi-Jun Hong, Tzu-Ping She, Ying-Ting Huang, I-Chi Chen, Tai-Jung Lin，Zhi-Jun Hong 維持第二位；署名版列 Spring 2024 |
 | 匿名資訊 | 兩匿名版的 Author metadata 為空、標題中性；全文及 metadata 無六人姓名、課程、教師、Spring 2024、原專題題名、使用者路徑或儲存庫識別；外部 Day／Lin 文獻及關鍵數據保留 |
 | 頁碼及文字擷取 | 全部 48 頁頁碼正確；文字可擷取，關鍵數字、作者順序及匿名狀態核對通過 |
 | 彩色與灰階 | 保留彩色、線型或標記；MV／BL／1/N 為藍／橘／綠。cividis 相關矩陣固定 −1 至 1；256 色取樣的相對亮度嚴格遞增，灰階可辨識色階、線型與標記 |

@@ -12,12 +12,12 @@
       "林岱融"
     ],
     "en": [
-      "蘇柏諺",
+      "Bo-Yan Su",
       "Zhi-Jun Hong",
-      "佘梓平",
-      "黃纓婷",
-      "陳依琪",
-      "林岱融"
+      "Tzu-Ping She",
+      "Ying-Ting Huang",
+      "I-Chi Chen",
+      "Tai-Jung Lin"
     ]
   },
   "report_variants": {
@@ -2332,7 +2332,7 @@
     },
     {
       "path": "scripts/build_reports.py",
-      "sha256": "50e20920ac25c14de7c2e537141f7909ae7afef5028573008ec92eba515d84a0"
+      "sha256": "2bd8e7003781836c2d03deeaa75ac918a6c097fda676769f32d583d8ca7a9f33"
     },
     {
       "path": "scripts/requirements-reports.txt",
@@ -2394,19 +2394,19 @@
   "outputs": [
     {
       "path": "reports/report_zh/report_zh.pdf",
-      "sha256": "646a26015ca035fe3553db6fdf5b914cf6072cfd9eb8af44224047b252735f1b"
+      "sha256": "44f655167ada4380948cf7da51b8c80bba028d8441106140fc37b5b0c6940716"
     },
     {
       "path": "reports/report_en/report_en.pdf",
-      "sha256": "caadd65c19df7ba72990347f8ca6dd1aad01e4e553d905b6b959d39e9d452ce1"
+      "sha256": "92543d17f789989fd9d23fb06c01593812d44bd94aa7339e92cfeb67a023d849"
     },
     {
       "path": "reports/report_zh/report_zh_anonymous.pdf",
-      "sha256": "9a1c7e46ec9e39db72dbab96792c2552bbc3a89ce59647f778f4ea2ab3b1c602"
+      "sha256": "ac098bfc60c891701788916cf33b6b740e1248ef572c6f9275371e8f4c1c1332"
     },
     {
       "path": "reports/report_en/report_en_anonymous.pdf",
-      "sha256": "6e3e6882225b84abebd9fa926ad9de719a92cbc901841deec1eed94a6cf1f111"
+      "sha256": "202ed85ff1823d21a136a492b1c4f7421b1fa26cbe89c32f69e03d74959a9a07"
     },
     {
       "path": "reports/assets/wealth.png",
