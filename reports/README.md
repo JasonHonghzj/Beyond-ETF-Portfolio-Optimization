@@ -1,19 +1,19 @@
-# 中英文研究報告 / Bilingual research reports
+# Bilingual research reports
 
-本專題完成於 **Spring 2024**；市場資料截止於 **2023-11-30**。2026-10-21 完成原生 R／Python 全流程重跑及三模型、22 股完整重訓，未加入新的市場期間。
+English | [繁體中文](README_zh.md) · [Back to the project guide](../README.md)
 
-The project was completed in **Spring 2024**, using data ending **2023-11-30**. Native R/Python execution and full retraining of three models across 22 stocks were completed on 2026-10-21 without extending the market-data period.
+This **Spring 2024** Big Data Analytics final project uses market data ending **November 30, 2023**. The native R/Python pipeline and full retraining of three models across 22 stocks were completed on **October 21, 2026**, without extending the market-data period.
 
-| 版本 / Version | PDF | 可編輯內容 / Editable narrative | 作者 / Authors |
+| Report | PDF | Editable narrative | Authors |
 |---|---|---|---|
-| 繁體中文・署名課程版 | [report_zh.pdf](report_zh/report_zh.pdf) | [content.md](report_zh/content.md) | 蘇柏諺、洪稚鈞、佘梓平、黃纓婷、陳依琪、林岱融 |
-| English・署名課程版 | [report_en.pdf](report_en/report_en.pdf) | [content.md](report_en/content.md) | Bo-Yan Su, Zhi-Jun Hong, Tzu-Ping She, Ying-Ting Huang, I-Chi Chen, Tai-Jung Lin |
+| Traditional Chinese | [report_zh.pdf](report_zh/report_zh.pdf) | [content.md](report_zh/content.md) | 蘇柏諺、洪稚鈞、佘梓平、黃纓婷、陳依琪、林岱融 |
+| English | [report_en.pdf](report_en/report_en.pdf) | [content.md](report_en/content.md) | Bo-Yan Su, Zhi-Jun Hong, Tzu-Ping She, Ying-Ting Huang, I-Chi Chen, Tai-Jung Lin |
 
-報告採用 [OSDI 2024 template](https://www.usenix.org/conferences/author-resources/paper-templates)。
+The reports use the [OSDI 2024 submission template](https://www.usenix.org/conference/osdi24/requirements-authors).
 
-The reports use the [OSDI 2024 template](https://www.usenix.org/conferences/author-resources/paper-templates).
+The affiliation appears below the author names: **國立成功大學統計學系** in Chinese and **Department of Statistics, National Cheng Kung University, Taiwan.** in English. Both reports list all six members in the order shown above, with Zhi-Jun Hong second.
 
-| 中文姓名 / Chinese name | 英文姓名 / English name |
+| Chinese name | English name |
 |---|---|
 | 蘇柏諺 | Bo-Yan Su |
 | 洪稚鈞 | Zhi-Jun Hong |
@@ -22,9 +22,9 @@ The reports use the [OSDI 2024 template](https://www.usenix.org/conferences/auth
 | 陳依琪 | I-Chi Chen |
 | 林岱融 | Tai-Jung Lin |
 
-## 重建 / Rebuild
+## Files and rebuild
 
-在專案根目錄執行，使用 Python 3.10 或以上版本：
+`report_zh/` and `report_en/` contain the editable narrative sources and final PDFs. `assets/` contains six composite figures managed by the report builder. The manifest and validation files in this directory record source hashes, numerical checks, and layout checks.
 
 Run from the project root with Python 3.10 or newer:
 
@@ -33,20 +33,18 @@ python -m pip install -r scripts/requirements-reports.txt
 python scripts/build_reports.py
 ```
 
-預設讀取 Windows 的 `C:/Windows/Fonts`。其他系統可用 `--font-dir` 指向含 `times.ttf`、`timesbd.ttf`、`timesi.ttf`、`timesbi.ttf` 與 `mingliu.ttc` 的合法字型目錄。若 Matplotlib 預設快取位置不可寫，可將 `MPLCONFIGDIR` 指向可寫位置。
+The default font directory is `C:/Windows/Fonts`. On another system, use `--font-dir` to provide a licensed font directory containing `times.ttf`, `timesbd.ttf`, `timesi.ttf`, `timesbi.ttf`, and `mingliu.ttc`. Set `MPLCONFIGDIR` to a writable directory if the default Matplotlib cache is unavailable.
 
-The default font directory is `C:/Windows/Fonts`. Use `--font-dir` to provide the listed licensed font files on another system. Set `MPLCONFIGDIR` to a writable directory if the default Matplotlib cache is unavailable.
+The report generator reads local data and 16 saved analysis CSVs to produce six composite figures and two 12-page PDFs, totaling 24 pages. It does not download market data or retrain models. Review both narrative sources whenever data, assumptions, or results change; the builder checks key numerical claims before producing the PDFs.
 
-報告產製程式只讀取本地資料與既有 16 份 CSV，重建 6 張整合圖及中英文兩份 PDF；每份報告 12 頁，共 24 頁。報告建置本身不下載市場資料或重新訓練模型。`assets/` 內的整合圖由此程式管理。若固定敘述與績效數據不再一致，程式會要求先審查內容。已完成的完整分析包含 472 張 PNG：16 張核心圖、434 張額外股票配對 CCF 及 22 張三模型預測圖。
+The completed analysis contains 472 PNGs: 16 core figures, 434 additional stock-pair CCFs, and 22 three-model forecast panels. These current outputs are in `../outputs/`. The 37 earlier project-generated figures are kept separately in the [historical-results archive](../archive/historical-results/README.md), and external cited papers are in `../references/papers/`.
 
-The report generator reads local data and 16 existing CSV tables to produce six composite figures and two 12-page PDFs, totaling 24 pages. Report construction itself does not download market data or retrain models. The completed analysis has 472 PNGs: 16 core figures, 434 additional stock-pair CCFs, and 22 three-model forecast panels. Review both narrative sources whenever results change.
+## Evidence and verification
 
-## 證據與驗證 / Evidence and verification
+- [report_manifest.json](report_manifest.json): source and output SHA-256 hashes, authors, layout settings, numerical checks, and research limitations.
+- [validation.json](validation.json): paper dimensions, text boundaries, embedded fonts, page numbers, and author order for both reports, totaling 24 pages. Figures also receive color and grayscale visual checks.
+- [VALIDATION.md](VALIDATION.md): the scope of page-by-page visual inspection and calculation checks.
+- [Full-run evidence](../outputs/full_run/2026-10-21/): native R 4.6.1 execution, 32 R checks, eight Python tests, and the commands and results of full model training.
+- [Original presentation](../docs/presentation.pdf) and [source data](../data/): the project inputs used alongside the saved analysis tables.
 
-- [report_manifest.json](report_manifest.json)：來源及產出 SHA-256、作者、版面、數據核對與研究限制。
-- [validation.json](validation.json)：兩份共 24 頁的紙張尺寸、文字邊界、字型內嵌、頁碼及作者順序檢查；圖表另完成彩色與灰階視覺核對。
-- [VALIDATION.md](VALIDATION.md)：逐頁視覺檢查與計算驗證範圍。
-- [完整執行證據](../outputs/full_run/2026-10-21/)：原生 R 4.6.1 執行與 32 項檢查、Python 八項測試、LSTM 22 股 × 50 epochs 設定及結果。RF 使用 500 棵樹，XGBoost 使用 10 rounds；合併輸出含 66 筆指標、15,477 筆測試預測。
-- 原始資料、簡報、16 份 CSV、472 張分析 PNG 及 37 張歷史圖稿保留於專案正式路徑。預設不重訓入口會保留已存的三模型結果。
-
-Historical allocations and refitted portfolios are reported separately. Results use unadjusted closing prices without reinvested distributions or costs, and the allocation comparison is in-sample. Full retraining completed for RF (500 trees), XGBoost (10 rounds), and LSTM (50 epochs) across 22 stocks, producing 66 metric rows and 15,477 test predictions. Native R checks and Python tests passed; execution evidence is in [outputs/full_run/2026-10-21/](../outputs/full_run/2026-10-21/). Current retraining does not recover the missing historical RMSE exclusion records.
+Historical allocations and refitted portfolios are reported separately. Results use unadjusted closing prices without reinvested distributions or costs, and the allocation comparison is in-sample. Full retraining completed for RF (500 trees), XGBoost (10 rounds), and LSTM (50 epochs) across 22 stocks, producing 66 metric rows and 15,477 test predictions. The default R workflow preserves and loads these saved model results. Current retraining does not recover the missing historical RMSE exclusion records.

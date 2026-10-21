@@ -1,21 +1,28 @@
-# 專題原始碼封存
+# Source-code and historical-results archive
 
-| 檔案 | 內容與用途 |
+English | [繁體中文](README_zh.md) · [Back to the project guide](../README.md)
+
+This directory preserves the earlier source code, generated figures, and organization records of the Spring 2024 project. Use the root `run.R` and maintained scripts for current analysis.
+
+| File or directory | Contents and purpose |
 |---|---|
-| `final-submission-source.rar` | 原 `Final project/BDA_Final_Project_Team3_code.rar`，保留正式提交的 12 份 R／Notebook 原始碼，包括 LSTM 與 BL |
-| `legacy-source.zip` | 保留 14 份相關舊來源：11 支 R、2 支 Python、1 份 Notebook，供比對與還原 |
-| `legacy-source-manifest.json` | 目前 `legacy-source.zip` 的保留成員與驗證紀錄 |
-| `original-manifest.json` | 第一次程式整理時的原始檔案清冊及 SHA-256，路徑反映整理前結構 |
-| `cleanup-verification.json` | 第一次程式整理時的驗證結果，反映當時 21 份備份與 89 份原始輸入的狀態 |
+| `final-submission-source.rar` | The original `Final project/BDA_Final_Project_Team3_code.rar`, containing 12 submitted R/notebook source files, including LSTM and BL |
+| `legacy-source.zip` | 14 relevant earlier sources: 11 R scripts, two Python scripts, and one notebook, retained for comparison and recovery |
+| `legacy-source-manifest.json` | Retained members of the current legacy ZIP and their verification records |
+| `original-manifest.json` | The first code-cleanup inventory and SHA-256 hashes; paths reflect the earlier folder structure |
+| `cleanup-verification.json` | Verification from the first code cleanup, recording the then-current 21 backups and 89 original inputs |
+| [historical-results/](historical-results/) | 37 figures generated before refactoring, with an inventory and SHA-256 manifest |
 
-`legacy-source.zip` 由原 `original-code-20261020.zip` 整理而來，保留相關 R、BL Python 與 Notebook，並從原巢狀 ZIP 取出唯一的 Python 匯出來源 `Untitled1 (2).py`。三組 `.RData`／`.Rhistory` 共六個工作階段檔，以及兩份巢狀 Notebook ZIP 已移除；目前封存不包含這些工作階段或課堂紀錄。
+`legacy-source.zip` was reorganized from `original-code-20261020.zip`. It retains the relevant R, BL Python, and notebook sources, including the unique exported Python source `Untitled1 (2).py` recovered from a nested ZIP. Six `.RData`/`.Rhistory` session files and two nested notebook ZIPs were removed. These session and classroom records are not included in the current archive.
 
-舊來源內的硬編碼路徑與實驗設定仍保留原樣。日常執行使用專案根目錄的 `run.R`；如需檢查舊程式，先解壓到獨立資料夾：
+The earlier sources retain their original hardcoded paths and experimental settings. To inspect them, first extract them into a separate directory:
 
 ```powershell
 Expand-Archive -LiteralPath archive/legacy-source.zip -DestinationPath archive/restored-legacy-source
 ```
 
-正式資料已集中於 `data/stocks/`、`data/etfs/` 與 `data/historical/`；正式簡報在 `docs/presentation.pdf`，論文及原始圖稿在 `references/`。搬移與刪除依據見 [全資料夾整理紀錄](../docs/FOLDER_CLEANUP.md)。
+Run this command from the project root. Current research inputs are in `data/stocks/`, `data/etfs/`, and `data/historical/`; the presentation is `docs/presentation.pdf`. External cited papers belong in `references/papers/`, current analysis outputs in `outputs/`, and reports and composite figures in `reports/`.
 
-`original-manifest.json` 與 `cleanup-verification.json` 保留第一次整理的歷史證據，不能用其舊路徑或檔案數認定目前檔案缺漏，也不代表已刪除的前期資料仍可從目前封存還原。現有舊來源以 `legacy-source-manifest.json` 為準。
+The 37 project-generated figures were moved from `references/figures/` to [historical-results/figures/](historical-results/figures/): 30 stock decomposition plots, four ETF decomposition plots, two recurrence plots, and one MV frontier image. They preserve the project's earlier execution results. The [figure guide](historical-results/README.md) and [figure_manifest.json](historical-results/figure_manifest.json) record categories, current paths, and file hashes. See the [folder-cleanup record](../docs/FOLDER_CLEANUP.md) for moves and deletions.
+
+`original-manifest.json` and `cleanup-verification.json` preserve evidence of the first cleanup. Their old paths and file counts do not describe the current inventory or imply that removed files can still be recovered. Refer to `legacy-source-manifest.json` for the current legacy source archive.

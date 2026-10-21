@@ -29,7 +29,7 @@ The final six stocks are **3034, 2357, 2454, 2886, 3711, and 2330**. Their histo
 | [Full execution summary](outputs/full_run/2026-10-21/RUN_SUMMARY.md) | Commands, logs, timings, and the complete 22-stock model comparison |
 | [Model comparison CSV](outputs/full_run/2026-10-21/model_comparison.csv) | Per-stock RF, XGBoost, and LSTM test errors |
 
-The reports use the OSDI 2024 template.
+The reports use the [OSDI 2024 submission template](https://www.usenix.org/conference/osdi24/requirements-authors).
 
 ## Main results
 
@@ -83,17 +83,24 @@ portfolio optimization/
 │   ├── analysis.rds                   Saved R configuration and analysis objects
 │   └── RUN_NOTES.txt                  Assumptions and R session/package information
 ├── reports/
+│   ├── README.md                     English report guide
+│   ├── README_zh.md                  Traditional Chinese report guide
 │   ├── report_zh/                    Chinese narrative and PDF
 │   ├── report_en/                    English narrative and PDF
 │   ├── assets/                       Six composite report figures
 │   └── …                             Report guide, source manifest, validation records
 ├── references/
-│   ├── papers/                       Research paper cited by the project
-│   └── figures/                      37 preserved historical figures
-└── archive/                          Original submitted and relevant legacy source
+│   └── papers/                       External research paper cited by the project
+└── archive/
+    ├── historical-results/
+    │   ├── figures/                  37 figures generated before refactoring
+    │   ├── README.md                 Historical figure inventory and provenance
+    │   ├── README_zh.md              Traditional Chinese historical-results guide
+    │   └── figure_manifest.json      Paths, categories, and SHA-256 hashes
+    └── …                             Original source archives and provenance records
 ```
 
-`data/` and `references/figures/` preserve research inputs and original artwork. Generated analysis belongs in `outputs/`; generated report figures and PDFs belong in `reports/`. The public project includes analysis results and full-run evidence so the README links can be inspected directly. The `.gitignore` excludes R session files, Python caches, virtual environments, and temporary files. The `.gitattributes` preserves checked file bytes so platform newline conversion does not invalidate recorded SHA-256 hashes.
+`data/` contains research inputs; `references/papers/` contains external literature. Current analysis results belong in `outputs/`, and report figures and PDFs belong in `reports/`. Earlier project-generated figures are preserved separately in `archive/historical-results/` so their execution history is clear. The public project includes analysis results and full-run evidence so the README links can be inspected directly. The `.gitignore` excludes R session files, Python caches, virtual environments, and temporary files. The `.gitattributes` preserves checked file bytes so platform newline conversion does not invalidate recorded SHA-256 hashes.
 
 ## Environment and setup
 
@@ -235,8 +242,8 @@ The earlier WebR checks described in the validation history were superseded for 
 
 ## References and archived material
 
-[references/](references/) retains the cited research paper and **37 historical figures**: 30 stock decomposition plots, four ETF decomposition plots, two recurrence plots, and one MV frontier image. The original `3711 2311 復發圖.png` is retained as evidence because the provided raw data do not contain stock 2311; the current pipeline does not silently substitute another stock for it.
+[references/papers/](references/papers/) contains the external research paper cited by the project. The **37 figures produced by the earlier project code** are archived under [archive/historical-results/](archive/historical-results/), rather than classified as external references: 30 stock decomposition plots, four ETF decomposition plots, two recurrence plots, and one MV frontier image. Its [inventory](archive/historical-results/README.md) and [SHA-256 manifest](archive/historical-results/figure_manifest.json) record the preserved files. The original `3711 2311 復發圖.png` is retained because the provided raw data do not contain stock 2311; the current pipeline does not silently substitute another stock for it.
 
 [archive/](archive/) preserves the original final submission's 12 source files in `final-submission-source.rar` and 14 relevant legacy scripts/notebooks in `legacy-source.zip`. These are recovery and provenance records; use the root entry points for the maintained workflow. Old R session files, duplicate nested archives, and unrelated attachments were removed during folder organization.
 
-See the [archive guide](archive/README.md) for recovery details, the [folder cleanup record](docs/FOLDER_CLEANUP.md) for moves and deletions, and the [refactoring notes](docs/REFACTOR_NOTES.md) for calculation changes. Historical inventory paths in archive manifests describe the earlier folder layout.
+See the [archive guide](archive/README.md) for recovery details, the [current folder and report review](docs/FOLDER_REVIEW.md) for the maintained structure, the [folder cleanup record](docs/FOLDER_CLEANUP.md) for earlier moves and deletions, and the [refactoring notes](docs/REFACTOR_NOTES.md) for calculation changes. Historical inventory paths in archive manifests describe the earlier folder layout.

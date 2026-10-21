@@ -10,6 +10,8 @@
       "author": "蘇柏諺; 洪稚鈞; 佘梓平; 黃纓婷; 陳依琪; 林岱融",
       "title": "超越 ETF：股票預測與投資組合比較",
       "author_order_verified": true,
+      "affiliation": "國立成功大學統計學系",
+      "title_block_order_verified": true,
       "page_size_pt": [
         612,
         792
@@ -17,7 +19,7 @@
       "pages_checked": [
         {
           "page": 1,
-          "extracted_characters": 1083,
+          "extracted_characters": 1094,
           "text_font_sizes_pt": [
             10.0,
             11.0,
@@ -26,6 +28,7 @@
           "used_embedded_fonts": [
             "AAAAAA+PMingLiU-1",
             "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPS-ItalicMT",
             "AAAAAA+TimesNewRomanPSMT",
             "AAAAAB+PMingLiU-1"
           ],
@@ -118,7 +121,7 @@
         },
         {
           "page": 7,
-          "extracted_characters": 462,
+          "extracted_characters": 493,
           "text_font_sizes_pt": [
             10.0,
             11.0
@@ -203,7 +206,7 @@
         },
         {
           "page": 12,
-          "extracted_characters": 1258,
+          "extracted_characters": 1300,
           "text_font_sizes_pt": [
             10.0,
             11.0
@@ -228,6 +231,8 @@
       "author": "Bo-Yan Su; Zhi-Jun Hong; Tzu-Ping She; Ying-Ting Huang; I-Chi Chen; Tai-Jung Lin",
       "title": "Beyond ETFs: Stock Forecasting and Portfolio Comparison",
       "author_order_verified": true,
+      "affiliation": "Department of Statistics, National Cheng Kung University, Taiwan.",
+      "title_block_order_verified": true,
       "page_size_pt": [
         612,
         792
@@ -235,7 +240,7 @@
       "pages_checked": [
         {
           "page": 1,
-          "extracted_characters": 2744,
+          "extracted_characters": 2798,
           "text_font_sizes_pt": [
             10.0,
             11.0,
@@ -243,6 +248,7 @@
           ],
           "used_embedded_fonts": [
             "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPS-ItalicMT",
             "AAAAAA+TimesNewRomanPSMT"
           ],
           "outside_text_block_characters": 0,
@@ -320,7 +326,7 @@
         },
         {
           "page": 7,
-          "extracted_characters": 1219,
+          "extracted_characters": 1321,
           "text_font_sizes_pt": [
             10.0,
             11.0
@@ -390,7 +396,7 @@
         },
         {
           "page": 12,
-          "extracted_characters": 1732,
+          "extracted_characters": 1745,
           "text_font_sizes_pt": [
             10.0,
             11.0
@@ -408,7 +414,7 @@
   },
   "source_hashes_match": true,
   "output_hashes_match": true,
-  "source_hashes_checked": 558,
+  "source_hashes_checked": 596,
   "output_hashes_checked": 8,
   "report_document_count": 2,
   "total_pages_checked": 24,

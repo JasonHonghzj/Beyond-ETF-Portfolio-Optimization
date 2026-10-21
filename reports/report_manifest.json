@@ -20,6 +20,10 @@
       "Tai-Jung Lin"
     ]
   },
+  "affiliations": {
+    "zh": "國立成功大學統計學系",
+    "en": "Department of Statistics, National Cheng Kung University, Taiwan."
+  },
   "report_variants": {
     "author_named": {
       "files": [
@@ -2323,7 +2327,7 @@
     },
     {
       "path": "scripts/build_reports.py",
-      "sha256": "ca4856fcfd9b5358a134f57cd70dcb4af29d23aa22af9009b758a00d8bb43786"
+      "sha256": "2da5b40d092dac716534857f4d792cbee5b5d32851caedf4c96ad179beae31f5"
     },
     {
       "path": "scripts/requirements-reports.txt",
@@ -2347,11 +2351,163 @@
     },
     {
       "path": "reports/report_zh/content.md",
-      "sha256": "bd3cc76a981415ef8c3ac307c8dfb7827bd46045903cd446b69ee2f695e87006"
+      "sha256": "1b64d291f6888a7fb331068d99518cede8ad6294c4d8240fd642fce677981c0e"
     },
     {
       "path": "reports/report_en/content.md",
-      "sha256": "3bde56bc2bfba7d19a6c87f4e2b30a8940ade4f7879f099ff333a9233cc75bd5"
+      "sha256": "ea6fb3843de38675bf5010912a1175902850e302dcedfc3e13d749f38b115158"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/etfs/0050_plot.png",
+      "sha256": "600007948d6e6e58e2194d189b04af2efc3e3b1ddee12deb1754c9273c1355f0"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/etfs/0056_plot.png",
+      "sha256": "c1925602685897ed8af6a722d689f63f38ec698ea7bf78b299f7edfe512b5814"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/etfs/006208_plot.png",
+      "sha256": "a6da2c1ce6f7a4fbf5612e3a8231a2bb250709890ac789e55741eec9512d6b7a"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/etfs/00713_plot.png",
+      "sha256": "bd27b1d7be157a6c92d76098384dce3227365960745076e15606bd038045a4d7"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/1216_plot.png",
+      "sha256": "35bee152b979f22b14870014645a03f303370a3f49a2f8560ddab8305e64901d"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/1301_plot.png",
+      "sha256": "84010e643419ad35e00b141be11fb73f87623e22af535a92d5a2473681c3fcee"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/1303_plot.png",
+      "sha256": "b5ae897de015211a25873e6b65853b30935737fac72667582b3013b40c386ec4"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/1326_plot.png",
+      "sha256": "5e54988c399fefeca42ac12f4dff2213471fbca6762db1b9f8753e296d056c9e"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/2002_plot.png",
+      "sha256": "e19fb659452689628e5794cf9f3c9954b65bcbd936ceadde8f448a8efe7ceac2"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/2207_plot.png",
+      "sha256": "9277e78871058605fefb40d2916234dcadaa295333f2c24ebddc667c76ba524d"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/2303_plot.png",
+      "sha256": "3a2f733da2a0eff5096290a0b1aa66451c99599ede132121cd75e08eccd950ea"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/2308_plot.png",
+      "sha256": "a484ab2b3cf368f1ae9b171be5b3b306adf433a0c8bbea927fca69caab865037"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/2317_plot.png",
+      "sha256": "c174fe3a7d43445d8a2bbf1b01f3bbf91d9ece3bca9c5bc218392620816d5947"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/2330_plot.png",
+      "sha256": "f2ec8d4dc62001b69b068cf08d079f827fd4fed14e5d7b05d7e392a5a8b048b8"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/2357_plot.png",
+      "sha256": "3fcd7225a7c70b6ac078c153c068a7bddb5dc67ec255a761cff55482fa2e07e3"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/2382_plot.png",
+      "sha256": "fd823a455044f778fa355b5411e566b2a1ef9fae34bb857ad72dce4ad8a20f7f"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/2395_plot.png",
+      "sha256": "d067739cdcd9a8efe76847d3df31668c7cd8d762a3c14e397e35b35fa654fc17"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/2412_plot.png",
+      "sha256": "185ea16bfe3d31deeb6dbc397856be906f1e0808c5e1e7a48daec656ef63ecc8"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/2454_plot.png",
+      "sha256": "e627b9c06afccd80dd1a2fa31615cb182eea15bf16f2c6012ee01d4efa946847"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/2603_plot.png",
+      "sha256": "298c7b3674bdc3b36b23900407b99f43c42d92928512b2f0f2501fbfae9e8e17"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/2881_plot.png",
+      "sha256": "3425f620bdb3f06af36092ea287a1bc3fe64263a336cf41d253ec5ffc32210e3"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/2882_plot.png",
+      "sha256": "7c77dff44ba3744cc10c5736206f91a75a8589fb17b85394345284f448c9604b"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/2884_plot.png",
+      "sha256": "8e2e4b49aa0c82198be12fe2fc9c4e64b1d55b62e4ed7c7776d3dd99bc488165"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/2885_plot.png",
+      "sha256": "608434f394e790728d708f924d5ebd97451b0df2316a56f0132621b44dbef197"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/2886_plot.png",
+      "sha256": "bb0980b42c4b53cb6d8cd811934de2f82fc1a744859cb761a6e001e1dde371f0"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/2891_plot.png",
+      "sha256": "9badfedf884b287c0d80a47038a4e9569c5809a6889e9ffdc4f095431a58748c"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/2892_plot.png",
+      "sha256": "ecf295b056a72e88730de2c464c59acd961924c9bc3124476beeaf0dcde837b8"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/3034_plot.png",
+      "sha256": "d0b87883009c0326759f476e4cb7e517ea1138ddd976606f2cf8d83446a9c41f"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/3045_plot.png",
+      "sha256": "90097f8effb6184e75c9ff13448949a4de47c8f46d00ac19a386125ba45fd053"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/3231_plot.png",
+      "sha256": "fd3096716eafeb00f340642a8476715d37779c376e67d9a7e4e20e6e8a09cf47"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/3711_plot.png",
+      "sha256": "02fce6d48f81da8bd27cb07c89a1a25752e0c0774a4d1e73b1a1133e06a48043"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/5880_plot.png",
+      "sha256": "df83730425ea4905054d54e335b3b31549de35637693c0f1706597129ddbc703"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/6505_plot.png",
+      "sha256": "db528dadacf6cbc687f28188d082b8b034157ce8de51d31d9bc6481c1bd5b721"
+    },
+    {
+      "path": "archive/historical-results/figures/decomposition/stocks/6669_plot.png",
+      "sha256": "d9937849d6501c3ff35c8b7ac4536a2109b3678b8cc5c1fd7ac81fd95859924b"
+    },
+    {
+      "path": "archive/historical-results/figures/portfolio/mv.jpg",
+      "sha256": "a49edb4fc716cd068c453a4bd838ded1cea4d7f772ab3b48956355d0e0343fb8"
+    },
+    {
+      "path": "archive/historical-results/figures/recurrence/2881 2882復發圖.png",
+      "sha256": "a4a44332a834b16a4a9d60df7aec7f48f289a999da5c7151394c6d6051c71207"
+    },
+    {
+      "path": "archive/historical-results/figures/recurrence/3711 2311 復發圖.png",
+      "sha256": "0ad471cf5cf187ebe4d34c08fd4541b61c70c7665448843bce34df901e8deef9"
+    },
+    {
+      "path": "archive/historical-results/figure_manifest.json",
+      "sha256": "999e58d962d8cb41fa9afcf1d08d0574a5cb8dbc59d5a63e93431c434ae3cc95"
     },
     {
       "path": "outputs/full_run/2026-10-21/verification.json",
@@ -2385,11 +2541,11 @@
   "outputs": [
     {
       "path": "reports/report_zh/report_zh.pdf",
-      "sha256": "fc557d7e63cdbea649fa4669b60ada7dbd94eae5dc9ed2a5956de6c552eb13f0"
+      "sha256": "71a6bec1403f62bea17fe7b07f76dadeb296bbec2a021ef239c7372a7b0be014"
     },
     {
       "path": "reports/report_en/report_en.pdf",
-      "sha256": "7ca901b99e99baf2c581503683d2a15c276cc8093cb1213dc24f0ad5c16808e9"
+      "sha256": "5b6da73f4e2212bf6bc333d6df310cc0885883d5804c7d4d1cd0c25b006730d3"
     },
     {
       "path": "reports/assets/wealth.png",

@@ -21,11 +21,11 @@
 |---|---|
 | [正式簡報](docs/presentation.pdf) | Spring 2024 的原始研究設計與結果 |
 | [中文報告](reports/report_zh/report_zh.pdf)／[英文報告](reports/report_en/report_en.pdf) | 課程報告：摘要、概述、目標、方法、結果、彩色圖表與限制 |
-| [報告說明](reports/README.md) | 作者資訊、版面、可編輯來源、字型與重建方式 |
+| [報告說明](reports/README_zh.md) | 作者資訊、版面、可編輯來源、字型與重建方式 |
 | [完整執行摘要](outputs/full_run/2026-10-21/RUN_SUMMARY.md) | 實際命令、日誌、耗時與 22 股模型比較 |
 | [模型比較 CSV](outputs/full_run/2026-10-21/model_comparison.csv) | 每股 RF／XGBoost／LSTM 的測試誤差 |
 
-報告採用 OSDI 2024 template。
+報告採用 [OSDI 2024 投稿範本](https://www.usenix.org/conference/osdi24/requirements-authors)。
 
 ## 主要結果
 
@@ -78,16 +78,23 @@
     │   ├── analysis.rds                   R 設定與分析物件
     │   └── RUN_NOTES.txt                  假設與 R 套件／執行環境
     ├── reports/
+    │   ├── README.md                     英文報告說明
+    │   ├── README_zh.md                  繁體中文報告說明
     │   ├── report_zh/                    中文敘述來源與 PDF
     │   ├── report_en/                    英文敘述來源與 PDF
     │   ├── assets/                       六張報告整合圖
     │   └── …                             報告說明、來源清冊與版面驗證
     ├── references/
-    │   ├── papers/                       簡報引用的研究論文
-    │   └── figures/                      37 張保留的歷史圖稿
-    └── archive/                          正式提交與相關舊來源封存
+    │   └── papers/                       簡報引用的外部研究論文
+    └── archive/
+        ├── historical-results/
+        │   ├── figures/                  重構前程式產生的 37 張歷史結果圖
+        │   ├── README.md                 歷史圖表清單與來源說明
+        │   ├── README_zh.md              繁體中文歷史結果說明
+        │   └── figure_manifest.json      路徑、分類與 SHA-256
+        └── …                             正式提交、相關舊來源與歷史清冊
 
-原始研究輸入放在 data/，歷史圖稿放在 references/figures/；重算分析放在 outputs/，報告圖與 PDF 放在 reports/。公開專案一併保留分析產出與完整執行證據，讓 README 連結可直接查閱；.gitignore 僅排除 R 工作階段、Python 快取、虛擬環境與暫存檔。.gitattributes 保留原始位元內容，避免換行轉換使來源清冊的 SHA-256 失效。
+原始研究輸入放在 data/，外部論文放在 references/papers/；目前重算分析放在 outputs/，報告圖與 PDF 放在 reports/。重構前自行產生的圖表另存於 archive/historical-results/，保留各執行批次的來源脈絡。公開專案一併保留分析產出與完整執行證據，讓 README 連結可直接查閱；.gitignore 僅排除 R 工作階段、Python 快取、虛擬環境與暫存檔。.gitattributes 保留原始位元內容，避免換行轉換使來源清冊的 SHA-256 失效。
 
 ## 環境與安裝
 
@@ -127,7 +134,7 @@ RStudio 亦可執行：
 
 報告程式讀取根目錄 outputs/ 內已存分析結果，不會重訓。若發現模型輸出，會要求完整且一致的 22 股 × 3 模型資料；單股或未完成輸出不能冒充完整報告證據。修改資料、估計設定或結果時，也須審查中英文敘述來源。
 
-報告字型預設讀取 C:/Windows/Fonts。其他系統須透過 --font-dir 提供合法的 Times New Roman 與 PMingLiU 字型，檔名及細節見 [報告重建說明](reports/README.md)。
+報告字型預設讀取 C:/Windows/Fonts。其他系統須透過 --font-dir 提供合法的 Times New Roman 與 PMingLiU 字型，檔名及細節見 [報告重建說明](reports/README_zh.md)。
 
 ### 常用參數與另存輸出
 
@@ -232,8 +239,8 @@ R 主流程約 **102 秒**，LSTM 全 22 股訓練約 **148 秒**；不含首次
 
 ## 參考資料與封存
 
-[references/](references/) 保留引用論文及 **37 張歷史圖稿**：30 張股票分解、4 張 ETF 分解、2 張復發圖、1 張 MV 前緣圖。其中 3711／2311 原復發圖因缺少 2311 原始行情而僅作歷史證據，不以其他股票冒名替代。
+[references/papers/](references/papers/) 僅保留引用的外部研究論文。過去自行產生的 **37 張歷史結果圖**移至 [archive/historical-results/](archive/historical-results/)：30 張股票分解、4 張 ETF 分解、2 張復發圖、1 張 MV 前緣圖，並附上[圖表清單](archive/historical-results/README_zh.md)與 [SHA-256 清冊](archive/historical-results/figure_manifest.json)。其中 3711／2311 原復發圖因缺少 2311 原始行情而僅作歷史證據，不以其他股票冒名替代。
 
 [archive/](archive/) 保留正式提交 RAR 的 12 份來源，以及 legacy ZIP 的 14 份相關舊程式／Notebook。日常執行使用根目錄入口，封存供比對與還原；舊工作階段、重複壓縮檔及無關附件已於整理時移除。
 
-還原方式見 [封存說明](archive/README.md)，搬移及刪除理由見 [資料夾整理紀錄](docs/FOLDER_CLEANUP.md)，計算修正見 [重構紀錄](docs/REFACTOR_NOTES.md)。封存中的舊清冊路徑反映整理前結構，並非目前的檔案位置。
+還原方式見 [封存說明](archive/README_zh.md)，現有分類與本次檢查見 [資料夾及報告審查](docs/FOLDER_REVIEW.md)，過去搬移及刪除理由見 [資料夾整理紀錄](docs/FOLDER_CLEANUP.md)，計算修正見 [重構紀錄](docs/REFACTOR_NOTES.md)。封存中的舊清冊路徑反映整理前結構，並非目前的檔案位置。

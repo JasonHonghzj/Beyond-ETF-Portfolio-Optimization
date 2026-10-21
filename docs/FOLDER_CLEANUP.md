@@ -1,5 +1,7 @@
 # 全資料夾整理紀錄（2026-10-20）
 
+> 後續更新（2026-10-21）：本檔及 `FOLDER_CLEANUP.json` 保留當時的分類與路徑紀錄。37 張專案自行產生的舊圖已從 `references/figures/` 移至 `archive/historical-results/figures/`；外部文獻仍在 `references/papers/`。現有分類見[歷史結果說明](../archive/historical-results/README_zh.md)，逐檔搬移與雜湊見[新清冊](../archive/historical-results/figure_manifest.json)。
+
 依「整個資料夾只保留 final project 相關檔案」整理，檢查了檔案內容、壓縮包內的成員、簡報引用與程式讀取路徑。沒有僅因程式未引用就刪除相關研究文件或歷史圖。
 
 ## 移除內容

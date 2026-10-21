@@ -70,7 +70,7 @@ Full retraining on October 21, 2026 passed in native R 4.6.1 and Python: thirty-
 
 ## exploration
 
-Price boxplots and the indexed six-stock trend panel describe the thirty-stock and ten-ETF input universe before allocation. Descriptive tables retain each symbol's observation count, date coverage, and price-level summaries. Differences in nominal price scales make direct boxplot heights unsuitable as return rankings. The selected-stock trend panel indexes each series to one at their common starting date, connecting exploration to the eventual holdings. These figures provide descriptive context without identifying the causes of price movements [3].
+Price boxplots and the indexed six-stock trend panel describe the thirty-stock and ten-ETF input universe before allocation. Descriptive tables retain each symbol's observation count, date coverage, and price-level summaries. Differences in nominal price scales make direct boxplot heights unsuitable as return rankings. The selected-stock trend panel indexes each series to one at their common starting date, connecting exploration to the eventual holdings. Original decomposition plots are preserved as historical project outputs in archive/historical-results/figures/. These figures provide descriptive context without identifying the causes of price movements [3].
 
 ## stationarity
 

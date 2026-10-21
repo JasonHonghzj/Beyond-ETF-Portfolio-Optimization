@@ -49,6 +49,11 @@ SCREENED = ["2317", "2330", "2395", "2357", "3231", "2207", "2603", "3034",
 AUTHORS_ZH = ["蘇柏諺", "洪稚鈞", "佘梓平", "黃纓婷", "陳依琪", "林岱融"]
 # User-provided English names, with given names before surnames.
 AUTHORS_EN = ["Bo-Yan Su", "Zhi-Jun Hong", "Tzu-Ping She", "Ying-Ting Huang", "I-Chi Chen", "Tai-Jung Lin"]
+AFFILIATIONS = {
+    "zh": "國立成功大學統計學系",
+    "en": "Department of Statistics, National Cheng Kung University, Taiwan.",
+}
+HISTORICAL_FIGURES = Path("archive/historical-results/figures")
 RULES = "https://www.usenix.org/conference/osdi24/requirements-authors"
 TEMPLATE = "https://www.usenix.org/conferences/author-resources/paper-templates"
 # Keep colors consistent across related panels, with line styles and markers
@@ -420,6 +425,8 @@ def styles(lang):
         "title": ParagraphStyle("title", parent=body, fontName="TNR-Bold", fontSize=14,
                                  leading=16, alignment=TA_CENTER, spaceAfter=0, rightIndent=0),
         "center": ParagraphStyle("center", parent=body, alignment=TA_CENTER, spaceAfter=0, rightIndent=0),
+        "course": ParagraphStyle("course", parent=body, fontName="TNR-Italic", alignment=TA_CENTER,
+                                 spaceAfter=0, rightIndent=0),
     }
 
 
@@ -558,7 +565,7 @@ def build_pdf(root: Path, e: dict, assets: dict, lang: str) -> Path:
         return caption(cv, content[key], prefix, top, s)
 
     try:
-        # Page 1: title/author block and two-column abstract/introduction.
+        # Page 1: title, authors, affiliation, coursework and research term.
         top = start()
         title_p = Paragraph(markup(title), s["title"])
         _, h = title_p.wrap(WIDTH, HEIGHT)
@@ -566,8 +573,12 @@ def build_pdf(root: Path, e: dict, assets: dict, lang: str) -> Path:
         names = ", ".join(AUTHORS_EN) if lang == "en" else "、".join(AUTHORS_ZH)
         p = Paragraph(markup(names), s["center"]); _, h = p.wrap(WIDTH, HEIGHT)
         p.drawOn(cv, LEFT, top - h); top -= h + 5
-        course = "Big Data Analytics course project | Spring 2024" if lang == "en" else "巨量資料分析課程專題 | Spring 2024 | 授課教師：鄭順林"
-        p = Paragraph(markup(course), s["center"]); _, h = p.wrap(WIDTH, HEIGHT)
+        p = Paragraph(markup(AFFILIATIONS[lang]), s["center"]); _, h = p.wrap(WIDTH, HEIGHT)
+        p.drawOn(cv, LEFT, top - h); top -= h + 9
+        course = "Big Data Analytics Coursework" if lang == "en" else "巨量資料分析課程期末專題 | 授課教師：鄭順林"
+        p = Paragraph(markup(course), s["course"]); _, h = p.wrap(WIDTH, HEIGHT)
+        p.drawOn(cv, LEFT, top - h); top -= h + 2
+        p = Paragraph(markup(TERM), s["course"]); _, h = p.wrap(WIDTH, HEIGHT)
         p.drawOn(cv, LEFT, top - h); top -= h + 18
         left = block("abstract") + block("overview")
         coverage = ("Observation coverage: 28 stock series have 1,195 observations; 2603 has 1,188 and 6669 has 1,144. Nine ETFs have 1,195 observations; 00830 has 1,120. Common six-stock/ten-ETF evaluation: 218 prices, 217 returns." if lang == "en" else
@@ -757,8 +768,8 @@ def build_pdf(root: Path, e: dict, assets: dict, lang: str) -> Path:
         format_note += ("Report plots use color with line styles or marker shapes as additional visual cues. The correlation scale has monotonic luminance for grayscale printing." if lang == "en" else
                         "報告圖採彩色，保留線型及標記輔助辨識；相關矩陣色階亮度單調，兼顧黑白列印。")
         right += [Spacer(1, 12)] + paragraphs(format_note, s["body"])
-        preserved = ("Preserved historical artwork. references/figures/ contains thirty stock decompositions, four ETF decompositions, two original recurrence images, and one original MV frontier. These thirty-seven files are archival context, distinct from the generated figures cataloged above. They are not additional independent performance experiments." if lang == "en" else
-                     "原始圖稿：references/figures/ 保存三十張個股分解、四張 ETF 分解、兩張原始復發圖及一張原 MV 前緣，共三十七份。這些檔案供歷史追溯，與表 5 的重算圖分開，不代表額外獨立績效實驗。")
+        preserved = ("Archived historical results. archive/historical-results/figures/ contains thirty stock decompositions, four ETF decompositions, two original recurrence images, and one original MV frontier. These thirty-seven project outputs are archival context, distinct from the current figures cataloged above and from external literature in references/papers/." if lang == "en" else
+                     "歷史結果封存：archive/historical-results/figures/ 保存三十張個股分解、四張 ETF 分解、兩張原始復發圖及一張原 MV 前緣，共三十七份自行產生的舊分析輸出。這些檔案供歷史追溯，與表 5 的目前重算圖及 references/papers/ 的外部文獻分開。")
         right += paragraphs(preserved, s["body"])
         columns(left, right, top=top, label="references")
         end()
@@ -784,6 +795,13 @@ def main(argv=None):
     root = args.root.resolve()
     register_fonts(args.font_dir)
     e = load_evidence(root)
+    historical_figures = sorted(p for p in (root / HISTORICAL_FIGURES).rglob("*") if p.is_file())
+    historical_manifest = root / "archive/historical-results/figure_manifest.json"
+    archive_record = json.loads(historical_manifest.read_text(encoding="utf-8"))
+    archived_hashes = {item["path"]: item["sha256"] for item in archive_record["files"]}
+    actual_hashes = {p.relative_to(root).as_posix(): sha(p) for p in historical_figures}
+    if len(historical_figures) != 37 or archive_record["file_count"] != 37 or actual_hashes != archived_hashes:
+        raise ValueError("Historical figure archive no longer matches its 37-file provenance manifest.")
     assets = make_figures(e, root / "reports/assets")
     outputs = [build_pdf(root, e, assets, lang) for lang in ("zh", "en")]
     sources = sorted((root / "outputs/tables").glob("*.csv"))
@@ -797,6 +815,8 @@ def main(argv=None):
                 root / "scripts/train_lstm.py", root / "scripts/requirements-lstm.txt",
                 root / "tests/run_tests.R", root / "tests/test_lstm.py",
                 root / "reports/report_zh/content.md", root / "reports/report_en/content.md"]
+    sources += historical_figures
+    sources += [historical_manifest]
     if e["forecast"] is not None:
         evidence_dir = root / "outputs/full_run/2026-10-21"
         sources += [p for name in ("verification.json", "r_execution.json", "r_tests.log",
@@ -805,6 +825,7 @@ def main(argv=None):
     manifest = {
         "research_term": TERM, "data_cutoff": "2023-11-30", "reconstruction_review_date": REVIEW_DATE,
         "authors": {"zh": AUTHORS_ZH, "en": AUTHORS_EN},
+        "affiliations": AFFILIATIONS,
         "report_variants": {
             "author_named": {"files": [f"reports/report_{lang}/report_{lang}.pdf" for lang in ("zh", "en")],
                              "includes_course_term": True},
@@ -829,7 +850,7 @@ def main(argv=None):
                           "historical_ml_workbooks": len(list((root / "data/historical").glob("*.xlsx"))),
                           "report_composite_figures": len(assets),
                           "report_pdf_count": len(outputs),
-                          "preserved_historical_figures": sum(p.is_file() for p in (root / "references/figures").rglob("*"))},
+                          "preserved_historical_figures": len(historical_figures)},
         "numeric_checks": {"historical_wealth_max_abs_error": e["wealth_error"],
                            "benchmark_outperformance_counts": e["wins"], "ccf_examples": e["ccf_checks"],
                            "full_retraining": {key: value for key, value in e["forecast"].items() if key != "metrics"}

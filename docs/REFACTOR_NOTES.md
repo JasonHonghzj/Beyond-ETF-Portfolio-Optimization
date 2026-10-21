@@ -46,7 +46,7 @@
 1. 第 45 頁 MV 權重總和為 1.001，BL 為 0.993。歷史圖使用該頁數字正規化後的權重；不把四捨五入誤差當額外槓桿。2023-01-03 至 2023-11-30 重算 MV 價格報酬約 40.40%，BL 約 38.71%，1/N 約 39.57%。風險與 Sharpe 因統一定義及年化而不同。
 2. 原正式 BL 使用 Yahoo 價格、Ledoit–Wolf covariance、執行時市值、L2、max_sharpe，而且後段 frontier 採不同目標。新 R 版使用本機價格、樣本 covariance、明示等權 prior、原年度 views 與自訂 Omega；保留可重現的重新估計流程，沒有宣稱精確重現原 BL 數字。原 Notebook 完整留在 RAR／備份中。
 3. 獨立列舉確認有八組並列、各含 22 檔的最大低相關 clique，原簡報名單也是有效解。穩定字典序 tie-break 會把原名單中的 **6505 換成 1301**；輸出 `stock_selection_comparison.csv` 供檢查。歷史模型仍使用簡報原 22 股與最終 6 股；此差異不是原選股錯誤。
-4. 第 39 頁 `3711/2311` 缺少 2311 原始資料，不能重新生成，原 PNG 保留於 `references/figures/recurrence/`。不將 2317 假冒 2311；預設生成有資料的 2881/2882，以及原 R 程式的 2412/6505。
+4. 第 39 頁 `3711/2311` 缺少 2311 原始資料，不能重新生成，原 PNG 現封存於 `archive/historical-results/figures/recurrence/`（2026-10-21 從 `references/figures/recurrence/` 移入）。不將 2317 假冒 2311；預設生成有資料的 2881/2882，以及原 R 程式的 2412/6505。
 5. 復發圖為兩條各自 z-score 後的價格序列，矩陣 `abs(z_x[i]-z_y[j]) <= radius`，embedding=1。這是明確定義的純量交叉復發圖，不輸出或冒稱完整 CRQA 統計量。
 6. `return_1.xlsx` 沒有日期；第二階段確認六欄皆可由保留的收盤價重建為每日簡單報酬後，已移除這份重複匯出。原 `三種ML的return.xlsx` 保留為 `data/historical/ml_returns.xlsx`；其原單位為百分比，輸出表名仍為 `historical_ml_returns_percent.csv`。
 7. 簡報選股及配置是歷史研究設定；同一 2023 期間配適與評估屬樣本內比較。預測期間的首末價格差也不能當成期初已知的一年預測。未額外擴張為新的樣本外研究。
