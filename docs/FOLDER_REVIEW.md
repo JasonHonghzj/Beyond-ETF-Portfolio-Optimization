@@ -24,14 +24,16 @@ The 37 earlier project-generated figures were moved from `references/figures/` t
 
 The project root, reports directory, archive, and historical-results directory use an English `README.md` with a linked `README_zh.md`. The root `README_en.md` remains a compatibility link. Directory trees distinguish inputs, current outputs, historical results, external references, and report deliverables.
 
-Both reports retain the six-author order, with Zhi-Jun Hong second. The department is placed below the authors; coursework and Spring 2024 occupy separate lines. The OSDI statement links to the [OSDI 2024 author requirements](https://www.usenix.org/conference/osdi24/requirements-authors).
+Both reports retain the six-author order, with Zhi-Jun Hong second. Their matching front matter uses a two-line title followed by authors, department, advisor, coursework, and Spring 2024. Corresponding elements share the same type sizes and spacing; coursework and term use regular type. The advisor is identified as **Advised by Prof. Shun-Lin Jeng** in English and **指導教授：鄭順林** in Chinese. The OSDI statement links to the [OSDI 2024 author requirements](https://www.usenix.org/conference/osdi24/requirements-authors).
+
+The final References page in each report contains only Day and Lin's 2019 research paper, numbered [1]. In-text literature citations use that number. The project presentation, generated figures, code outputs, formatting resources, and archive explanations are excluded from the bibliography. Their provenance remains documented in this repository, including the report manifest and historical-results inventory.
 
 ## Verification
 
 - 32 native R regression checks and eight Python unit tests passed again after the folder review.
 - The report build reconciles performance, allocations, predictions, dates, and metric tables with the saved local evidence. No financial data or fitted model outputs were changed during this review.
 - Historical MV/BL/equal-weight results, ETF counterexamples, and refitted-frontier quantities agree across the report narratives and CSVs.
-- Both reports have 11 body pages and one reference page. The fresh PDF checks cover the department/byline order, paper size, text bounds, embedded fonts, page numbers, and source/output hashes. The rendered pages are inspected for layout.
+- Both reports have 11 body pages and one reference page. The fresh PDF checks cover matching title and front-matter styles, department/advisor/byline order, the paper-only bibliography and citation numbering, paper size, text bounds, embedded fonts, page numbers, and source/output hashes. All 24 rendered pages are inspected for layout.
 - Current Markdown links and bilingual navigation resolve to existing files or directories. Report details are recorded in [reports/VALIDATION.md](../reports/VALIDATION.md).
 
 The earlier full training and execution logs remain in [outputs/full_run/2026-10-21/](../outputs/full_run/2026-10-21/). This review reran regression tests and rebuilt the reports; it did not extend the market window or repeat full model training.

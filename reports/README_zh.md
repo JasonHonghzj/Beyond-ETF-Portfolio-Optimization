@@ -11,7 +11,9 @@
 
 報告採用 [OSDI 2024 投稿範本](https://www.usenix.org/conference/osdi24/requirements-authors)。
 
-作者姓名下方列出所屬單位：中文版為**國立成功大學統計學系**，英文版為 **Department of Statistics, National Cheng Kung University, Taiwan.**。兩份報告均依上表順序列出六位組員，洪稚鈞位於第二位。
+兩份報告採用相同的兩行標題版面，首頁依序列出作者、系所、指導教授、課程及研究學期。所屬單位為**國立成功大學統計學系**／**Department of Statistics, National Cheng Kung University, Taiwan.**；指導教授列為**指導教授：鄭順林**／**Advised by Prof. Shun-Lin Jeng**。課程與 **Spring 2024** 各自成行，使用一般字體。兩份報告均依上表順序列出六位組員，洪稚鈞位於第二位。
+
+最後的參考文獻頁僅保留 **Min-Yuh Day 與 Jian-Ting Lin（2019）**的研究論文，統一編為 **[1]**。專題簡報、自行產生的圖表、程式產出及格式資源改由專案說明與來源清冊記錄，不列入報告的文獻書目。
 
 | 中文姓名 | 英文姓名 |
 |---|---|

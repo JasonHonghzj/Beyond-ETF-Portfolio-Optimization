@@ -11,7 +11,9 @@ This **Spring 2024** Big Data Analytics final project uses market data ending **
 
 The reports use the [OSDI 2024 submission template](https://www.usenix.org/conference/osdi24/requirements-authors).
 
-The affiliation appears below the author names: **國立成功大學統計學系** in Chinese and **Department of Statistics, National Cheng Kung University, Taiwan.** in English. Both reports list all six members in the order shown above, with Zhi-Jun Hong second.
+Both reports share the same two-line title layout and front-matter order: authors, department, advisor, coursework, and research term. The affiliation is **國立成功大學統計學系** in Chinese and **Department of Statistics, National Cheng Kung University, Taiwan.** in English. The advisor line reads **指導教授：鄭順林** in Chinese and **Advised by Prof. Shun-Lin Jeng** in English. Coursework and **Spring 2024** appear on separate lines in regular type. Both reports list all six members in the order shown above, with Zhi-Jun Hong second.
+
+The final References page contains only the research paper by **Min-Yuh Day and Jian-Ting Lin (2019)**, cited as **[1]**. The project presentation, generated figures, code outputs, and formatting resources are documented in the repository guides and provenance records rather than in the paper's bibliography.
 
 | Chinese name | English name |
 |---|---|

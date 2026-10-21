@@ -53,6 +53,17 @@ AFFILIATIONS = {
     "zh": "國立成功大學統計學系",
     "en": "Department of Statistics, National Cheng Kung University, Taiwan.",
 }
+TITLE_LINES = {
+    "zh": ("超越 ETF", "股票預測與投資組合比較"),
+    "en": ("Beyond ETFs", "Stock Forecasting and Portfolio Comparison"),
+}
+ADVISORS = {"zh": "指導教授：鄭順林", "en": "Advised by Prof. Shun-Lin Jeng"}
+COURSEWORK = {"zh": "巨量資料分析課程期末專題", "en": "Big Data Analytics Coursework"}
+LITERATURE = [
+    "[1] Min-Yuh Day and Jian-Ting Lin. 2019. Artificial Intelligence for ETF Market Prediction and Portfolio Optimization. "
+    "In Proceedings of the 2019 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining "
+    "(ASONAM '19), 1026-1033. Association for Computing Machinery. https://doi.org/10.1145/3341161.3344822."
+]
 HISTORICAL_FIGURES = Path("archive/historical-results/figures")
 RULES = "https://www.usenix.org/conference/osdi24/requirements-authors"
 TEMPLATE = "https://www.usenix.org/conferences/author-resources/paper-templates"
@@ -425,8 +436,8 @@ def styles(lang):
         "title": ParagraphStyle("title", parent=body, fontName="TNR-Bold", fontSize=14,
                                  leading=16, alignment=TA_CENTER, spaceAfter=0, rightIndent=0),
         "center": ParagraphStyle("center", parent=body, alignment=TA_CENTER, spaceAfter=0, rightIndent=0),
-        "course": ParagraphStyle("course", parent=body, fontName="TNR-Italic", alignment=TA_CENTER,
-                                 spaceAfter=0, rightIndent=0),
+        "reference": ParagraphStyle("reference", parent=body, alignment=TA_LEFT, wordWrap=None,
+                                     leftIndent=14, firstLineIndent=-14, rightIndent=0),
     }
 
 
@@ -530,7 +541,7 @@ def build_pdf(root: Path, e: dict, assets: dict, lang: str) -> Path:
     stem = f"report_{lang}"
     out = directory / f"{stem}.pdf"
     temp = directory / f".{stem}.building.pdf"
-    title = "Beyond ETFs: Stock Forecasting and Portfolio Comparison" if lang == "en" else "超越 ETF：股票預測與投資組合比較"
+    title = ": ".join(TITLE_LINES[lang])
     cv = canvas.Canvas(str(temp), pagesize=(PAGE_W, PAGE_H), pageCompression=1)
     cv.setTitle(title)
     cv.setAuthor("; ".join(AUTHORS_EN if lang == "en" else AUTHORS_ZH))
@@ -565,21 +576,18 @@ def build_pdf(root: Path, e: dict, assets: dict, lang: str) -> Path:
         return caption(cv, content[key], prefix, top, s)
 
     try:
-        # Page 1: title, authors, affiliation, coursework and research term.
+        # Both languages share the same two-line title and five metadata rows.
         top = start()
-        title_p = Paragraph(markup(title), s["title"])
+        title_p = Paragraph("<br/>".join(markup(line) for line in TITLE_LINES[lang]), s["title"])
         _, h = title_p.wrap(WIDTH, HEIGHT)
         title_p.drawOn(cv, LEFT, top - h); top -= h + 12
         names = ", ".join(AUTHORS_EN) if lang == "en" else "、".join(AUTHORS_ZH)
-        p = Paragraph(markup(names), s["center"]); _, h = p.wrap(WIDTH, HEIGHT)
-        p.drawOn(cv, LEFT, top - h); top -= h + 5
-        p = Paragraph(markup(AFFILIATIONS[lang]), s["center"]); _, h = p.wrap(WIDTH, HEIGHT)
-        p.drawOn(cv, LEFT, top - h); top -= h + 9
-        course = "Big Data Analytics Coursework" if lang == "en" else "巨量資料分析課程期末專題 | 授課教師：鄭順林"
-        p = Paragraph(markup(course), s["course"]); _, h = p.wrap(WIDTH, HEIGHT)
-        p.drawOn(cv, LEFT, top - h); top -= h + 2
-        p = Paragraph(markup(TERM), s["course"]); _, h = p.wrap(WIDTH, HEIGHT)
-        p.drawOn(cv, LEFT, top - h); top -= h + 18
+        for text, gap in ((names, 5), (AFFILIATIONS[lang], 5), (ADVISORS[lang], 9),
+                          (COURSEWORK[lang], 2), (TERM, 18)):
+            p = Paragraph(markup(text), s["center"])
+            _, h = p.wrap(WIDTH, HEIGHT)
+            p.drawOn(cv, LEFT, top - h)
+            top -= h + gap
         left = block("abstract") + block("overview")
         coverage = ("Observation coverage: 28 stock series have 1,195 observations; 2603 has 1,188 and 6669 has 1,144. Nine ETFs have 1,195 observations; 00830 has 1,120. Common six-stock/ten-ETF evaluation: 218 prices, 217 returns." if lang == "en" else
                     "觀測覆蓋：28 檔股票各有 1,195 筆，2603 為 1,188 筆，6669 為 1,144 筆；九檔 ETF 各有 1,195 筆，00830 為 1,120 筆。六股與十檔 ETF 的共同評估窗口為 218 筆價格、217 筆報酬。")
@@ -752,26 +760,8 @@ def build_pdf(root: Path, e: dict, assets: dict, lang: str) -> Path:
         end()
         # References are not counted toward the OSDI body-page limit. No appendix.
         top = start(labels["references"])
-        refs = [
-            "[1] Spring 2024 Big Data Analytics project team. Beyond ETFs (超越 ETF). Course presentation, Spring 2024. Local artifact: docs/presentation.pdf; methods and results on slides 31-54.",
-            "[2] Min-Yuh Day and Jian-Ting Lin. Artificial Intelligence for ETF Market Prediction and Portfolio Optimization. In Proceedings of the 2019 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM), 2019. DOI: 10.1145/3341161.3344822. Preserved paper: references/papers/ai_etf_portfolio_optimization_2019.pdf.",
-            f"[3] Project reconstruction artifacts, reviewed {REVIEW_DATE}. R/config.R, R/data.R, R/models.R, R/portfolio.R, R/plots.R; outputs/tables/; outputs/models/; outputs/RUN_NOTES.txt; docs/VALIDATION.md. {len(e['tables'])} CSV tables and {len(e['figure_paths'])} generated PNG figures, including extended CCF and prediction figures when present.",
-            "[4] USENIX. OSDI '24 Requirements for Authors. Accessed 2026-10-20. " + RULES,
-            "[5] USENIX. Templates for Conference Papers. Accessed 2026-10-20. " + TEMPLATE,
-        ]
-        left = paragraphs("\n\n".join(refs[:3]), s["body"])
-        right = paragraphs("\n\n".join(refs[3:]), s["body"])
-        format_note = ("Format note. US Letter; centered 7 x 9 inch text area; two 3.335 inch columns separated by 0.33 inch; body type 10 pt with 12 pt leading. Times New Roman is embedded for Latin text and PMingLiU for Chinese. Body: eleven pages; references: one page. " if lang == "en" else
-                       "版面說明：US Letter，置中的 7 x 9 英吋文字區，兩欄各 3.335 英吋、欄距 0.33 英吋，本文 10 pt、行距 12 pt。西文內嵌 Times New Roman，中文內嵌 PMingLiU。正文十一頁、參考文獻一頁，不設附錄。")
-        format_note += ("This is an author-named course report, not an anonymous conference submission. No conference submission or acceptance is claimed. " if lang == "en" else
-                        "本稿為署名課程報告，並非匿名會議投稿稿件，亦不表示曾投稿或獲錄取。")
-        format_note += ("Report plots use color with line styles or marker shapes as additional visual cues. The correlation scale has monotonic luminance for grayscale printing." if lang == "en" else
-                        "報告圖採彩色，保留線型及標記輔助辨識；相關矩陣色階亮度單調，兼顧黑白列印。")
-        right += [Spacer(1, 12)] + paragraphs(format_note, s["body"])
-        preserved = ("Archived historical results. archive/historical-results/figures/ contains thirty stock decompositions, four ETF decompositions, two original recurrence images, and one original MV frontier. These thirty-seven project outputs are archival context, distinct from the current figures cataloged above and from external literature in references/papers/." if lang == "en" else
-                     "歷史結果封存：archive/historical-results/figures/ 保存三十張個股分解、四張 ETF 分解、兩張原始復發圖及一張原 MV 前緣，共三十七份自行產生的舊分析輸出。這些檔案供歷史追溯，與表 5 的目前重算圖及 references/papers/ 的外部文獻分開。")
-        right += paragraphs(preserved, s["body"])
-        columns(left, right, top=top, label="references")
+        # Keep repository provenance and format guidance in the guides/manifest.
+        columns(paragraphs("\n\n".join(LITERATURE), s["reference"]), [], top=top, label="references")
         end()
         if page != 12:
             raise ValueError("Unexpected page composition")
@@ -826,12 +816,18 @@ def main(argv=None):
         "research_term": TERM, "data_cutoff": "2023-11-30", "reconstruction_review_date": REVIEW_DATE,
         "authors": {"zh": AUTHORS_ZH, "en": AUTHORS_EN},
         "affiliations": AFFILIATIONS,
+        "advisors": ADVISORS,
+        "bibliography": {"entry_count": len(LITERATURE), "type": "research_literature_only",
+                         "doi": "10.1145/3341161.3344822"},
         "report_variants": {
             "author_named": {"files": [f"reports/report_{lang}/report_{lang}.pdf" for lang in ("zh", "en")],
                              "includes_course_term": True},
         },
         "format": {"paper": "US Letter", "text_block_inches": [7, 9], "columns": 2,
                    "column_gap_inches": .33, "body_font_pt": 10, "leading_pt": 12,
+                   "title_lines": 2, "title_font_pt": 14, "title_leading_pt": 16,
+                   "title_block_order": ["title", "authors", "affiliation", "advisor", "coursework", "term"],
+                   "title_block_metadata_font_pt": 10, "title_block_metadata_italic": False,
                    "body_pages": 11, "reference_pages": 1, "appendices": 0,
                    "latin_font": "Times New Roman (embedded)", "chinese_font": "PMingLiU (embedded)",
                    "figure_color_mode": "color", "strategy_palette": COLORS,

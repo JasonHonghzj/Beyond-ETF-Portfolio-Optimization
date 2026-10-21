@@ -17,16 +17,19 @@ This record covers the two attributed Chinese and English reports, with 12 pages
 | 字型 | 全部實際使用的 Times New Roman、PMingLiU 及 Times 項目符號均內嵌；可擷取文字最小 10 pt |
 | 文字邊界 | 全部 24 頁逐字幾何檢查通過，邊界容差 0.5 pt，無文字越界 |
 | 作者及年代 | 中文署名順序為蘇柏諺、洪稚鈞、佘梓平、黃纓婷、陳依琪、林岱融；英文對應為 Bo-Yan Su, Zhi-Jun Hong, Tzu-Ping She, Ying-Ting Huang, I-Chi Chen, Tai-Jung Lin，Zhi-Jun Hong 維持第二位；署名版列 Spring 2024 |
-| 作者單位與首頁 | 作者下方獨立列國立成功大學統計學系／Department of Statistics, National Cheng Kung University, Taiwan.；課程與 Spring 2024 分行排列，六位作者順序不變 |
+| 首頁格式一致性 | 中英文均為兩行標題，依序列作者、系所、指導教授、課程、Spring 2024；對應元素採相同字級、行距與間距，課程及學期使用一般字體 |
+| 中英文幾何核對 | 兩行標題及五行資訊的文字基線均為 706、690、666、649、632、611、597 pt；末頁文獻各字元的文字與位置也完全一致 |
+| 作者單位與指導教授 | 國立成功大學統計學系／Department of Statistics, National Cheng Kung University, Taiwan.；指導教授：鄭順林／Advised by Prof. Shun-Lin Jeng；六位作者順序不變 |
+| 參考文獻 | 最後一頁僅列 Day 與 Lin（2019）研究論文 [1]，內文引用編號一致；不列專題簡報、自製圖表、程式產出或格式資源，也不附版面與封存說明 |
 | 頁碼及文字擷取 | 全部 24 頁頁碼正確；文字可擷取，關鍵數字及作者順序核對通過 |
 | 彩色與灰階 | 保留彩色、線型或標記；MV／BL／1/N 為藍／橘／綠。cividis 相關矩陣固定 −1 至 1；256 色取樣的相對亮度嚴格遞增，灰階可辨識色階、線型與標記 |
-| 最終視覺檢查 | Poppler 重新渲染兩份 PDF 共 24 頁，核對新增單位與重排首頁、歷史結果封存說明及整體版面，未見裁切、重疊或圖例遮擋 |
+| 最終視覺檢查 | Poppler 重新渲染兩份 PDF 共 24 頁，核對一致的標題及首頁資訊、指導教授、精簡參考文獻頁與整體版面，未見裁切、重疊或圖例遮擋 |
 
 圖 1 顯示 `W(t)-1`（起點 0），底層期初淨值為 1。圖中文字以 300 dpi 點陣化，其字級不屬於 PDF 文字擷取檢查，已另作視覺核對。兩份報告的第 4–9 頁涵蓋六組共同圖像，均完成彩色與灰階辨識檢視。
 
 報告採用 [OSDI 2024 投稿範本](https://www.usenix.org/conference/osdi24/requirements-authors)。
 
-The reports use the [OSDI 2024 submission template](https://www.usenix.org/conference/osdi24/requirements-authors). Both preserve the requested six-author order and place the department below the byline, with coursework and Spring 2024 on separate lines. Layout, fonts, text boundaries, author metadata, page numbering, and source/output hashes are checked across all 24 pages. The six shared figure groups are also reviewed in color and grayscale.
+The reports use the [OSDI 2024 submission template](https://www.usenix.org/conference/osdi24/requirements-authors). Both use a two-line title and matching front-matter order, sizes, and spacing: authors, department, advisor, coursework, and Spring 2024. The English advisor line is “Advised by Prof. Shun-Lin Jeng”; the Chinese line is “指導教授：鄭順林”. Coursework and term use regular type. The six-author order is unchanged. The final References page contains only Day and Lin's 2019 research paper, numbered [1], with corresponding in-text citations. Layout, fonts, text boundaries, author metadata, page numbering, and source/output hashes are checked across all 24 pages. The six shared figure groups are also reviewed in color and grayscale.
 
 ## 數值及來源 / Numerical evidence and provenance
 

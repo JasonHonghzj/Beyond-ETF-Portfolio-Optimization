@@ -24,6 +24,15 @@
     "zh": "國立成功大學統計學系",
     "en": "Department of Statistics, National Cheng Kung University, Taiwan."
   },
+  "advisors": {
+    "zh": "指導教授：鄭順林",
+    "en": "Advised by Prof. Shun-Lin Jeng"
+  },
+  "bibliography": {
+    "entry_count": 1,
+    "type": "research_literature_only",
+    "doi": "10.1145/3341161.3344822"
+  },
   "report_variants": {
     "author_named": {
       "files": [
@@ -43,6 +52,19 @@
     "column_gap_inches": 0.33,
     "body_font_pt": 10,
     "leading_pt": 12,
+    "title_lines": 2,
+    "title_font_pt": 14,
+    "title_leading_pt": 16,
+    "title_block_order": [
+      "title",
+      "authors",
+      "affiliation",
+      "advisor",
+      "coursework",
+      "term"
+    ],
+    "title_block_metadata_font_pt": 10,
+    "title_block_metadata_italic": false,
     "body_pages": 11,
     "reference_pages": 1,
     "appendices": 0,
@@ -2327,7 +2349,7 @@
     },
     {
       "path": "scripts/build_reports.py",
-      "sha256": "2da5b40d092dac716534857f4d792cbee5b5d32851caedf4c96ad179beae31f5"
+      "sha256": "5a79e43b7d9dc265a2b448bf1be82e252a27497bc55644ac9e8fbe518bd7a801"
     },
     {
       "path": "scripts/requirements-reports.txt",
@@ -2351,11 +2373,11 @@
     },
     {
       "path": "reports/report_zh/content.md",
-      "sha256": "1b64d291f6888a7fb331068d99518cede8ad6294c4d8240fd642fce677981c0e"
+      "sha256": "ec0aa9f708e4daa4648120870e5eaba0a6bbcd575c2943fdc777b790660e441b"
     },
     {
       "path": "reports/report_en/content.md",
-      "sha256": "ea6fb3843de38675bf5010912a1175902850e302dcedfc3e13d749f38b115158"
+      "sha256": "9b64f1b71983966f329ce9af304c098319f50c0b557be87964e3cd02919c82ca"
     },
     {
       "path": "archive/historical-results/figures/decomposition/etfs/0050_plot.png",
@@ -2541,11 +2563,11 @@
   "outputs": [
     {
       "path": "reports/report_zh/report_zh.pdf",
-      "sha256": "71a6bec1403f62bea17fe7b07f76dadeb296bbec2a021ef239c7372a7b0be014"
+      "sha256": "03527dae760fc0cef98efeb447235ec2187a092162285002f8a69a2297701153"
     },
     {
       "path": "reports/report_en/report_en.pdf",
-      "sha256": "5b6da73f4e2212bf6bc333d6df310cc0885883d5804c7d4d1cd0c25b006730d3"
+      "sha256": "b3d8afadcda4aaba2b6257096ff54459d7fda2fc0fc0d7b7ff45f8844d693c40"
     },
     {
       "path": "reports/assets/wealth.png",
