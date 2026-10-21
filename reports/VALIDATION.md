@@ -2,41 +2,38 @@
 
 檢查日期 / Review date: **2026-10-21**
 
-本次新增署名／匿名四份版本、調整作者順序及相關矩陣色階後，**四份共 48 頁的版面、字型、作者與匿名資訊檢查均通過**。全部頁面已渲染核對，六組圖另以灰階檢視線型、標記及色階；下列記錄適用於本次四份最終 PDF。
+本紀錄涵蓋中英文兩份署名報告，**每份 12 頁，共 24 頁**。檢查項目包含版面、字型、作者順序、metadata 及來源／產出雜湊；六組圖另以彩色與灰階檢視線型、標記及色階。
 
-All four attributed/anonymous versions passed the fresh 48-page review after revising the author order and correlation color scale. Anonymization and grayscale figure readability were also checked. The English byline now uses the supplied spellings in given-name–surname order; all four PDFs were regenerated and their author order, metadata, anonymity, and source/output hashes passed renewed checks.
-
-英文署名現依提供的拼音統一為「名字在前、姓氏在後」。四份 PDF 已重新產生並通過作者順序、metadata、匿名資訊及雜湊核對；以相同解析度逐頁比較，僅英文署名版第一頁的作者列發生視覺變更，已目視確認，其餘 47 頁相同。
+This record covers the two attributed Chinese and English reports, with 12 pages each and 24 pages in total. Checks cover layout, fonts, author order, metadata, and source/output hashes, together with color and grayscale inspection of the six shared figure groups.
 
 ## 產出與版面 / Outputs and layout
 
 | 檢查 / Check | 結果 / Result |
 |---|---|
-| 中文及英文 PDF | 各有署名課程版及匿名版，共四份；各 12 頁：正文 11 頁、參考文獻 1 頁；不設附錄 |
-| 紙張與文字區 | 全部 48 頁為 612 × 792 pt（US Letter），文字位於置中 504 × 648 pt 區域 |
+| 中文及英文 PDF | 兩份署名報告；各 12 頁：正文 11 頁、參考文獻 1 頁；不設附錄 |
+| 紙張與文字區 | 全部 24 頁為 612 × 792 pt（US Letter），文字位於置中 504 × 648 pt 區域 |
 | 雙欄 | 欄寬 240.12 pt，欄距 23.76 pt（0.33 in）；整頁寬度的圖表跨欄排版 |
 | 文字 | 本文、表格、圖說 10 pt / 12 pt；標題 11 或 14 pt；未縮小文字以塞入頁面 |
 | 字型 | 全部實際使用的 Times New Roman、PMingLiU 及 Times 項目符號均內嵌；可擷取文字最小 10 pt |
-| 文字邊界 | 全部 48 頁逐字幾何檢查通過，邊界容差 0.5 pt，無文字越界 |
+| 文字邊界 | 全部 24 頁逐字幾何檢查通過，邊界容差 0.5 pt，無文字越界 |
 | 作者及年代 | 中文署名順序為蘇柏諺、洪稚鈞、佘梓平、黃纓婷、陳依琪、林岱融；英文對應為 Bo-Yan Su, Zhi-Jun Hong, Tzu-Ping She, Ying-Ting Huang, I-Chi Chen, Tai-Jung Lin，Zhi-Jun Hong 維持第二位；署名版列 Spring 2024 |
-| 匿名資訊 | 兩匿名版的 Author metadata 為空、標題中性；全文及 metadata 無六人姓名、課程、教師、Spring 2024、原專題題名、使用者路徑或儲存庫識別；外部 Day／Lin 文獻及關鍵數據保留 |
-| 頁碼及文字擷取 | 全部 48 頁頁碼正確；文字可擷取，關鍵數字、作者順序及匿名狀態核對通過 |
+| 頁碼及文字擷取 | 全部 24 頁頁碼正確；文字可擷取，關鍵數字及作者順序核對通過 |
 | 彩色與灰階 | 保留彩色、線型或標記；MV／BL／1/N 為藍／橘／綠。cividis 相關矩陣固定 −1 至 1；256 色取樣的相對亮度嚴格遞增，灰階可辨識色階、線型與標記 |
-| 最終視覺檢查 | Poppler 渲染四份 PDF 共 48 頁；英文 24 頁、中文署名 12 頁及五張變動匿名頁逐頁檢視，另七張匿名頁與署名渲染雜湊相同；未見裁切、重疊或圖例遮擋 |
+| 最終視覺檢查 | Poppler 重新渲染兩份 PDF 共 24 頁；逐頁像素雜湊與原保留版本一致，並檢視本次渲染，未見裁切、重疊或圖例遮擋 |
 
-圖 1 顯示 `W(t)-1`（起點 0），底層期初淨值為 1。圖中文字以 300 dpi 點陣化，其字級不屬於 PDF 文字擷取檢查，已另作視覺核對。四個版本各自的第 4–9 頁另以 Poppler 灰階渲染，六組共同圖像亦完成灰階辨識檢視。版面依 [reports/README.md](README.md) 所連結規範。
+圖 1 顯示 `W(t)-1`（起點 0），底層期初淨值為 1。圖中文字以 300 dpi 點陣化，其字級不屬於 PDF 文字擷取檢查，已另作視覺核對。兩份報告的第 4–9 頁涵蓋六組共同圖像，均完成彩色與灰階辨識檢視。
 
-署名課程版供作者留存；匿名版回應 [OSDI 2024 雙盲作者要求](https://www.usenix.org/conference/osdi24/requirements-authors)，避免署名與雙盲規則衝突。這是版本區分及版面參照，不表示實際投稿，也不保證會議接受。
+報告採用 [OSDI 2024 template](https://www.usenix.org/conferences/author-resources/paper-templates)。
 
-The attributed course versions preserve the requested six-author order. Separate anonymous versions address the [OSDI 2024 double-blind requirements](https://www.usenix.org/conference/osdi24/requirements-authors). Fresh layout, font, text-boundary, author/metadata, and source/output-hash checks passed for all 48 pages. All pages were covered by visual inspection or identical-render comparison, and all six common figure pages were checked in grayscale. This does not imply an actual submission or guarantee conference acceptance.
+The reports use the [OSDI 2024 template](https://www.usenix.org/conferences/author-resources/paper-templates). Both preserve the requested six-author order. Layout, fonts, text boundaries, author metadata, page numbering, and source/output hashes are checked across all 24 pages. The six shared figure groups are also reviewed in color and grayscale.
 
 ## 數值及來源 / Numerical evidence and provenance
 
 - 16 份 CSV 與 472 張分析 PNG 全部納入報告清冊；PNG 包含 16 張核心圖、434 張額外股票配對 CCF 及 22 張三模型預測圖（合計 435 組股票 CCF、一組 ETF CCF）。40 份原始價格 Excel 與一份歷史 ML Excel 均保留。
 - 獨立從原始價格核對歷史買入持有淨值、績效、相關矩陣及 BL prior／posterior，最大數值差異小於 `8e-15`。
 - 報告產製程式另核對 218 筆評估價格、歷史淨值、三種配置期間報酬及相對 10 檔 ETF 的勝出數。
-- [report_manifest.json](report_manifest.json) 保存原始證據、分析程式、產製程式及兩份敘述來源的 SHA-256；558 筆來源與四份 PDF、六張整合圖共 10 筆產出雜湊均重新核對一致。
-- [validation.json](validation.json) 已記錄本次四文件、48 頁的紙張尺寸、字型、字級、邊界、頁碼、作者及匿名檢查結果。
+- [report_manifest.json](report_manifest.json) 保存原始證據、分析程式、產製程式及兩份敘述來源的 SHA-256；558 筆來源與兩份 PDF、六張整合圖共 8 筆產出雜湊均重新核對一致。
+- [validation.json](validation.json) 記錄兩文件、24 頁的紙張尺寸、字型、字級、邊界、頁碼及作者檢查結果。
 
 Historical MV / BL / 1/N price returns are **40.4048% / 38.7129% / 39.5722%**, each exceeding seven of ten ETF returns. The report retains counterexamples, including 00757's higher return and 00713's lower volatility and higher Sharpe.
 

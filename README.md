@@ -24,13 +24,12 @@ The final six stocks are **3034, 2357, 2454, 2886, 3711, and 2330**. Their histo
 | Start here | Contents |
 |---|---|
 | [Original presentation](docs/presentation.pdf) | The Spring 2024 project and original findings |
-| [Chinese report](reports/report_zh/report_zh.pdf) / [English report](reports/report_en/report_en.pdf) | Named course-report editions: objectives, methods, results, color figures, tables, and limitations |
-| [Anonymous Chinese report](reports/report_zh/report_zh_anonymous.pdf) / [anonymous English report](reports/report_en/report_en_anonymous.pdf) | Separate editions with identifying content removed |
+| [Chinese report](reports/report_zh/report_zh.pdf) / [English report](reports/report_en/report_en.pdf) | Course reports: objectives, methods, results, color figures, tables, and limitations |
 | [Report guide](reports/README.md) | Editable report sources, author information, layout, fonts, and rebuild instructions |
 | [Full execution summary](outputs/full_run/2026-10-21/RUN_SUMMARY.md) | Commands, logs, timings, and the complete 22-stock model comparison |
 | [Model comparison CSV](outputs/full_run/2026-10-21/model_comparison.csv) | Per-stock RF, XGBoost, and LSTM test errors |
 
-Each report is 12 pages. Both named editions list all six group members, with **Zhi-Jun Hong second**. The English byline is ordered **Bo-Yan Su, Zhi-Jun Hong, Tzu-Ping She, Ying-Ting Huang, I-Chi Chen, and Tai-Jung Lin**, with given names before family names. The separate anonymous editions support review without identifying content. All four editions use the equivalent OSDI 2024 two-column layout documented in the report guide; these files are not evidence of an actual conference submission.
+The reports use the OSDI 2024 template.
 
 ## Main results
 
@@ -43,6 +42,19 @@ The following results are recalculated from local closing prices for **January 3
 | Equal weight (1/N) | 39.5722% | 16.5717% | 2.326 |
 
 Source: [presentation_price_performance.csv](outputs/tables/presentation_price_performance.csv). Each portfolio's period price return exceeds **7 of the 10 ETF benchmarks**. This is not uniform outperformance: ETF 00757 has a higher return, while 00713 has lower volatility and a higher Sharpe ratio. The configuration uses 252 trading days for annualization and a 1.565% annual risk-free rate.
+
+The final six-stock allocation below shows the **historical normalized initial capital weights** used for these results:
+
+| Stock | MV | BL | Equal weight (1/N) |
+|---|---:|---:|---:|
+| 3034 | 24.38% | 18.13% | 16.67% |
+| 2357 | 18.38% | 8.06% | 16.67% |
+| 2454 | 12.89% | 19.13% | 16.67% |
+| 2886 | 43.96% | 9.06% | 16.67% |
+| 3711 | 0.40% | 17.12% | 16.67% |
+| 2330 | 0.00% | 28.50% | 16.67% |
+
+Source: [presentation_weights_normalized.csv](outputs/tables/presentation_weights_normalized.csv). Each portfolio sums to 100% before display rounding; the percentages shown may not total exactly 100%. Independently [refitted in-sample weights](outputs/tables/recomputed_in_sample_weights.csv) are saved separately.
 
 These are historical price-return comparisons. The data do not include reinvested distributions, transaction costs, taxes, or corporate-action adjustment. Stock selection is retrospective, and the refitted portfolios use the same window for fitting and evaluation. The results do not establish an out-of-sample investable strategy.
 
@@ -71,8 +83,8 @@ portfolio optimization/
 │   ├── analysis.rds                   Saved R configuration and analysis objects
 │   └── RUN_NOTES.txt                  Assumptions and R session/package information
 ├── reports/
-│   ├── report_zh/                    Chinese narrative, named PDF, anonymous PDF
-│   ├── report_en/                    English narrative, named PDF, anonymous PDF
+│   ├── report_zh/                    Chinese narrative and PDF
+│   ├── report_en/                    English narrative and PDF
 │   ├── assets/                       Six composite report figures
 │   └── …                             Report guide, source manifest, validation records
 ├── references/
@@ -128,7 +140,7 @@ python scripts/train_lstm.py
 # Train RF/XGBoost, load all three models, and plot every stock-pair CCF.
 Rscript --vanilla run.R --train --all-pairs
 
-# Build the named and anonymous bilingual reports from saved analysis results.
+# Build the two bilingual reports from saved analysis results.
 python scripts/build_reports.py
 ```
 
@@ -188,7 +200,7 @@ The number of generated analysis files depends on available model results and op
 | Default run with all 22 stocks' saved model results | 38 | 16 |
 | Full run with complete models and `--all-pairs` | 472 | 16 |
 
-The full 472 consist of **16 core figures + 434 additional stock-pair CCFs + 22 model forecast panels**. The core figures already contain one stock CCF and one ETF CCF, so there are 435 stock CCFs and one ETF CCF in total. These counts exclude the **four model CSVs**, full-run audit files, and the report builder's **six composite figures and four PDFs**. Rerunning a smaller workflow in an existing output directory does not remove previously generated extra pair plots, so the folder's total may exceed the files generated by that invocation.
+The full 472 consist of **16 core figures + 434 additional stock-pair CCFs + 22 model forecast panels**. The core figures already contain one stock CCF and one ETF CCF, so there are 435 stock CCFs and one ETF CCF in total. These counts exclude the **four model CSVs**, full-run audit files, and the report builder's **six composite figures and two PDFs**. Rerunning a smaller workflow in an existing output directory does not remove previously generated extra pair plots, so the folder's total may exceed the files generated by that invocation.
 
 ## Source code guide
 

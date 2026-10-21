@@ -27,15 +27,6 @@
         "reports/report_en/report_en.pdf"
       ],
       "includes_course_term": true
-    },
-    "anonymous": {
-      "files": [
-        "reports/report_zh/report_zh_anonymous.pdf",
-        "reports/report_en/report_en_anonymous.pdf"
-      ],
-      "pdf_author_metadata": "",
-      "neutral_title": true,
-      "identifying_course_and_project_context_removed": true
     }
   },
   "format": {
@@ -98,7 +89,7 @@
     "raw_workbooks": 40,
     "historical_ml_workbooks": 1,
     "report_composite_figures": 6,
-    "report_pdf_count": 4,
+    "report_pdf_count": 2,
     "preserved_historical_figures": 37
   },
   "numeric_checks": {
@@ -2332,7 +2323,7 @@
     },
     {
       "path": "scripts/build_reports.py",
-      "sha256": "2bd8e7003781836c2d03deeaa75ac918a6c097fda676769f32d583d8ca7a9f33"
+      "sha256": "ca4856fcfd9b5358a134f57cd70dcb4af29d23aa22af9009b758a00d8bb43786"
     },
     {
       "path": "scripts/requirements-reports.txt",
@@ -2394,19 +2385,11 @@
   "outputs": [
     {
       "path": "reports/report_zh/report_zh.pdf",
-      "sha256": "44f655167ada4380948cf7da51b8c80bba028d8441106140fc37b5b0c6940716"
+      "sha256": "fc557d7e63cdbea649fa4669b60ada7dbd94eae5dc9ed2a5956de6c552eb13f0"
     },
     {
       "path": "reports/report_en/report_en.pdf",
-      "sha256": "92543d17f789989fd9d23fb06c01593812d44bd94aa7339e92cfeb67a023d849"
-    },
-    {
-      "path": "reports/report_zh/report_zh_anonymous.pdf",
-      "sha256": "ac098bfc60c891701788916cf33b6b740e1248ef572c6f9275371e8f4c1c1332"
-    },
-    {
-      "path": "reports/report_en/report_en_anonymous.pdf",
-      "sha256": "202ed85ff1823d21a136a492b1c4f7421b1fa26cbe89c32f69e03d74959a9a07"
+      "sha256": "7ca901b99e99baf2c581503683d2a15c276cc8093cb1213dc24f0ad5c16808e9"
     },
     {
       "path": "reports/assets/wealth.png",

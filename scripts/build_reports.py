@@ -2,8 +2,8 @@
 
 Install requirements-reports.txt, then run: python scripts/build_reports.py
 The Markdown files are the editable narrative source. This program supplies the
-tables, color figures, page composition, provenance, and four final PDFs:
-Chinese and English author-named reports and corresponding anonymous copies.
+tables, color figures, page composition, provenance, and two final PDFs:
+Chinese and English author-named reports.
 No market download or model training is performed.
 """
 
@@ -393,59 +393,6 @@ def read_content(path: Path) -> dict:
     return sections
 
 
-def anonymize_content(content: dict, lang: str) -> dict:
-    """Remove identifying course/project context while retaining the evidence.
-
-    The editable sources remain the author-named record. Anonymous copies use
-    neutral descriptions of that record, not pseudonyms for its contributors.
-    Dataset intervals, model settings, numerical results, and cited external
-    researchers remain unchanged. Fail closed if a known identity survives.
-    """
-    result = dict(content)
-    if lang == "en":
-        replacements = (
-            ("This report reconstructs Beyond ETFs, a Spring 2024 course project combining stock screening, machine learning, and portfolio allocation.",
-             "This study combines stock screening, machine learning, and portfolio allocation."),
-            ("Beyond ETFs was conducted in Spring 2024 for a big-data analytics course; the preserved presentation records the original group investigation [1].",
-             "The preserved research record documents the historical investigation [1]."),
-            ("That verification date is separate from the original research term.",
-             "The verification date does not extend the market-data window."),
-            ("These counterexamples qualify the project's Beyond ETFs framing",
-             "These counterexamples limit the scope of ETF outperformance claims"),
-            ("course-project reconstruction", "historical reconstruction"),
-            ("course project", "historical study"),
-            ("the project", "the study"),
-            ("The project", "The study"),
-        )
-    else:
-        replacements = (
-            ("本研究為 Spring 2024「巨量資料分析」課程期末專題，", "本研究"),
-            ("本專題以「超越 ETF」為問題起點，", "本研究比較個股配置與 ETF，"),
-            ("原研究於 Spring 2024 完成；", ""),
-            ("故「超越 ETF」須明確說明", "故比較結論須明確說明"),
-            ("未全面超越 ETF 的風險調整表現", "未全面優於 ETF 的風險調整表現"),
-            ("本專題", "本研究"),
-            ("專題的價值", "研究的價值"),
-            ("專案保留的", "所保留的"),
-        )
-    for key, text in result.items():
-        for old, neutral in replacements:
-            text = text.replace(old, neutral)
-        result[key] = text
-    identifying_terms = AUTHORS_ZH + AUTHORS_EN + [
-        "鄭順林", "Spring 2024", "Spring2024", "Beyond ETFs", "超越 ETF", "超越ETF",
-        "Big Data Analytics", "big-data analytics", "巨量資料分析", "course project",
-        "course-project", "課程", "專題", "original group investigation",
-    ]
-    for key, text in result.items():
-        for term in identifying_terms:
-            if term.casefold() in text.casefold():
-                raise ValueError(f"Anonymous {lang} section {key} retains an identifying term: {term}")
-        if re.search(r"https?://(?:www\.)?(?:github|gitlab)\.com/|[A-Za-z]:[\\/]Users[\\/]", text, re.I):
-            raise ValueError(f"Anonymous {lang} section {key} retains a repository or user-profile link")
-    return result
-
-
 def markup(text: str) -> str:
     text = text.replace("−", "-").replace("–", "-").replace("—", "-").replace("\u00a0", " ")
     text = html.escape(text)
@@ -569,24 +516,19 @@ LABELS = {
 }
 
 
-def build_pdf(root: Path, e: dict, assets: dict, lang: str, anonymous: bool = False) -> Path:
+def build_pdf(root: Path, e: dict, assets: dict, lang: str) -> Path:
     directory = root / "reports" / f"report_{lang}"
     content = read_content(directory / "content.md")
-    if anonymous:
-        content = anonymize_content(content, lang)
     s, labels = styles(lang), LABELS[lang]
-    stem = f"report_{lang}" + ("_anonymous" if anonymous else "")
+    stem = f"report_{lang}"
     out = directory / f"{stem}.pdf"
     temp = directory / f".{stem}.building.pdf"
-    title = (("Stock Forecasting and Portfolio Comparison" if lang == "en" else "股票預測與投資組合比較") if anonymous else
-             ("Beyond ETFs: Stock Forecasting and Portfolio Comparison" if lang == "en" else "超越 ETF：股票預測與投資組合比較"))
+    title = "Beyond ETFs: Stock Forecasting and Portfolio Comparison" if lang == "en" else "超越 ETF：股票預測與投資組合比較"
     cv = canvas.Canvas(str(temp), pagesize=(PAGE_W, PAGE_H), pageCompression=1)
     cv.setTitle(title)
-    cv.setAuthor("" if anonymous else "; ".join(AUTHORS_EN if lang == "en" else AUTHORS_ZH))
-    cv.setSubject("Anonymous manuscript; historical stock and ETF analysis; OSDI 2024-style layout" if anonymous else
-                  f"Spring 2024 course project; reconstruction reviewed {REVIEW_DATE}; OSDI 2024-style layout")
-    cv.setCreator("ReportLab; source-backed color figures" if anonymous else
-                  "scripts/build_reports.py (ReportLab; source-backed color figures)")
+    cv.setAuthor("; ".join(AUTHORS_EN if lang == "en" else AUTHORS_ZH))
+    cv.setSubject(f"Spring 2024 course project; reconstruction reviewed {REVIEW_DATE}; OSDI 2024-style layout")
+    cv.setCreator("scripts/build_reports.py (ReportLab; source-backed color figures)")
     page = 0
 
     def start(title=None):
@@ -621,16 +563,12 @@ def build_pdf(root: Path, e: dict, assets: dict, lang: str, anonymous: bool = Fa
         title_p = Paragraph(markup(title), s["title"])
         _, h = title_p.wrap(WIDTH, HEIGHT)
         title_p.drawOn(cv, LEFT, top - h); top -= h + 12
-        names = (("Anonymous submission" if lang == "en" else "匿名稿") if anonymous else
-                 (", ".join(AUTHORS_EN) if lang == "en" else "、".join(AUTHORS_ZH)))
+        names = ", ".join(AUTHORS_EN) if lang == "en" else "、".join(AUTHORS_ZH)
         p = Paragraph(markup(names), s["center"]); _, h = p.wrap(WIDTH, HEIGHT)
         p.drawOn(cv, LEFT, top - h); top -= h + 5
-        if anonymous:
-            top -= 13
-        else:
-            course = "Big Data Analytics course project | Spring 2024" if lang == "en" else "巨量資料分析課程專題 | Spring 2024 | 授課教師：鄭順林"
-            p = Paragraph(markup(course), s["center"]); _, h = p.wrap(WIDTH, HEIGHT)
-            p.drawOn(cv, LEFT, top - h); top -= h + 18
+        course = "Big Data Analytics course project | Spring 2024" if lang == "en" else "巨量資料分析課程專題 | Spring 2024 | 授課教師：鄭順林"
+        p = Paragraph(markup(course), s["center"]); _, h = p.wrap(WIDTH, HEIGHT)
+        p.drawOn(cv, LEFT, top - h); top -= h + 18
         left = block("abstract") + block("overview")
         coverage = ("Observation coverage: 28 stock series have 1,195 observations; 2603 has 1,188 and 6669 has 1,144. Nine ETFs have 1,195 observations; 00830 has 1,120. Common six-stock/ten-ETF evaluation: 218 prices, 217 returns." if lang == "en" else
                     "觀測覆蓋：28 檔股票各有 1,195 筆，2603 為 1,188 筆，6669 為 1,144 筆；九檔 ETF 各有 1,195 筆，00830 為 1,120 筆。六股與十檔 ETF 的共同評估窗口為 218 筆價格、217 筆報酬。")
@@ -810,20 +748,12 @@ def build_pdf(root: Path, e: dict, assets: dict, lang: str, anonymous: bool = Fa
             "[4] USENIX. OSDI '24 Requirements for Authors. Accessed 2026-10-20. " + RULES,
             "[5] USENIX. Templates for Conference Papers. Accessed 2026-10-20. " + TEMPLATE,
         ]
-        if anonymous:
-            refs[0] = ("[1] Authors withheld for anonymous review. Historical stock-screening, forecasting, and portfolio-comparison research record. Preserved data and methods: docs/presentation.pdf, slides 31-54." if lang == "en" else
-                       "[1] 作者資訊隱去。股票篩選、預測與投資組合比較之歷史研究紀錄。資料與方法保存於 docs/presentation.pdf，第 31-54 頁。")
-            refs[2] = (f"[3] Research reconstruction artifacts, reviewed {REVIEW_DATE}. R/config.R, R/data.R, R/models.R, R/portfolio.R, R/plots.R; outputs/tables/; outputs/models/; outputs/RUN_NOTES.txt; docs/VALIDATION.md. {len(e['tables'])} CSV tables and {len(e['figure_paths'])} generated PNG figures, including extended CCF and prediction figures when present.")
         left = paragraphs("\n\n".join(refs[:3]), s["body"])
         right = paragraphs("\n\n".join(refs[3:]), s["body"])
         format_note = ("Format note. US Letter; centered 7 x 9 inch text area; two 3.335 inch columns separated by 0.33 inch; body type 10 pt with 12 pt leading. Times New Roman is embedded for Latin text and PMingLiU for Chinese. Body: eleven pages; references: one page. " if lang == "en" else
                        "版面說明：US Letter，置中的 7 x 9 英吋文字區，兩欄各 3.335 英吋、欄距 0.33 英吋，本文 10 pt、行距 12 pt。西文內嵌 Times New Roman，中文內嵌 PMingLiU。正文十一頁、參考文獻一頁，不設附錄。")
-        if anonymous:
-            format_note += ("Contributors and identifying information have been withheld. This copy does not assert conference submission or acceptance. " if lang == "en" else
-                            "本稿已隱去署名與識別資料，不表示曾向會議投稿或獲錄取。")
-        else:
-            format_note += ("This is an author-named course report, not an anonymous conference submission. No conference submission or acceptance is claimed. " if lang == "en" else
-                            "本稿為署名課程報告，並非匿名會議投稿稿件，亦不表示曾投稿或獲錄取。")
+        format_note += ("This is an author-named course report, not an anonymous conference submission. No conference submission or acceptance is claimed. " if lang == "en" else
+                        "本稿為署名課程報告，並非匿名會議投稿稿件，亦不表示曾投稿或獲錄取。")
         format_note += ("Report plots use color with line styles or marker shapes as additional visual cues. The correlation scale has monotonic luminance for grayscale printing." if lang == "en" else
                         "報告圖採彩色，保留線型及標記輔助辨識；相關矩陣色階亮度單調，兼顧黑白列印。")
         right += [Spacer(1, 12)] + paragraphs(format_note, s["body"])
@@ -855,8 +785,7 @@ def main(argv=None):
     register_fonts(args.font_dir)
     e = load_evidence(root)
     assets = make_figures(e, root / "reports/assets")
-    outputs = [build_pdf(root, e, assets, lang, anonymous=anonymous)
-               for anonymous in (False, True) for lang in ("zh", "en")]
+    outputs = [build_pdf(root, e, assets, lang) for lang in ("zh", "en")]
     sources = sorted((root / "outputs/tables").glob("*.csv"))
     sources += e["figure_paths"]
     sources += sorted((root / "outputs/models").glob("*.csv"))
@@ -879,9 +808,6 @@ def main(argv=None):
         "report_variants": {
             "author_named": {"files": [f"reports/report_{lang}/report_{lang}.pdf" for lang in ("zh", "en")],
                              "includes_course_term": True},
-            "anonymous": {"files": [f"reports/report_{lang}/report_{lang}_anonymous.pdf" for lang in ("zh", "en")],
-                          "pdf_author_metadata": "", "neutral_title": True,
-                          "identifying_course_and_project_context_removed": True},
         },
         "format": {"paper": "US Letter", "text_block_inches": [7, 9], "columns": 2,
                    "column_gap_inches": .33, "body_font_pt": 10, "leading_pt": 12,

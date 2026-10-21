@@ -20,13 +20,12 @@
 | 從這裡開始 | 內容 |
 |---|---|
 | [正式簡報](docs/presentation.pdf) | Spring 2024 的原始研究設計與結果 |
-| [中文報告](reports/report_zh/report_zh.pdf)／[英文報告](reports/report_en/report_en.pdf) | 含作者的課程報告：摘要、概述、目標、方法、結果、彩色圖表與限制 |
-| [中文匿名版](reports/report_zh/report_zh_anonymous.pdf)／[英文匿名版](reports/report_en/report_en_anonymous.pdf) | 另行移除署名與身份線索的版本 |
+| [中文報告](reports/report_zh/report_zh.pdf)／[英文報告](reports/report_en/report_en.pdf) | 課程報告：摘要、概述、目標、方法、結果、彩色圖表與限制 |
 | [報告說明](reports/README.md) | 作者資訊、版面、可編輯來源、字型與重建方式 |
 | [完整執行摘要](outputs/full_run/2026-10-21/RUN_SUMMARY.md) | 實際命令、日誌、耗時與 22 股模型比較 |
 | [模型比較 CSV](outputs/full_run/2026-10-21/model_comparison.csv) | 每股 RF／XGBoost／LSTM 的測試誤差 |
 
-兩份署名版均列六位組員，**洪稚鈞／Zhi-Jun Hong 排第二位**；英文版依序列為 **Bo-Yan Su、Zhi-Jun Hong、Tzu-Ping She、Ying-Ting Huang、I-Chi Chen、Tai-Jung Lin**，英文姓名均將名字放在姓氏之前。另提供中英匿名版，以區分課程署名與 double-blind 匿名需求。四份 PDF 各 12 頁，依 OSDI 2024 的等效雙欄版面編排；不代表曾投稿或獲該會議錄取。
+報告採用 OSDI 2024 template。
 
 ## 主要結果
 
@@ -39,6 +38,19 @@
 | 等權重（1/N） | 39.5722% | 16.5717% | 2.326 |
 
 來源：[歷史價格績效表](outputs/tables/presentation_price_performance.csv)。三種配置的期間報酬各高於 **7／10 檔 ETF**，但未全面超越 ETF：00757 報酬更高，00713 波動更低且 Sharpe 更高。年化使用 252 個交易日，年度無風險利率為 1.565%。
+
+最終六檔股票的投資比例如下，為上述績效所使用的**歷史正規化初始資金配置**：
+
+| 股票代號 | MV | BL | 等權重（1/N） |
+|---|---:|---:|---:|
+| 3034 | 24.38% | 18.13% | 16.67% |
+| 2357 | 18.38% | 8.06% | 16.67% |
+| 2454 | 12.89% | 19.13% | 16.67% |
+| 2886 | 43.96% | 9.06% | 16.67% |
+| 3711 | 0.40% | 17.12% | 16.67% |
+| 2330 | 0.00% | 28.50% | 16.67% |
+
+來源：[歷史正規化權重表](outputs/tables/presentation_weights_normalized.csv)。各配置在顯示四捨五入前合計為 100%，表列百分比可能不精確加總為 100%。另行估計的[同期間重新配置權重](outputs/tables/recomputed_in_sample_weights.csv)獨立保存。
 
 這些結果是歷史價格報酬比較。資料未納入配息再投入、成本、稅費及公司行動調整；選股具有歷史選擇因素，重新配置又使用同期間估計與評價，不能解讀為已驗證的樣本外可投資策略。
 
@@ -66,8 +78,8 @@
     │   ├── analysis.rds                   R 設定與分析物件
     │   └── RUN_NOTES.txt                  假設與 R 套件／執行環境
     ├── reports/
-    │   ├── report_zh/                    中文敘述來源、署名 PDF、匿名 PDF
-    │   ├── report_en/                    英文敘述來源、署名 PDF、匿名 PDF
+    │   ├── report_zh/                    中文敘述來源與 PDF
+    │   ├── report_en/                    英文敘述來源與 PDF
     │   ├── assets/                       六張報告整合圖
     │   └── …                             報告說明、來源清冊與版面驗證
     ├── references/
@@ -183,7 +195,7 @@ RStudio 亦可執行：
 | 已有完整 22 股三模型的預設流程 | 38 | 16 |
 | 完整模型加 --all-pairs | 472 | 16 |
 
-上述表格以 tseries 等依賴皆已安裝為前提。472 張圖為 **16 張核心圖＋434 張額外股票 CCF＋22 張預測比較圖**；核心圖已含一組股票及一組 ETF CCF，因此股票配對總數為 435。另有四份模型 CSV、完整執行稽核檔，以及報告的六張整合圖與四份 PDF，不計入這個分析圖表數。
+上述表格以 tseries 等依賴皆已安裝為前提。472 張圖為 **16 張核心圖＋434 張額外股票 CCF＋22 張預測比較圖**；核心圖已含一組股票及一組 ETF CCF，因此股票配對總數為 435。另有四份模型 CSV、完整執行稽核檔，以及報告的六張整合圖與兩份 PDF，不計入這個分析圖表數。
 
 較小的重跑不會清除先前的額外配對圖，因此「資料夾現存數」可能大於「本次重畫數」。
 
