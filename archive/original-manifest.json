@@ -1,0 +1,561 @@
+{
+  "backup": "original-code-20261020.zip",
+  "backed_up_files": [
+    {
+      "path": ".RData",
+      "size": 249903,
+      "sha256": "cc09e3099d3e33b723a6f2439c4e456ebad245c897df03785ea1310841b38d7e"
+    },
+    {
+      "path": ".Rhistory",
+      "size": 11644,
+      "sha256": "a31614d1454ee96235f5a293c36dea651dc805f29dc09c12073989d5c3a53259"
+    },
+    {
+      "path": "巨量Final.R",
+      "size": 4509,
+      "sha256": "520f1bc9550e3d7d5b87f15a725da826ffeaa77a77d9ce70b8b6e65e8729e17d"
+    },
+    {
+      "path": "巨量_BL.R",
+      "size": 2199,
+      "sha256": "06f628a5acfdd9cf4e168f0bd7f20fdef0d0b63ecdef5ac33e6c8c2f9ed0e1c1"
+    },
+    {
+      "path": "巨量_MV.R",
+      "size": 1191,
+      "sha256": "1e54014f5543719edc926a2384d3c66d9eb437aa34e667171a2506f57cda9bad"
+    },
+    {
+      "path": "巨量_rolling_data.R",
+      "size": 3078,
+      "sha256": "ffd578da844183cf9a06a6c60ea6d5457aac76681fa4d8dcf2a7a4fb98dda087"
+    },
+    {
+      "path": "巨量_XGB.R",
+      "size": 1780,
+      "sha256": "b57e3a5b4c0af4236e5db0bd91f17b3d56161d88209a816d341b75ab571bd4b9"
+    },
+    {
+      "path": "巨量_交叉相關.R",
+      "size": 1943,
+      "sha256": "c41ba1f2235b35a7d0e1c75f7a44dc0ce2c6a4863ec34c398019f4d52db15459"
+    },
+    {
+      "path": "巨量_報酬比較.R",
+      "size": 1746,
+      "sha256": "6c3a6ad9e5225307607ad54134b1785a202e5920b3b2342454e2bcade2d3fd7f"
+    },
+    {
+      "path": "巨量_復發圖.R",
+      "size": 932,
+      "sha256": "3e0f67ccfb9edadad98ee33ffa91b149ab6db2bec7c0d81da7686509524df442"
+    },
+    {
+      "path": "巨量_累計報酬圖_效率曲線.R",
+      "size": 7334,
+      "sha256": "8019811412bbc9b71667edd4ef8ef5a6cc2765f0b43ff7302f19ddf902a21937"
+    },
+    {
+      "path": "巨量_配適圓餅圖.R",
+      "size": 990,
+      "sha256": "7374cd977f3d9c7df5b261e24049ef4f08c0b6bcc7656c45971da04fc5bd5b63"
+    },
+    {
+      "path": "巨量_風險比較圖.R",
+      "size": 1396,
+      "sha256": "c55f7e2f2e680df72dc951765e1a8b2b75fb679ac3dfb8d8d1360ac992d3cbb6"
+    },
+    {
+      "path": "BL model/BL (1).py",
+      "size": 7663,
+      "sha256": "ca657542bdc970a843591321dd66cd33601065629a2752485f4e5e610fa8fdd2"
+    },
+    {
+      "path": "BL model/Untitled1 (2).zip",
+      "size": 1848,
+      "sha256": "2baf76c14f8b2fc31ffaf690b598d1ba8eec9f9c621421b2525f306da7eb11d8"
+    },
+    {
+      "path": "BL model/Untitled1.ipynb",
+      "size": 298619,
+      "sha256": "f476c7f27b0d1311be3221dc58b421f0584af5c7f28c0148ec81c937821f56d2"
+    },
+    {
+      "path": "BL model/Untitled1.zip",
+      "size": 182021,
+      "sha256": "fdc9f76db10347344dcf9516c8a9fcdf6db85c9cfc1d42f0b0129c79c282c553"
+    },
+    {
+      "path": "ETF/.RData",
+      "size": 803026,
+      "sha256": "25bf8b0a3671543fdf692d90725ac0774115fcf2cc4f17dadf1ae2b95bd3db47"
+    },
+    {
+      "path": "ETF/.Rhistory",
+      "size": 17777,
+      "sha256": "ba6617d3ed93ed2c5e8c6c034e00eb9f40f4ee1a7fdbc9c427507f90b5528934"
+    },
+    {
+      "path": "stock_data/.RData",
+      "size": 3105022,
+      "sha256": "b24b95e38c1ed18d977c5ebdb8c4b3debc749c3258702146649d62f5991fc2cb"
+    },
+    {
+      "path": "stock_data/.Rhistory",
+      "size": 13656,
+      "sha256": "659fe4db8cacdc08d78367872d0767c8b5acad572a80783ebcc03038b212417d"
+    }
+  ],
+  "preserved_inputs": [
+    {
+      "path": "(A3-1)時報資訊 - 股票歷史資料和三年基金歷史資料_0329.zip",
+      "size": 892375,
+      "sha256": "71c91c92946e6db32cd6aa32d8c3c11b51227a3c13313587c03f41d76c228a76"
+    },
+    {
+      "path": "return_1.xlsx",
+      "size": 81515,
+      "sha256": "59311914b8d3b6f681a0964365ba3b7d4a4f5436204613f0fbb1405caf65a076"
+    },
+    {
+      "path": "三種ML的return.xlsx",
+      "size": 11383,
+      "sha256": "f24c7c705b190eb150b47f68f0913fd2cac93e29dd68171b0880c49f4d5807d9"
+    },
+    {
+      "path": "巨量資料分析_Final presentation.pdf",
+      "size": 2893409,
+      "sha256": "0a7b3a6397cf3af319e15a0cf919f2e243efa0d7c0d1144eab4b7b0fe5d294af"
+    },
+    {
+      "path": "ETF/0050_daily.xlsx",
+      "size": 63682,
+      "sha256": "3570705f344aaaa61a1e875905bbff38f557ce19b6643b1eba22040dfe20e6fa"
+    },
+    {
+      "path": "ETF/0050_plot.png",
+      "size": 107741,
+      "sha256": "600007948d6e6e58e2194d189b04af2efc3e3b1ddee12deb1754c9273c1355f0"
+    },
+    {
+      "path": "ETF/0056_daily.xlsx",
+      "size": 64245,
+      "sha256": "7000c99fcfa8c865b334bc1dfd0de34c72fe4dd71b29300e08cdf8c3812f8c61"
+    },
+    {
+      "path": "ETF/0056_plot.png",
+      "size": 113140,
+      "sha256": "c1925602685897ed8af6a722d689f63f38ec698ea7bf78b299f7edfe512b5814"
+    },
+    {
+      "path": "ETF/006208_daily.xlsx",
+      "size": 61831,
+      "sha256": "760a28ae9606bcc2bfb70e7c8303718cde5be6e436fc58f8dfabe9dbe312eb67"
+    },
+    {
+      "path": "ETF/006208_plot.png",
+      "size": 109049,
+      "sha256": "a6da2c1ce6f7a4fbf5612e3a8231a2bb250709890ac789e55741eec9512d6b7a"
+    },
+    {
+      "path": "ETF/00646_daily.xlsx",
+      "size": 61666,
+      "sha256": "db9f144dd4197e5b886c8f23747bd003bb8b220552a618fa8d4d3b90890f386d"
+    },
+    {
+      "path": "ETF/00692_daily.xlsx",
+      "size": 62794,
+      "sha256": "fac53763485a0c483fb20afa1faa6ace9830f49f53f9c385a72bc16b0db6c0a8"
+    },
+    {
+      "path": "ETF/00712_daily.xlsx",
+      "size": 60086,
+      "sha256": "27b5a6f6d6b4a60420913d36204056acab21dd771a1818b75283b9a2565f50d8"
+    },
+    {
+      "path": "ETF/00713_daily.xlsx",
+      "size": 61106,
+      "sha256": "6ab5f0d2ec33699f469ebde889895415d2ee498c4dd44d7abc1e451a996488d7"
+    },
+    {
+      "path": "ETF/00713_plot.png",
+      "size": 108818,
+      "sha256": "bd27b1d7be157a6c92d76098384dce3227365960745076e15606bd038045a4d7"
+    },
+    {
+      "path": "ETF/00733_daily.xlsx",
+      "size": 61332,
+      "sha256": "6aca7ce8a002d6cb6d1f4e7dbd3e6937ed290ebc76da83c51345fec154d10a1f"
+    },
+    {
+      "path": "ETF/00757_daily.xlsx",
+      "size": 61116,
+      "sha256": "7529d23b6055c451e1957d11e9d261eff07b497487bcbd46f4f7ca17832911e1"
+    },
+    {
+      "path": "ETF/00830_daily.xlsx",
+      "size": 58749,
+      "sha256": "239bcf1273cb5a47a800d9c061b7dabed26b4b7ee9c2978919c278d663c57a96"
+    },
+    {
+      "path": "ETF/data.xlsx",
+      "size": 87225,
+      "sha256": "7dc8b6d5bafe964c3f532380d465d87b3d116911c27331f27803568a6f83aeeb"
+    },
+    {
+      "path": "ETF/ETF.rar",
+      "size": 423135,
+      "sha256": "47431cc5919480dfa5a8b6bbc0524544aa75da6dad2efb0e8760fc25a49ed1ee"
+    },
+    {
+      "path": "Final project/Artificial Intelligence for ETF Market Prediction and Portfolio Optimization.pdf",
+      "size": 406509,
+      "sha256": "8d4fc60be5845224f00433814f56dd85d271602b3d94f6f14e6ec600599c1764"
+    },
+    {
+      "path": "Final project/BDA_Final_Project_Team3_code.rar",
+      "size": 313495,
+      "sha256": "469c8c9f513b4fbaa28e953949c0e67ad41dca32e3f1d8d4adaa99281788abe3"
+    },
+    {
+      "path": "Final project/presentation2.pdf",
+      "size": 154709,
+      "sha256": "e1c3a017aa7f1602570cdbca2cc264ef171f91675e738ef538c6fba1f20ed945"
+    },
+    {
+      "path": "Final project/復發圖/2881 2882復發圖.png",
+      "size": 146124,
+      "sha256": "a4a44332a834b16a4a9d60df7aec7f48f289a999da5c7151394c6d6051c71207"
+    },
+    {
+      "path": "Final project/復發圖/3711 2311 復發圖.png",
+      "size": 164833,
+      "sha256": "0ad471cf5cf187ebe4d34c08fd4541b61c70c7665448843bce34df901e8deef9"
+    },
+    {
+      "path": "stock_data/1216_daily.xlsx",
+      "size": 60722,
+      "sha256": "692ffb4d2046bd7fa5ab47453cfe1687bd8f12d1ae928d2a6e52f74d4e4c488a"
+    },
+    {
+      "path": "stock_data/1216_plot.png",
+      "size": 117570,
+      "sha256": "35bee152b979f22b14870014645a03f303370a3f49a2f8560ddab8305e64901d"
+    },
+    {
+      "path": "stock_data/1301_daily.xlsx",
+      "size": 60420,
+      "sha256": "b919dc113f4712ccfc4fb1976c2c3eb917845ceb11dcbc598224211850b9e4ff"
+    },
+    {
+      "path": "stock_data/1301_plot.png",
+      "size": 117108,
+      "sha256": "84010e643419ad35e00b141be11fb73f87623e22af535a92d5a2473681c3fcee"
+    },
+    {
+      "path": "stock_data/1303_daily.xlsx",
+      "size": 61386,
+      "sha256": "3641a7f34fbb15ffb257c3ed0924146168e2f63dd7f506f04facf988b6b252f2"
+    },
+    {
+      "path": "stock_data/1303_plot.png",
+      "size": 112572,
+      "sha256": "b5ae897de015211a25873e6b65853b30935737fac72667582b3013b40c386ec4"
+    },
+    {
+      "path": "stock_data/1326_daily.xlsx",
+      "size": 60448,
+      "sha256": "58835aa17a0a57f9a5954c95ad88760fb96674008e82b9214f368554a9b1ff72"
+    },
+    {
+      "path": "stock_data/1326_plot.png",
+      "size": 110867,
+      "sha256": "5e54988c399fefeca42ac12f4dff2213471fbca6762db1b9f8753e296d056c9e"
+    },
+    {
+      "path": "stock_data/2002_daily.xlsx",
+      "size": 61887,
+      "sha256": "24b52049b251a4a14eeecc03c7e991b01f0cdba6967ea57cef0eb52459276332"
+    },
+    {
+      "path": "stock_data/2002_plot.png",
+      "size": 108932,
+      "sha256": "e19fb659452689628e5794cf9f3c9954b65bcbd936ceadde8f448a8efe7ceac2"
+    },
+    {
+      "path": "stock_data/2207_daily.xlsx",
+      "size": 60416,
+      "sha256": "4bd9644ae9aa36a9a366094267b9d464fd4e89fd581e4c57a98210564531c77b"
+    },
+    {
+      "path": "stock_data/2207_plot.png",
+      "size": 113895,
+      "sha256": "9277e78871058605fefb40d2916234dcadaa295333f2c24ebddc667c76ba524d"
+    },
+    {
+      "path": "stock_data/2303_daily.xlsx",
+      "size": 63887,
+      "sha256": "b934426a50ea5d2149fe63c0b05d6a6490e148a4365b7996fde28802b273f5aa"
+    },
+    {
+      "path": "stock_data/2303_plot.png",
+      "size": 109853,
+      "sha256": "3a2f733da2a0eff5096290a0b1aa66451c99599ede132121cd75e08eccd950ea"
+    },
+    {
+      "path": "stock_data/2308_daily.xlsx",
+      "size": 62170,
+      "sha256": "aa8f963d353ccd8f0cc624c2266f2586ce14a19b7acd8fa16697cdfdc735f8e9"
+    },
+    {
+      "path": "stock_data/2308_plot.png",
+      "size": 113037,
+      "sha256": "a484ab2b3cf368f1ae9b171be5b3b306adf433a0c8bbea927fca69caab865037"
+    },
+    {
+      "path": "stock_data/2317_daily.xlsx",
+      "size": 61514,
+      "sha256": "6efbf32ea3b74e5e72b01bf291d803a3ef6846056b28cc47e6cac44798e77483"
+    },
+    {
+      "path": "stock_data/2317_plot.png",
+      "size": 109958,
+      "sha256": "c174fe3a7d43445d8a2bbf1b01f3bbf91d9ece3bca9c5bc218392620816d5947"
+    },
+    {
+      "path": "stock_data/2330_daily.xlsx",
+      "size": 63373,
+      "sha256": "1a801ecea4e304ec65ac83e2019fb346b124b4aea53321e9c9fe287a0bbca88d"
+    },
+    {
+      "path": "stock_data/2330_plot.png",
+      "size": 109586,
+      "sha256": "f2ec8d4dc62001b69b068cf08d079f827fd4fed14e5d7b05d7e392a5a8b048b8"
+    },
+    {
+      "path": "stock_data/2357_daily.xlsx",
+      "size": 61529,
+      "sha256": "0380304a9ee6f84ec392a89020b84367a2b01c3294660094f2ad25b06d38c562"
+    },
+    {
+      "path": "stock_data/2357_plot.png",
+      "size": 112344,
+      "sha256": "3fcd7225a7c70b6ac078c153c068a7bddb5dc67ec255a761cff55482fa2e07e3"
+    },
+    {
+      "path": "stock_data/2382_daily.xlsx",
+      "size": 62273,
+      "sha256": "13670c10c77bfd50d29ae90bf10748b93652a8868bdcb7c46cc05cc814a0278c"
+    },
+    {
+      "path": "stock_data/2382_plot.png",
+      "size": 104168,
+      "sha256": "fd823a455044f778fa355b5411e566b2a1ef9fae34bb857ad72dce4ad8a20f7f"
+    },
+    {
+      "path": "stock_data/2395_daily.xlsx",
+      "size": 61319,
+      "sha256": "9fa6dd97af6a6de6c77b86d0569303ed98fd3693539f0e5c6436993b5a928937"
+    },
+    {
+      "path": "stock_data/2395_plot.png",
+      "size": 119675,
+      "sha256": "d067739cdcd9a8efe76847d3df31668c7cd8d762a3c14e397e35b35fa654fc17"
+    },
+    {
+      "path": "stock_data/2412_daily.xlsx",
+      "size": 57535,
+      "sha256": "fb0ef4661e2f41ccfb3748910dd94dc59e355212a671a74cd75a0412041944ee"
+    },
+    {
+      "path": "stock_data/2412_plot.png",
+      "size": 113927,
+      "sha256": "185ea16bfe3d31deeb6dbc397856be906f1e0808c5e1e7a48daec656ef63ecc8"
+    },
+    {
+      "path": "stock_data/2454_daily.xlsx",
+      "size": 63096,
+      "sha256": "3db9ce52b7db17d47b37c8a9b5dd6202b5017ef77ee29a4f0db439d213200b14"
+    },
+    {
+      "path": "stock_data/2454_plot.png",
+      "size": 107466,
+      "sha256": "e627b9c06afccd80dd1a2fa31615cb182eea15bf16f2c6012ee01d4efa946847"
+    },
+    {
+      "path": "stock_data/2603_daily.xlsx",
+      "size": 62519,
+      "sha256": "0a7ca79b9aa85298489edb3ed540c67f339472ce881187c71793a74763c767c4"
+    },
+    {
+      "path": "stock_data/2603_plot.png",
+      "size": 108246,
+      "sha256": "298c7b3674bdc3b36b23900407b99f43c42d92928512b2f0f2501fbfae9e8e17"
+    },
+    {
+      "path": "stock_data/2881_daily.xlsx",
+      "size": 62684,
+      "sha256": "0bcfbc0a754b3dc84de1d1e1e137537af73183e7ea7d494f577386ee9f2b0451"
+    },
+    {
+      "path": "stock_data/2881_plot.png",
+      "size": 113065,
+      "sha256": "3425f620bdb3f06af36092ea287a1bc3fe64263a336cf41d253ec5ffc32210e3"
+    },
+    {
+      "path": "stock_data/2882_daily.xlsx",
+      "size": 62883,
+      "sha256": "d71c6c877d4d107685b091f7517721680b667aab8f10024e58c7a3eceed58f05"
+    },
+    {
+      "path": "stock_data/2882_plot.png",
+      "size": 113288,
+      "sha256": "7c77dff44ba3744cc10c5736206f91a75a8589fb17b85394345284f448c9604b"
+    },
+    {
+      "path": "stock_data/2884_daily.xlsx",
+      "size": 61274,
+      "sha256": "fa7d0d0bf97ff3768a91d50dab8403f1236995e821d72b8e7588e86ee5299614"
+    },
+    {
+      "path": "stock_data/2884_plot.png",
+      "size": 112143,
+      "sha256": "8e2e4b49aa0c82198be12fe2fc9c4e64b1d55b62e4ed7c7776d3dd99bc488165"
+    },
+    {
+      "path": "stock_data/2885_daily.xlsx",
+      "size": 61165,
+      "sha256": "e3dfa4ae35979424262fd5990e0c73ea1e22a6be40d223164ed07b668ac6c074"
+    },
+    {
+      "path": "stock_data/2885_plot.png",
+      "size": 110017,
+      "sha256": "608434f394e790728d708f924d5ebd97451b0df2316a56f0132621b44dbef197"
+    },
+    {
+      "path": "stock_data/2886_daily.xlsx",
+      "size": 61787,
+      "sha256": "2f9d8de1dd0298b543a3f2d02b04043304f540828ece43d1a3c996292d58b3a6"
+    },
+    {
+      "path": "stock_data/2886_plot.png",
+      "size": 111313,
+      "sha256": "bb0980b42c4b53cb6d8cd811934de2f82fc1a744859cb761a6e001e1dde371f0"
+    },
+    {
+      "path": "stock_data/2891_daily.xlsx",
+      "size": 61505,
+      "sha256": "bf176b8c36ba731ff8da6a3f957a1e7d82da3090fa96b94ffb98bdc955d64be0"
+    },
+    {
+      "path": "stock_data/2891_plot.png",
+      "size": 112538,
+      "sha256": "9badfedf884b287c0d80a47038a4e9569c5809a6889e9ffdc4f095431a58748c"
+    },
+    {
+      "path": "stock_data/2892_daily.xlsx",
+      "size": 60573,
+      "sha256": "b3c3dc6185e275224254b4e95a67508b2e96a5bab7970540e52f0bbde5d80e68"
+    },
+    {
+      "path": "stock_data/2892_plot.png",
+      "size": 108119,
+      "sha256": "ecf295b056a72e88730de2c464c59acd961924c9bc3124476beeaf0dcde837b8"
+    },
+    {
+      "path": "stock_data/3034_daily.xlsx",
+      "size": 63373,
+      "sha256": "25d387859f0a062d427b1b03f218d67097792ce02f2ef2a777a4cd19b010febe"
+    },
+    {
+      "path": "stock_data/3034_plot.png",
+      "size": 108862,
+      "sha256": "d0b87883009c0326759f476e4cb7e517ea1138ddd976606f2cf8d83446a9c41f"
+    },
+    {
+      "path": "stock_data/3045_daily.xlsx",
+      "size": 58312,
+      "sha256": "77b29a0ff4f9e262e90608ad55dfdd82fdbbf32a3fefdb5a134c07628a7ef53c"
+    },
+    {
+      "path": "stock_data/3045_plot.png",
+      "size": 117573,
+      "sha256": "90097f8effb6184e75c9ff13448949a4de47c8f46d00ac19a386125ba45fd053"
+    },
+    {
+      "path": "stock_data/3231_daily.xlsx",
+      "size": 62576,
+      "sha256": "61ebdabe5f4f0b49923aa5e3f5dbad5f5132ba481263a7fb948e3b1475e7c5db"
+    },
+    {
+      "path": "stock_data/3231_plot.png",
+      "size": 102638,
+      "sha256": "fd3096716eafeb00f340642a8476715d37779c376e67d9a7e4e20e6e8a09cf47"
+    },
+    {
+      "path": "stock_data/3711_daily.xlsx",
+      "size": 62251,
+      "sha256": "0181593fe04265d56bf60a153ea6a9bb03018ae7cfc93d0452b3e74e26ec4f98"
+    },
+    {
+      "path": "stock_data/3711_plot.png",
+      "size": 116367,
+      "sha256": "02fce6d48f81da8bd27cb07c89a1a25752e0c0774a4d1e73b1a1133e06a48043"
+    },
+    {
+      "path": "stock_data/5880_daily.xlsx",
+      "size": 60333,
+      "sha256": "3d02e87c90e7ceda6018b46a3f11f396c21986ede610cf164f1313bf7fd4847b"
+    },
+    {
+      "path": "stock_data/5880_plot.png",
+      "size": 108344,
+      "sha256": "df83730425ea4905054d54e335b3b31549de35637693c0f1706597129ddbc703"
+    },
+    {
+      "path": "stock_data/6505_daily.xlsx",
+      "size": 60582,
+      "sha256": "afc324b2a1865cfcb40ba804c74b324ab2acc7492d732ec03f9ce520f5d1843f"
+    },
+    {
+      "path": "stock_data/6505_plot.png",
+      "size": 119651,
+      "sha256": "db528dadacf6cbc687f28188d082b8b034157ce8de51d31d9bc6481c1bd5b721"
+    },
+    {
+      "path": "stock_data/6669_daily.xlsx",
+      "size": 59828,
+      "sha256": "02e7903044c0350f83364f09b6335d73dec0cce1db9251aaa6f6a3a81e0337c4"
+    },
+    {
+      "path": "stock_data/6669_plot.png",
+      "size": 116831,
+      "sha256": "d9937849d6501c3ff35c8b7ac4536a2109b3678b8cc5c1fd7ac81fd95859924b"
+    },
+    {
+      "path": "stock_data/daily_.rar",
+      "size": 1812913,
+      "sha256": "a60a4ff506ff202dd0461fc97636338df75cbfe145e61aca2715a9cff762c814"
+    },
+    {
+      "path": "stock_data/stock_data.xlsx",
+      "size": 218196,
+      "sha256": "f10893854028fe93ec57c1a60d6a3ca62f02ea2d277cc6b6e5c3322c5598e9bd"
+    },
+    {
+      "path": "效率前緣圖/frontier plot.jpg",
+      "size": 73410,
+      "sha256": "89eef9c0330deb3a1ec075d00fa55620a1a7d8fbb5eb2da4797bea94612bfe02"
+    },
+    {
+      "path": "效率前緣圖/mv.jpg",
+      "size": 36554,
+      "sha256": "a49edb4fc716cd068c453a4bd838ded1cea4d7f772ab3b48956355d0e0343fb8"
+    }
+  ],
+  "scope": "Historical inventory before first code refactor; not a current filesystem manifest.",
+  "backup_status": "Original full backup superseded by legacy-source.zip during folder cleanup at user request.",
+  "current_source_manifest": "legacy-source-manifest.json",
+  "current_folder_manifest": "../docs/FOLDER_CLEANUP.json"
+}

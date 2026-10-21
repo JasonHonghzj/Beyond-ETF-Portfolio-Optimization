@@ -1,0 +1,807 @@
+{
+  "review_date": "2026-10-21",
+  "status": "passed",
+  "stocks": 22,
+  "model_families": 3,
+  "metric_rows": 66,
+  "prediction_rows": 15477,
+  "raw_workbooks": 40,
+  "csv_tables": 16,
+  "png_figures": 472,
+  "stock_ccf_pairs": 435,
+  "etf_ccf_pairs": 1,
+  "forecast_figures": 22,
+  "lowest_RMSE_counts_by_stock": {
+    "RF": 13,
+    "LSTM": 6,
+    "XGB": 3
+  },
+  "alignment_checks": [
+    {
+      "symbol": "2317",
+      "model": "RF",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2317",
+      "model": "XGB",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2317",
+      "model": "LSTM",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2330",
+      "model": "RF",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2330",
+      "model": "XGB",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2330",
+      "model": "LSTM",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2395",
+      "model": "RF",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2395",
+      "model": "XGB",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2395",
+      "model": "LSTM",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2357",
+      "model": "RF",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2357",
+      "model": "XGB",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2357",
+      "model": "LSTM",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "3231",
+      "model": "RF",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "3231",
+      "model": "XGB",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "3231",
+      "model": "LSTM",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2207",
+      "model": "RF",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2207",
+      "model": "XGB",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2207",
+      "model": "LSTM",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2603",
+      "model": "RF",
+      "observations": 1188,
+      "train_n": 934,
+      "test_n": 234,
+      "test_start": "2022-12-09",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2603",
+      "model": "XGB",
+      "observations": 1188,
+      "train_n": 934,
+      "test_n": 234,
+      "test_start": "2022-12-09",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2603",
+      "model": "LSTM",
+      "observations": 1188,
+      "train_n": 934,
+      "test_n": 234,
+      "test_start": "2022-12-09",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "3034",
+      "model": "RF",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "3034",
+      "model": "XGB",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "3034",
+      "model": "LSTM",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "3045",
+      "model": "RF",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "3045",
+      "model": "XGB",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "3045",
+      "model": "LSTM",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2002",
+      "model": "RF",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2002",
+      "model": "XGB",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2002",
+      "model": "LSTM",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "6669",
+      "model": "RF",
+      "observations": 1144,
+      "train_n": 899,
+      "test_n": 225,
+      "test_start": "2022-12-22",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "6669",
+      "model": "XGB",
+      "observations": 1144,
+      "train_n": 899,
+      "test_n": 225,
+      "test_start": "2022-12-22",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "6669",
+      "model": "LSTM",
+      "observations": 1144,
+      "train_n": 899,
+      "test_n": 225,
+      "test_start": "2022-12-22",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "1216",
+      "model": "RF",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "1216",
+      "model": "XGB",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "1216",
+      "model": "LSTM",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2303",
+      "model": "RF",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2303",
+      "model": "XGB",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2303",
+      "model": "LSTM",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "3711",
+      "model": "RF",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "3711",
+      "model": "XGB",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "3711",
+      "model": "LSTM",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2308",
+      "model": "RF",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2308",
+      "model": "XGB",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2308",
+      "model": "LSTM",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2412",
+      "model": "RF",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2412",
+      "model": "XGB",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2412",
+      "model": "LSTM",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2382",
+      "model": "RF",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2382",
+      "model": "XGB",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2382",
+      "model": "LSTM",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2454",
+      "model": "RF",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2454",
+      "model": "XGB",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2454",
+      "model": "LSTM",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2881",
+      "model": "RF",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2881",
+      "model": "XGB",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2881",
+      "model": "LSTM",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2885",
+      "model": "RF",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2885",
+      "model": "XGB",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2885",
+      "model": "LSTM",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2886",
+      "model": "RF",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2886",
+      "model": "XGB",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "2886",
+      "model": "LSTM",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "6505",
+      "model": "RF",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "6505",
+      "model": "XGB",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    },
+    {
+      "symbol": "6505",
+      "model": "LSTM",
+      "observations": 1195,
+      "train_n": 940,
+      "test_n": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "source_dates_prices_metrics_match": true
+    }
+  ],
+  "core_table_comparison": [
+    {
+      "table": "adf_tests.csv",
+      "before_sha256": "55e55ca50a4437bcb8158624bf464a055f96616e9e3d2394f6541f5a2d0102a3",
+      "after_sha256": "405f870c8aa7896e6cb69ba134a10f4a10d812d2864f03a3497f7e5410337816",
+      "byte_identical": false,
+      "identical_after_newline_normalization": true
+    },
+    {
+      "table": "bl_annual_returns.csv",
+      "before_sha256": "c0e9b4d127a14893e19a826f89034dd1e3a4c556bb81671a15194d026ed0a2df",
+      "after_sha256": "3d62ba8940156974dd00cb7754f9574051e5eb5eec6e677abe66a8809524a133",
+      "byte_identical": false,
+      "identical_after_newline_normalization": true
+    },
+    {
+      "table": "bl_frontier.csv",
+      "before_sha256": "1452f368ed47b6fd8f4fe7f52326c8d6c9b49231917aa7255f7b3ef765f88b74",
+      "after_sha256": "98a48b0436edb4823658cb91307718e7e4b9887eaa5b0a2cb1c40acc19e2f013",
+      "byte_identical": false,
+      "identical_after_newline_normalization": true
+    },
+    {
+      "table": "etf_descriptive_statistics.csv",
+      "before_sha256": "a05e9aeeac3d31af1d5633473055ae0f3830832fd852dc9d79088438f90e11bb",
+      "after_sha256": "63cc41aef348b82255f3fe7f782d31f486fbc005b3489a901ff6f0e6586b2730",
+      "byte_identical": false,
+      "identical_after_newline_normalization": true
+    },
+    {
+      "table": "historical_ml_returns_percent.csv",
+      "before_sha256": "1ab99249db545938147fb7a41118b38227a0a26b868c9a06e2aa95400532bab0",
+      "after_sha256": "2a875bd2e166407dcbee007f1e3f612292d0ce4fdb023518e40d91f797c28b87",
+      "byte_identical": false,
+      "identical_after_newline_normalization": true
+    },
+    {
+      "table": "mv_frontier.csv",
+      "before_sha256": "d4b3ba19533d7eebc0cf32862439ce68842f6e08cf93f134056401334a612537",
+      "after_sha256": "105e7dbb33cb08b052d591a0ebada53440ed77155e25427b595bc2e2847faf5f",
+      "byte_identical": false,
+      "identical_after_newline_normalization": true
+    },
+    {
+      "table": "presentation_buy_and_hold_wealth.csv",
+      "before_sha256": "c717ce62fb6b486f1e1384d92227b9ec5c2fc3ea0ebadee7026c85991fc82971",
+      "after_sha256": "b87fcbc4713964b8ea30749981f44dbcc9378c1af1f64dc71d4e99a7f885646e",
+      "byte_identical": false,
+      "identical_after_newline_normalization": true
+    },
+    {
+      "table": "presentation_price_performance.csv",
+      "before_sha256": "d28c148704c00521bfd4e30ff562ff6ad10d8e6ef1ac1daaeea9db27355f2945",
+      "after_sha256": "c81793ee3308d66fb70b0883c1b18d7d4093987bdaa778ff9253ac1f0ab6d3af",
+      "byte_identical": false,
+      "identical_after_newline_normalization": true
+    },
+    {
+      "table": "presentation_weights_normalized.csv",
+      "before_sha256": "b3d702067946229c1efed5e03a26199d7fe0e737977c4edbf538a5543cfcf234",
+      "after_sha256": "54327f41bdfbb2d1f195dd4958f2a9c8444a61818d170ab4aa6f2d43a98bc438",
+      "byte_identical": false,
+      "identical_after_newline_normalization": true
+    },
+    {
+      "table": "recomputed_in_sample_performance.csv",
+      "before_sha256": "00d8b6c2f60de64fa31e4e5676eba3f2c4e56f4bddb8a5b74d841f3b4e0dd08f",
+      "after_sha256": "57499176606f7a8bfbb3d3d11ba3018f869bfe473e61e106a11fadb32a8fa59a",
+      "byte_identical": false,
+      "identical_after_newline_normalization": true
+    },
+    {
+      "table": "recomputed_in_sample_wealth.csv",
+      "before_sha256": "c2ea48fa7158b29be0c92d87dd260e8166b38882bf645eaf7eb28b06b5d3000a",
+      "after_sha256": "b1f9d73133a4c09273441606d1911dcaaad512ce039cae87d50406ef591f37cd",
+      "byte_identical": false,
+      "identical_after_newline_normalization": true
+    },
+    {
+      "table": "recomputed_in_sample_weights.csv",
+      "before_sha256": "24bebad676c6a2e85587317a9c689f108f3f02ba025c01312ddfbc0b904c9275",
+      "after_sha256": "ba5bf021e39886593175f2c4dbb5c446e67d90063e8454c25bd6f8d2d2fec05c",
+      "byte_identical": false,
+      "identical_after_newline_normalization": true
+    },
+    {
+      "table": "stock_descriptive_statistics.csv",
+      "before_sha256": "6d864d152d2cf1844e0f2201d3ee62994306592e8688ace4a8eef9d9584cfcb7",
+      "after_sha256": "58781cc08079ee14eeeadf05e64bd681e50fe2173e5326f2f86c19e9ebb686f5",
+      "byte_identical": false,
+      "identical_after_newline_normalization": true
+    },
+    {
+      "table": "stock_return_correlations.csv",
+      "before_sha256": "9cdd10c0a2aa3866862238efe47741765d796fdf3210ac2217a36e1cc8981998",
+      "after_sha256": "0a9dd6258a8c8764a6b2f8fc95c562311031939f8ed661c92b3660532f9923d1",
+      "byte_identical": false,
+      "identical_after_newline_normalization": false,
+      "maximum_numeric_difference": 9.71445146547012e-17
+    },
+    {
+      "table": "stock_selection_comparison.csv",
+      "before_sha256": "7d1bd3e4d855078a50fed1c1472b59a6dace34aa92858117ef4be3ba9538d33b",
+      "after_sha256": "70983c10734a5acc350c5960205e381ba168197f57894763b9ddb29e9e1364b0",
+      "byte_identical": false,
+      "identical_after_newline_normalization": true
+    }
+  ],
+  "model_files": [
+    {
+      "path": "outputs/models/forecast_metrics.csv",
+      "sha256": "40c6ff25ae1e6e5e65be145f5f8e2d35d1388524904e7e275eea4f714ed7be5f"
+    },
+    {
+      "path": "outputs/models/forecast_predictions.csv",
+      "sha256": "82dc226eb942fe64b5305974a951b1e22863ec595dacb2ebf333adf263e9ef23"
+    },
+    {
+      "path": "outputs/models/lstm_metrics.csv",
+      "sha256": "24c5d6cbbc56c74c6959fd73b8db3b941f7a2f79b3ab3a4c8258ab170118d1cb"
+    },
+    {
+      "path": "outputs/models/lstm_predictions.csv",
+      "sha256": "d68d10e6083de408e3e60df2ac434dc3f385b3542ebca03c852f3d34df1ba66e"
+    }
+  ]
+}

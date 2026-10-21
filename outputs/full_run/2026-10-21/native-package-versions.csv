@@ -1,0 +1,7 @@
+"package","version"
+"readxl","1.6.0"
+"quadprog","1.5.8"
+"igraph","2.3.4"
+"tseries","0.10.63"
+"randomForest","4.7.1.2"
+"xgboost","3.2.1.1"

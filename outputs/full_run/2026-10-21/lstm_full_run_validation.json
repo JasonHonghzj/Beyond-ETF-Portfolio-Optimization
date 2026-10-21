@@ -1,0 +1,607 @@
+{
+  "started_utc": "2026-10-21T18:51:06.026270+00:00",
+  "completed_utc": "2026-10-21T18:53:33.965089+00:00",
+  "runtime_seconds": 147.93928139994387,
+  "test_seconds": 0.27997249993495643,
+  "training_seconds": 147.62011409993283,
+  "python": "3.10.10 (tags/v3.10.10:aad5f6a, Feb  7 2023, 17:20:36) [MSC v.1929 64 bit (AMD64)]",
+  "executable": "C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+  "versions": {
+    "numpy": "1.23.5",
+    "pandas": "2.1.3",
+    "torch": "2.0.1+cpu",
+    "openpyxl": "3.1.5"
+  },
+  "settings": {
+    "epochs": 50,
+    "lookback": 20,
+    "train_fraction": 0.8,
+    "seed": 1,
+    "torch_threads": 1,
+    "deterministic_algorithms": true
+  },
+  "tests_passed": 8,
+  "metrics_rows": 22,
+  "prediction_rows": 5159,
+  "finite_metrics_and_predictions": true,
+  "prediction_counts": {
+    "2317": 235,
+    "2330": 235,
+    "2395": 235,
+    "2357": 235,
+    "3231": 235,
+    "2207": 235,
+    "2603": 234,
+    "3034": 235,
+    "3045": 235,
+    "2002": 235,
+    "6669": 225,
+    "1216": 235,
+    "2303": 235,
+    "3711": 235,
+    "2308": 235,
+    "2412": 235,
+    "2382": 235,
+    "2454": 235,
+    "2881": 235,
+    "2885": 235,
+    "2886": 235,
+    "6505": 235
+  },
+  "metrics": [
+    {
+      "symbol": "2317",
+      "model": "LSTM",
+      "rmse": 2.0802925571453303,
+      "mae": 1.612746015686462,
+      "predicted_period_return": -0.0120359574037044,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "train_n": 940,
+      "test_n": 235
+    },
+    {
+      "symbol": "2330",
+      "model": "LSTM",
+      "rmse": 15.131995027807733,
+      "mae": 12.948762982719122,
+      "predicted_period_return": 0.1723384263905067,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "train_n": 940,
+      "test_n": 235
+    },
+    {
+      "symbol": "2395",
+      "model": "LSTM",
+      "rmse": 8.655734731461623,
+      "mae": 6.611122487422,
+      "predicted_period_return": 0.0624154137023009,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "train_n": 940,
+      "test_n": 235
+    },
+    {
+      "symbol": "2357",
+      "model": "LSTM",
+      "rmse": 14.563603067789442,
+      "mae": 10.115323853889045,
+      "predicted_period_return": 0.3717284274604606,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "train_n": 940,
+      "test_n": 235
+    },
+    {
+      "symbol": "3231",
+      "model": "LSTM",
+      "rmse": 49.4000791275242,
+      "mae": 36.4610148910766,
+      "predicted_period_return": 0.4489908461601166,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "train_n": 940,
+      "test_n": 235
+    },
+    {
+      "symbol": "2207",
+      "model": "LSTM",
+      "rmse": 25.971372309504545,
+      "mae": 17.26008297230335,
+      "predicted_period_return": 0.0856816660797197,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "train_n": 940,
+      "test_n": 235
+    },
+    {
+      "symbol": "2603",
+      "model": "LSTM",
+      "rmse": 9.334404718720473,
+      "mae": 7.342738911482447,
+      "predicted_period_return": -0.2001726039543969,
+      "test_start": "2022-12-09",
+      "test_end": "2023-11-30",
+      "train_n": 934,
+      "test_n": 234
+    },
+    {
+      "symbol": "3034",
+      "model": "LSTM",
+      "rmse": 16.308263815339572,
+      "mae": 12.890214902360706,
+      "predicted_period_return": 0.657946452983863,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "train_n": 940,
+      "test_n": 235
+    },
+    {
+      "symbol": "3045",
+      "model": "LSTM",
+      "rmse": 1.1274094679268771,
+      "mae": 0.8425402744589972,
+      "predicted_period_return": 0.0347462115327026,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "train_n": 940,
+      "test_n": 235
+    },
+    {
+      "symbol": "2002",
+      "model": "LSTM",
+      "rmse": 0.5713160167618285,
+      "mae": 0.454589537103126,
+      "predicted_period_return": -0.1081782691078037,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "train_n": 940,
+      "test_n": 235
+    },
+    {
+      "symbol": "6669",
+      "model": "LSTM",
+      "rmse": 294.04661052071185,
+      "mae": 215.04952199161053,
+      "predicted_period_return": 0.4501756230976741,
+      "test_start": "2022-12-22",
+      "test_end": "2023-11-30",
+      "train_n": 899,
+      "test_n": 225
+    },
+    {
+      "symbol": "1216",
+      "model": "LSTM",
+      "rmse": 0.8168223863726229,
+      "mae": 0.591179168712586,
+      "predicted_period_return": 0.0980263047568748,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "train_n": 940,
+      "test_n": 235
+    },
+    {
+      "symbol": "2303",
+      "model": "LSTM",
+      "rmse": 1.3195517972451036,
+      "mae": 1.043566012973005,
+      "predicted_period_return": 0.0945698206436063,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "train_n": 940,
+      "test_n": 235
+    },
+    {
+      "symbol": "3711",
+      "model": "LSTM",
+      "rmse": 3.340123320903244,
+      "mae": 2.536229387724653,
+      "predicted_period_return": 0.2203037912816612,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "train_n": 940,
+      "test_n": 235
+    },
+    {
+      "symbol": "2308",
+      "model": "LSTM",
+      "rmse": 20.943104866405644,
+      "mae": 15.466995608552974,
+      "predicted_period_return": 0.0251022144990953,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "train_n": 940,
+      "test_n": 235
+    },
+    {
+      "symbol": "2412",
+      "model": "LSTM",
+      "rmse": 1.114541696493988,
+      "mae": 0.7743857029508403,
+      "predicted_period_return": 0.0666804379002332,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "train_n": 940,
+      "test_n": 235
+    },
+    {
+      "symbol": "2382",
+      "model": "LSTM",
+      "rmse": 72.40862287361307,
+      "mae": 50.15499091650894,
+      "predicted_period_return": 0.6404407890935995,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "train_n": 940,
+      "test_n": 235
+    },
+    {
+      "symbol": "2454",
+      "model": "LSTM",
+      "rmse": 26.207899229731805,
+      "mae": 20.12617992941052,
+      "predicted_period_return": 0.3084446180249147,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "train_n": 940,
+      "test_n": 235
+    },
+    {
+      "symbol": "2881",
+      "model": "LSTM",
+      "rmse": 1.2072057106210412,
+      "mae": 0.9421863185045652,
+      "predicted_period_return": 0.0871552839484826,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "train_n": 940,
+      "test_n": 235
+    },
+    {
+      "symbol": "2885",
+      "model": "LSTM",
+      "rmse": 0.4362615402765213,
+      "mae": 0.3512128233148697,
+      "predicted_period_return": 0.1077171082494203,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "train_n": 940,
+      "test_n": 235
+    },
+    {
+      "symbol": "2886",
+      "model": "LSTM",
+      "rmse": 0.632805272412717,
+      "mae": 0.4893989940669303,
+      "predicted_period_return": 0.2625502790208462,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "train_n": 940,
+      "test_n": 235
+    },
+    {
+      "symbol": "6505",
+      "model": "LSTM",
+      "rmse": 1.644263647184539,
+      "mae": 1.353639039384558,
+      "predicted_period_return": 0.0056494552584773,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "train_n": 940,
+      "test_n": 235
+    }
+  ],
+  "files": [
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\scripts\\train_lstm.py",
+      "bytes": 9410,
+      "sha256": "11151a97facfb5979a9fac0e5ed563210d5c280c637599b45fabeb6f0146b157"
+    },
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\tests\\test_lstm.py",
+      "bytes": 6426,
+      "sha256": "38f2a136b0bf60b7a725b1353285514bae0ff4bc510dee082ee3b53b1d5a89b2"
+    },
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\outputs\\models\\lstm_metrics.csv",
+      "bytes": 2238,
+      "sha256": "24c5d6cbbc56c74c6959fd73b8db3b941f7a2f79b3ab3a4c8258ab170118d1cb"
+    },
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\outputs\\models\\lstm_predictions.csv",
+      "bytes": 237408,
+      "sha256": "d68d10e6083de408e3e60df2ac434dc3f385b3542ebca03c852f3d34df1ba66e"
+    }
+  ],
+  "raw_alignment_checks": [
+    {
+      "symbol": "2317",
+      "raw_observations": 1195,
+      "test_rows": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "dates_and_actual_closes_match_raw": true
+    },
+    {
+      "symbol": "2330",
+      "raw_observations": 1195,
+      "test_rows": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "dates_and_actual_closes_match_raw": true
+    },
+    {
+      "symbol": "2395",
+      "raw_observations": 1195,
+      "test_rows": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "dates_and_actual_closes_match_raw": true
+    },
+    {
+      "symbol": "2357",
+      "raw_observations": 1195,
+      "test_rows": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "dates_and_actual_closes_match_raw": true
+    },
+    {
+      "symbol": "3231",
+      "raw_observations": 1195,
+      "test_rows": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "dates_and_actual_closes_match_raw": true
+    },
+    {
+      "symbol": "2207",
+      "raw_observations": 1195,
+      "test_rows": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "dates_and_actual_closes_match_raw": true
+    },
+    {
+      "symbol": "2603",
+      "raw_observations": 1188,
+      "test_rows": 234,
+      "test_start": "2022-12-09",
+      "test_end": "2023-11-30",
+      "dates_and_actual_closes_match_raw": true
+    },
+    {
+      "symbol": "3034",
+      "raw_observations": 1195,
+      "test_rows": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "dates_and_actual_closes_match_raw": true
+    },
+    {
+      "symbol": "3045",
+      "raw_observations": 1195,
+      "test_rows": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "dates_and_actual_closes_match_raw": true
+    },
+    {
+      "symbol": "2002",
+      "raw_observations": 1195,
+      "test_rows": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "dates_and_actual_closes_match_raw": true
+    },
+    {
+      "symbol": "6669",
+      "raw_observations": 1144,
+      "test_rows": 225,
+      "test_start": "2022-12-22",
+      "test_end": "2023-11-30",
+      "dates_and_actual_closes_match_raw": true
+    },
+    {
+      "symbol": "1216",
+      "raw_observations": 1195,
+      "test_rows": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "dates_and_actual_closes_match_raw": true
+    },
+    {
+      "symbol": "2303",
+      "raw_observations": 1195,
+      "test_rows": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "dates_and_actual_closes_match_raw": true
+    },
+    {
+      "symbol": "3711",
+      "raw_observations": 1195,
+      "test_rows": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "dates_and_actual_closes_match_raw": true
+    },
+    {
+      "symbol": "2308",
+      "raw_observations": 1195,
+      "test_rows": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "dates_and_actual_closes_match_raw": true
+    },
+    {
+      "symbol": "2412",
+      "raw_observations": 1195,
+      "test_rows": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "dates_and_actual_closes_match_raw": true
+    },
+    {
+      "symbol": "2382",
+      "raw_observations": 1195,
+      "test_rows": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "dates_and_actual_closes_match_raw": true
+    },
+    {
+      "symbol": "2454",
+      "raw_observations": 1195,
+      "test_rows": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "dates_and_actual_closes_match_raw": true
+    },
+    {
+      "symbol": "2881",
+      "raw_observations": 1195,
+      "test_rows": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "dates_and_actual_closes_match_raw": true
+    },
+    {
+      "symbol": "2885",
+      "raw_observations": 1195,
+      "test_rows": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "dates_and_actual_closes_match_raw": true
+    },
+    {
+      "symbol": "2886",
+      "raw_observations": 1195,
+      "test_rows": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "dates_and_actual_closes_match_raw": true
+    },
+    {
+      "symbol": "6505",
+      "raw_observations": 1195,
+      "test_rows": 235,
+      "test_start": "2022-12-08",
+      "test_end": "2023-11-30",
+      "dates_and_actual_closes_match_raw": true
+    }
+  ],
+  "input_files": [
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\data\\stocks\\2317_daily.xlsx",
+      "bytes": 61514,
+      "sha256": "6efbf32ea3b74e5e72b01bf291d803a3ef6846056b28cc47e6cac44798e77483"
+    },
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\data\\stocks\\2330_daily.xlsx",
+      "bytes": 63373,
+      "sha256": "1a801ecea4e304ec65ac83e2019fb346b124b4aea53321e9c9fe287a0bbca88d"
+    },
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\data\\stocks\\2395_daily.xlsx",
+      "bytes": 61319,
+      "sha256": "9fa6dd97af6a6de6c77b86d0569303ed98fd3693539f0e5c6436993b5a928937"
+    },
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\data\\stocks\\2357_daily.xlsx",
+      "bytes": 61529,
+      "sha256": "0380304a9ee6f84ec392a89020b84367a2b01c3294660094f2ad25b06d38c562"
+    },
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\data\\stocks\\3231_daily.xlsx",
+      "bytes": 62576,
+      "sha256": "61ebdabe5f4f0b49923aa5e3f5dbad5f5132ba481263a7fb948e3b1475e7c5db"
+    },
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\data\\stocks\\2207_daily.xlsx",
+      "bytes": 60416,
+      "sha256": "4bd9644ae9aa36a9a366094267b9d464fd4e89fd581e4c57a98210564531c77b"
+    },
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\data\\stocks\\2603_daily.xlsx",
+      "bytes": 62519,
+      "sha256": "0a7ca79b9aa85298489edb3ed540c67f339472ce881187c71793a74763c767c4"
+    },
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\data\\stocks\\3034_daily.xlsx",
+      "bytes": 63373,
+      "sha256": "25d387859f0a062d427b1b03f218d67097792ce02f2ef2a777a4cd19b010febe"
+    },
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\data\\stocks\\3045_daily.xlsx",
+      "bytes": 58312,
+      "sha256": "77b29a0ff4f9e262e90608ad55dfdd82fdbbf32a3fefdb5a134c07628a7ef53c"
+    },
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\data\\stocks\\2002_daily.xlsx",
+      "bytes": 61887,
+      "sha256": "24b52049b251a4a14eeecc03c7e991b01f0cdba6967ea57cef0eb52459276332"
+    },
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\data\\stocks\\6669_daily.xlsx",
+      "bytes": 59828,
+      "sha256": "02e7903044c0350f83364f09b6335d73dec0cce1db9251aaa6f6a3a81e0337c4"
+    },
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\data\\stocks\\1216_daily.xlsx",
+      "bytes": 60722,
+      "sha256": "692ffb4d2046bd7fa5ab47453cfe1687bd8f12d1ae928d2a6e52f74d4e4c488a"
+    },
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\data\\stocks\\2303_daily.xlsx",
+      "bytes": 63887,
+      "sha256": "b934426a50ea5d2149fe63c0b05d6a6490e148a4365b7996fde28802b273f5aa"
+    },
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\data\\stocks\\3711_daily.xlsx",
+      "bytes": 62251,
+      "sha256": "0181593fe04265d56bf60a153ea6a9bb03018ae7cfc93d0452b3e74e26ec4f98"
+    },
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\data\\stocks\\2308_daily.xlsx",
+      "bytes": 62170,
+      "sha256": "aa8f963d353ccd8f0cc624c2266f2586ce14a19b7acd8fa16697cdfdc735f8e9"
+    },
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\data\\stocks\\2412_daily.xlsx",
+      "bytes": 57535,
+      "sha256": "fb0ef4661e2f41ccfb3748910dd94dc59e355212a671a74cd75a0412041944ee"
+    },
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\data\\stocks\\2382_daily.xlsx",
+      "bytes": 62273,
+      "sha256": "13670c10c77bfd50d29ae90bf10748b93652a8868bdcb7c46cc05cc814a0278c"
+    },
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\data\\stocks\\2454_daily.xlsx",
+      "bytes": 63096,
+      "sha256": "3db9ce52b7db17d47b37c8a9b5dd6202b5017ef77ee29a4f0db439d213200b14"
+    },
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\data\\stocks\\2881_daily.xlsx",
+      "bytes": 62684,
+      "sha256": "0bcfbc0a754b3dc84de1d1e1e137537af73183e7ea7d494f577386ee9f2b0451"
+    },
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\data\\stocks\\2885_daily.xlsx",
+      "bytes": 61165,
+      "sha256": "e3dfa4ae35979424262fd5990e0c73ea1e22a6be40d223164ed07b668ac6c074"
+    },
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\data\\stocks\\2886_daily.xlsx",
+      "bytes": 61787,
+      "sha256": "2f9d8de1dd0298b543a3f2d02b04043304f540828ece43d1a3c996292d58b3a6"
+    },
+    {
+      "path": "C:\\Users\\acer\\Desktop\\github\\portfolio optimization\\data\\stocks\\6505_daily.xlsx",
+      "bytes": 60582,
+      "sha256": "afc324b2a1865cfcb40ba804c74b324ab2acc7492d732ec03f9ce520f5d1843f"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Registered S3 method overwritten by 'quantmod':
+  method            from
+  as.zoo.data.frame zoo 
+Ready: readxl, quadprog, igraph, randomForest, xgboost, tseries

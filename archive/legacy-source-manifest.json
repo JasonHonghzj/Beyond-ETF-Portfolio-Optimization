@@ -1,0 +1,121 @@
+{
+  "archive": "legacy-source.zip",
+  "source_count": 14,
+  "files": [
+    {
+      "path": "巨量Final.R",
+      "sha256": "520f1bc9550e3d7d5b87f15a725da826ffeaa77a77d9ce70b8b6e65e8729e17d",
+      "size": 4509
+    },
+    {
+      "path": "巨量_BL.R",
+      "sha256": "06f628a5acfdd9cf4e168f0bd7f20fdef0d0b63ecdef5ac33e6c8c2f9ed0e1c1",
+      "size": 2199
+    },
+    {
+      "path": "巨量_MV.R",
+      "sha256": "1e54014f5543719edc926a2384d3c66d9eb437aa34e667171a2506f57cda9bad",
+      "size": 1191
+    },
+    {
+      "path": "巨量_rolling_data.R",
+      "sha256": "ffd578da844183cf9a06a6c60ea6d5457aac76681fa4d8dcf2a7a4fb98dda087",
+      "size": 3078
+    },
+    {
+      "path": "巨量_XGB.R",
+      "sha256": "b57e3a5b4c0af4236e5db0bd91f17b3d56161d88209a816d341b75ab571bd4b9",
+      "size": 1780
+    },
+    {
+      "path": "巨量_交叉相關.R",
+      "sha256": "c41ba1f2235b35a7d0e1c75f7a44dc0ce2c6a4863ec34c398019f4d52db15459",
+      "size": 1943
+    },
+    {
+      "path": "巨量_報酬比較.R",
+      "sha256": "6c3a6ad9e5225307607ad54134b1785a202e5920b3b2342454e2bcade2d3fd7f",
+      "size": 1746
+    },
+    {
+      "path": "巨量_復發圖.R",
+      "sha256": "3e0f67ccfb9edadad98ee33ffa91b149ab6db2bec7c0d81da7686509524df442",
+      "size": 932
+    },
+    {
+      "path": "巨量_累計報酬圖_效率曲線.R",
+      "sha256": "8019811412bbc9b71667edd4ef8ef5a6cc2765f0b43ff7302f19ddf902a21937",
+      "size": 7334
+    },
+    {
+      "path": "巨量_配適圓餅圖.R",
+      "sha256": "7374cd977f3d9c7df5b261e24049ef4f08c0b6bcc7656c45971da04fc5bd5b63",
+      "size": 990
+    },
+    {
+      "path": "巨量_風險比較圖.R",
+      "sha256": "c55f7e2f2e680df72dc951765e1a8b2b75fb679ac3dfb8d8d1360ac992d3cbb6",
+      "size": 1396
+    },
+    {
+      "path": "BL model/BL (1).py",
+      "sha256": "ca657542bdc970a843591321dd66cd33601065629a2752485f4e5e610fa8fdd2",
+      "size": 7663
+    },
+    {
+      "path": "BL model/Untitled1.ipynb",
+      "sha256": "f476c7f27b0d1311be3221dc58b421f0584af5c7f28c0148ec81c937821f56d2",
+      "size": 298619
+    },
+    {
+      "path": "BL model/Untitled1 (2).py",
+      "sha256": "bda9678683e3317703d07d9bb4dddf5d428fe0fb11fec0bb8c7e0c134b2999f3",
+      "size": 3827,
+      "from": "BL model/Untitled1 (2).zip"
+    }
+  ],
+  "excluded_entries": [
+    {
+      "path": ".RData",
+      "sha256": "cc09e3099d3e33b723a6f2439c4e456ebad245c897df03785ea1310841b38d7e",
+      "reason": "工作階段/歷史或重複巢狀ZIP；不作現行專案來源"
+    },
+    {
+      "path": ".Rhistory",
+      "sha256": "a31614d1454ee96235f5a293c36dea651dc805f29dc09c12073989d5c3a53259",
+      "reason": "工作階段/歷史或重複巢狀ZIP；不作現行專案來源"
+    },
+    {
+      "path": "BL model/Untitled1 (2).zip",
+      "sha256": "2baf76c14f8b2fc31ffaf690b598d1ba8eec9f9c621421b2525f306da7eb11d8",
+      "reason": "工作階段/歷史或重複巢狀ZIP；不作現行專案來源"
+    },
+    {
+      "path": "BL model/Untitled1.zip",
+      "sha256": "fdc9f76db10347344dcf9516c8a9fcdf6db85c9cfc1d42f0b0129c79c282c553",
+      "reason": "工作階段/歷史或重複巢狀ZIP；不作現行專案來源"
+    },
+    {
+      "path": "ETF/.RData",
+      "sha256": "25bf8b0a3671543fdf692d90725ac0774115fcf2cc4f17dadf1ae2b95bd3db47",
+      "reason": "工作階段/歷史或重複巢狀ZIP；不作現行專案來源"
+    },
+    {
+      "path": "ETF/.Rhistory",
+      "sha256": "ba6617d3ed93ed2c5e8c6c034e00eb9f40f4ee1a7fdbc9c427507f90b5528934",
+      "reason": "工作階段/歷史或重複巢狀ZIP；不作現行專案來源"
+    },
+    {
+      "path": "stock_data/.RData",
+      "sha256": "b24b95e38c1ed18d977c5ebdb8c4b3debc749c3258702146649d62f5991fc2cb",
+      "reason": "工作階段/歷史或重複巢狀ZIP；不作現行專案來源"
+    },
+    {
+      "path": "stock_data/.Rhistory",
+      "sha256": "659fe4db8cacdc08d78367872d0767c8b5acad572a80783ebcc03038b212417d",
+      "reason": "工作階段/歷史或重複巢狀ZIP；不作現行專案來源"
+    }
+  ],
+  "supersedes": "original-code-20261020.zip",
+  "sha256": "fb285bf916a7bea1ce3e5d6f48f48aa3dba0304430ca2bb21e85d37b8ce58eb7"
+}

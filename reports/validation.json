@@ -1,0 +1,879 @@
+{
+  "review_date": "2026-10-21",
+  "documents": {
+    "zh": {
+      "path": "reports/report_zh/report_zh.pdf",
+      "variant": "author_named",
+      "pages": 12,
+      "body_pages": 11,
+      "reference_pages": 1,
+      "author": "蘇柏諺; 洪稚鈞; 佘梓平; 黃纓婷; 陳依琪; 林岱融",
+      "title": "超越 ETF：股票預測與投資組合比較",
+      "author_order_verified": true,
+      "anonymity_verified": false,
+      "identity_terms_checked": [],
+      "page_size_pt": [
+        612,
+        792
+      ],
+      "pages_checked": [
+        {
+          "page": 1,
+          "extracted_characters": 1083,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0,
+            14.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT",
+            "AAAAAB+PMingLiU-1"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 2,
+          "extracted_characters": 1496,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT",
+            "AAAAAB+PMingLiU-1"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 3,
+          "extracted_characters": 1087,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT",
+            "AAAAAB+PMingLiU-1",
+            "AAAAAC+PMingLiU-1"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 4,
+          "extracted_characters": 398,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT",
+            "AAAAAB+PMingLiU-1",
+            "AAAAAC+PMingLiU-1"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 5,
+          "extracted_characters": 848,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT",
+            "AAAAAB+PMingLiU-1",
+            "AAAAAC+PMingLiU-1"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 6,
+          "extracted_characters": 635,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT",
+            "AAAAAB+PMingLiU-1",
+            "AAAAAC+PMingLiU-1"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 7,
+          "extracted_characters": 462,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT",
+            "AAAAAB+PMingLiU-1",
+            "AAAAAC+PMingLiU-1"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 8,
+          "extracted_characters": 417,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT",
+            "AAAAAB+PMingLiU-1",
+            "AAAAAC+PMingLiU-1"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 9,
+          "extracted_characters": 497,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT",
+            "AAAAAB+PMingLiU-1",
+            "AAAAAC+PMingLiU-1"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 10,
+          "extracted_characters": 1157,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT",
+            "AAAAAB+PMingLiU-1",
+            "AAAAAC+PMingLiU-1"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 11,
+          "extracted_characters": 1882,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT",
+            "AAAAAB+PMingLiU-1",
+            "AAAAAC+PMingLiU-1"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 12,
+          "extracted_characters": 1258,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPSMT",
+            "AAAAAB+PMingLiU-1",
+            "AAAAAC+PMingLiU-1"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        }
+      ]
+    },
+    "en": {
+      "path": "reports/report_en/report_en.pdf",
+      "variant": "author_named",
+      "pages": 12,
+      "body_pages": 11,
+      "reference_pages": 1,
+      "author": "蘇柏諺; Zhi-Jun Hong; 佘梓平; 黃纓婷; 陳依琪; 林岱融",
+      "title": "Beyond ETFs: Stock Forecasting and Portfolio Comparison",
+      "author_order_verified": true,
+      "anonymity_verified": false,
+      "identity_terms_checked": [],
+      "page_size_pt": [
+        612,
+        792
+      ],
+      "pages_checked": [
+        {
+          "page": 1,
+          "extracted_characters": 2706,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0,
+            14.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 2,
+          "extracted_characters": 3294,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 3,
+          "extracted_characters": 1811,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 4,
+          "extracted_characters": 1067,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 5,
+          "extracted_characters": 1989,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 6,
+          "extracted_characters": 1464,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 7,
+          "extracted_characters": 1219,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 8,
+          "extracted_characters": 1321,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 9,
+          "extracted_characters": 1229,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 10,
+          "extracted_characters": 3078,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 11,
+          "extracted_characters": 2085,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 12,
+          "extracted_characters": 1732,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        }
+      ]
+    },
+    "zh_anonymous": {
+      "path": "reports/report_zh/report_zh_anonymous.pdf",
+      "variant": "anonymous",
+      "pages": 12,
+      "body_pages": 11,
+      "reference_pages": 1,
+      "author": "",
+      "title": "股票預測與投資組合比較",
+      "author_order_verified": false,
+      "anonymity_verified": true,
+      "identity_terms_checked": [
+        "Beyond ETF",
+        "Beyond ETFs",
+        "Big Data Analytics",
+        "Spring 2024",
+        "Spring2024",
+        "Users/acer",
+        "Users\\acer",
+        "Zhi-Jun Hong",
+        "big-data analytics",
+        "course",
+        "github.com/",
+        "gitlab.com/",
+        "original group investigation",
+        "佘梓平",
+        "專題",
+        "巨量資料分析",
+        "林岱融",
+        "洪稚鈞",
+        "蘇柏諺",
+        "課程",
+        "超越 ETF",
+        "超越ETF",
+        "鄭順林",
+        "陳依琪",
+        "黃纓婷"
+      ],
+      "page_size_pt": [
+        612,
+        792
+      ],
+      "pages_checked": [
+        {
+          "page": 1,
+          "extracted_characters": 981,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0,
+            14.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT",
+            "AAAAAB+PMingLiU-1"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 2,
+          "extracted_characters": 1495,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT",
+            "AAAAAB+PMingLiU-1"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 3,
+          "extracted_characters": 1087,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT",
+            "AAAAAB+PMingLiU-1"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 4,
+          "extracted_characters": 395,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT",
+            "AAAAAB+PMingLiU-1",
+            "AAAAAC+PMingLiU-1"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 5,
+          "extracted_characters": 848,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT",
+            "AAAAAB+PMingLiU-1",
+            "AAAAAC+PMingLiU-1"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 6,
+          "extracted_characters": 635,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT",
+            "AAAAAB+PMingLiU-1",
+            "AAAAAC+PMingLiU-1"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 7,
+          "extracted_characters": 462,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT",
+            "AAAAAB+PMingLiU-1",
+            "AAAAAC+PMingLiU-1"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 8,
+          "extracted_characters": 417,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT",
+            "AAAAAB+PMingLiU-1",
+            "AAAAAC+PMingLiU-1"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 9,
+          "extracted_characters": 497,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT",
+            "AAAAAB+PMingLiU-1",
+            "AAAAAC+PMingLiU-1"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 10,
+          "extracted_characters": 1157,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT",
+            "AAAAAB+PMingLiU-1",
+            "AAAAAC+PMingLiU-1"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 11,
+          "extracted_characters": 1882,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT",
+            "AAAAAB+PMingLiU-1",
+            "AAAAAC+PMingLiU-1"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 12,
+          "extracted_characters": 1167,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+PMingLiU-1",
+            "AAAAAA+TimesNewRomanPSMT",
+            "AAAAAB+PMingLiU-1",
+            "AAAAAC+PMingLiU-1"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        }
+      ]
+    },
+    "en_anonymous": {
+      "path": "reports/report_en/report_en_anonymous.pdf",
+      "variant": "anonymous",
+      "pages": 12,
+      "body_pages": 11,
+      "reference_pages": 1,
+      "author": "",
+      "title": "Stock Forecasting and Portfolio Comparison",
+      "author_order_verified": false,
+      "anonymity_verified": true,
+      "identity_terms_checked": [
+        "Beyond ETF",
+        "Beyond ETFs",
+        "Big Data Analytics",
+        "Spring 2024",
+        "Spring2024",
+        "Users/acer",
+        "Users\\acer",
+        "Zhi-Jun Hong",
+        "big-data analytics",
+        "course",
+        "github.com/",
+        "gitlab.com/",
+        "original group investigation",
+        "佘梓平",
+        "專題",
+        "巨量資料分析",
+        "林岱融",
+        "洪稚鈞",
+        "蘇柏諺",
+        "課程",
+        "超越 ETF",
+        "超越ETF",
+        "鄭順林",
+        "陳依琪",
+        "黃纓婷"
+      ],
+      "page_size_pt": [
+        612,
+        792
+      ],
+      "pages_checked": [
+        {
+          "page": 1,
+          "extracted_characters": 2528,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0,
+            14.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 2,
+          "extracted_characters": 3294,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 3,
+          "extracted_characters": 1809,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 4,
+          "extracted_characters": 1069,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 5,
+          "extracted_characters": 1989,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 6,
+          "extracted_characters": 1464,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 7,
+          "extracted_characters": 1219,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 8,
+          "extracted_characters": 1321,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 9,
+          "extracted_characters": 1229,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 10,
+          "extracted_characters": 3072,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 11,
+          "extracted_characters": 2085,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        },
+        {
+          "page": 12,
+          "extracted_characters": 1744,
+          "text_font_sizes_pt": [
+            10.0,
+            11.0
+          ],
+          "used_embedded_fonts": [
+            "AAAAAA+TimesNewRomanPS-BoldMT",
+            "AAAAAA+TimesNewRomanPSMT"
+          ],
+          "outside_text_block_characters": 0,
+          "page_number_correct": true
+        }
+      ]
+    }
+  },
+  "source_hashes_match": true,
+  "output_hashes_match": true,
+  "source_hashes_checked": 558,
+  "output_hashes_checked": 10,
+  "report_document_count": 4,
+  "total_pages_checked": 48,
+  "font_check_scope": "Extracted PDF text; rasterized figure labels are checked separately by visual review."
+}

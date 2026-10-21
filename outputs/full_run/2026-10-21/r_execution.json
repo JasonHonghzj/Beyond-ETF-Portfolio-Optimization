@@ -1,0 +1,18 @@
+[
+  {
+    "started_utc": "2026-10-21T18:55:54.9666970+00:00",
+    "name": "r_tests",
+    "exit_code": 0,
+    "elapsed_seconds": 1.5681122,
+    "command": "C:\\Users\\acer\\.codex\\visualizations\\2026\\10\\20\\01a15b68-a85b-7921-b275-96f58bf1f438\\full-run-2026-10-21\\runtime\\R-4.6.1\\bin\\Rscript.exe --vanilla tests/run_tests.R --models",
+    "completed_utc": "2026-10-21T18:55:56.5397520+00:00"
+  },
+  {
+    "started_utc": "2026-10-21T18:55:56.5688884+00:00",
+    "name": "r_full_pipeline",
+    "exit_code": 0,
+    "elapsed_seconds": 102.0558908,
+    "command": "C:\\Users\\acer\\.codex\\visualizations\\2026\\10\\20\\01a15b68-a85b-7921-b275-96f58bf1f438\\full-run-2026-10-21\\runtime\\R-4.6.1\\bin\\Rscript.exe --vanilla run.R --train --all-pairs",
+    "completed_utc": "2026-10-21T18:57:38.6249609+00:00"
+  }
+]

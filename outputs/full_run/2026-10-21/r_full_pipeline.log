@@ -1,0 +1,29 @@
+Loading the 30 stocks and 10 ETFs once, in chronological order.
+Recomputing MV/BL fits on the evaluation window (in-sample diagnostics).
+Registered S3 method overwritten by 'quantmod':
+  method            from
+  as.zoo.data.frame zoo 
+Training RF/XGB: 2317
+Training RF/XGB: 2330
+Training RF/XGB: 2395
+Training RF/XGB: 2357
+Training RF/XGB: 3231
+Training RF/XGB: 2207
+Training RF/XGB: 2603
+Training RF/XGB: 3034
+Training RF/XGB: 3045
+Training RF/XGB: 2002
+Training RF/XGB: 6669
+Training RF/XGB: 1216
+Training RF/XGB: 2303
+Training RF/XGB: 3711
+Training RF/XGB: 2308
+Training RF/XGB: 2412
+Training RF/XGB: 2382
+Training RF/XGB: 2454
+Training RF/XGB: 2881
+Training RF/XGB: 2885
+Training RF/XGB: 2886
+Training RF/XGB: 6505
+Rendering the presentation figures from shared results.
+Finished. Results: C:/Users/acer/Desktop/github/portfolio optimization/outputs
