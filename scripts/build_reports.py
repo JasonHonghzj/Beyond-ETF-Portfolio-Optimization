@@ -57,8 +57,8 @@ TITLE_LINES = {
     "zh": ("超越 ETF", "股票預測與投資組合比較"),
     "en": ("Beyond ETFs", "Stock Forecasting and Portfolio Comparison"),
 }
-ADVISORS = {"zh": "指導教授：鄭順林", "en": "Advised by Prof. Shun-Lin Jeng"}
-COURSEWORK = {"zh": "巨量資料分析課程期末專題", "en": "Big Data Analytics Coursework"}
+ADVISORS = {lang: "Advised by Prof. Shun-Lin Jeng" for lang in ("zh", "en")}
+COURSE_INFO = f"Big Data Analytics Final Project | {TERM} | {ADVISORS['en']}"
 LITERATURE = [
     "[1] Min-Yuh Day and Jian-Ting Lin. 2019. Artificial Intelligence for ETF Market Prediction and Portfolio Optimization. "
     "In Proceedings of the 2019 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining "
@@ -576,14 +576,13 @@ def build_pdf(root: Path, e: dict, assets: dict, lang: str) -> Path:
         return caption(cv, content[key], prefix, top, s)
 
     try:
-        # Both languages share the same two-line title and five metadata rows.
+        # Both languages share a two-line title and three metadata rows.
         top = start()
         title_p = Paragraph("<br/>".join(markup(line) for line in TITLE_LINES[lang]), s["title"])
         _, h = title_p.wrap(WIDTH, HEIGHT)
         title_p.drawOn(cv, LEFT, top - h); top -= h + 12
         names = ", ".join(AUTHORS_EN) if lang == "en" else "、".join(AUTHORS_ZH)
-        for text, gap in ((names, 5), (AFFILIATIONS[lang], 5), (ADVISORS[lang], 9),
-                          (COURSEWORK[lang], 2), (TERM, 18)):
+        for text, gap in ((names, 5), (AFFILIATIONS[lang], 5), (COURSE_INFO, 18)):
             p = Paragraph(markup(text), s["center"])
             _, h = p.wrap(WIDTH, HEIGHT)
             p.drawOn(cv, LEFT, top - h)
@@ -817,6 +816,7 @@ def main(argv=None):
         "authors": {"zh": AUTHORS_ZH, "en": AUTHORS_EN},
         "affiliations": AFFILIATIONS,
         "advisors": ADVISORS,
+        "course_term_advisor_line": COURSE_INFO,
         "bibliography": {"entry_count": len(LITERATURE), "type": "research_literature_only",
                          "doi": "10.1145/3341161.3344822"},
         "report_variants": {
@@ -826,7 +826,7 @@ def main(argv=None):
         "format": {"paper": "US Letter", "text_block_inches": [7, 9], "columns": 2,
                    "column_gap_inches": .33, "body_font_pt": 10, "leading_pt": 12,
                    "title_lines": 2, "title_font_pt": 14, "title_leading_pt": 16,
-                   "title_block_order": ["title", "authors", "affiliation", "advisor", "coursework", "term"],
+                   "title_block_order": ["title", "authors", "affiliation", "course_term_advisor"],
                    "title_block_metadata_font_pt": 10, "title_block_metadata_italic": False,
                    "body_pages": 11, "reference_pages": 1, "appendices": 0,
                    "latin_font": "Times New Roman (embedded)", "chinese_font": "PMingLiU (embedded)",

@@ -25,9 +25,10 @@
     "en": "Department of Statistics, National Cheng Kung University, Taiwan."
   },
   "advisors": {
-    "zh": "指導教授：鄭順林",
+    "zh": "Advised by Prof. Shun-Lin Jeng",
     "en": "Advised by Prof. Shun-Lin Jeng"
   },
+  "course_term_advisor_line": "Big Data Analytics Final Project | Spring 2024 | Advised by Prof. Shun-Lin Jeng",
   "bibliography": {
     "entry_count": 1,
     "type": "research_literature_only",
@@ -59,9 +60,7 @@
       "title",
       "authors",
       "affiliation",
-      "advisor",
-      "coursework",
-      "term"
+      "course_term_advisor"
     ],
     "title_block_metadata_font_pt": 10,
     "title_block_metadata_italic": false,
@@ -2349,7 +2348,7 @@
     },
     {
       "path": "scripts/build_reports.py",
-      "sha256": "5a79e43b7d9dc265a2b448bf1be82e252a27497bc55644ac9e8fbe518bd7a801"
+      "sha256": "9dc0ee33d7a63b9c0b7819afa7a90d2a61cd072d74c364724f790f0853a2f167"
     },
     {
       "path": "scripts/requirements-reports.txt",
@@ -2563,11 +2562,11 @@
   "outputs": [
     {
       "path": "reports/report_zh/report_zh.pdf",
-      "sha256": "03527dae760fc0cef98efeb447235ec2187a092162285002f8a69a2297701153"
+      "sha256": "899aadd62f895e63560792af6ed962813b44c893e6d0900b1a676760ce130ea1"
     },
     {
       "path": "reports/report_en/report_en.pdf",
-      "sha256": "b3d8afadcda4aaba2b6257096ff54459d7fda2fc0fc0d7b7ff45f8844d693c40"
+      "sha256": "599c16d76617cd706fd1e182f37e1f4a4be6ef2cfc5e95a1dc1a90534a3388fd"
     },
     {
       "path": "reports/assets/wealth.png",

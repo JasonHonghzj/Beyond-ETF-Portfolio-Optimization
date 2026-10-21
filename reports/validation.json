@@ -12,16 +12,15 @@
       "author_order_verified": true,
       "affiliation": "國立成功大學統計學系",
       "title_block_order_verified": true,
-      "advisor": "指導教授：鄭順林",
+      "advisor": "Advised by Prof. Shun-Lin Jeng",
       "literature_only_reference_count": 1,
+      "course_term_advisor_line": "Big Data Analytics Final Project | Spring 2024 | Advised by Prof. Shun-Lin Jeng",
       "header_baselines_pt": [
         706.0,
         690.0,
         666.0,
         649.0,
-        632.0,
-        611.0,
-        597.0
+        632.0
       ],
       "page_size_pt": [
         612,
@@ -30,7 +29,7 @@
       "pages_checked": [
         {
           "page": 1,
-          "extracted_characters": 1092,
+          "extracted_characters": 1128,
           "text_font_sizes_pt": [
             10.0,
             11.0,
@@ -244,14 +243,13 @@
       "title_block_order_verified": true,
       "advisor": "Advised by Prof. Shun-Lin Jeng",
       "literature_only_reference_count": 1,
+      "course_term_advisor_line": "Big Data Analytics Final Project | Spring 2024 | Advised by Prof. Shun-Lin Jeng",
       "header_baselines_pt": [
         706.0,
         690.0,
         666.0,
         649.0,
-        632.0,
-        611.0,
-        597.0
+        632.0
       ],
       "page_size_pt": [
         612,
@@ -260,7 +258,7 @@
       "pages_checked": [
         {
           "page": 1,
-          "extracted_characters": 2734,
+          "extracted_characters": 2738,
           "text_font_sizes_pt": [
             10.0,
             11.0,
@@ -442,6 +440,7 @@
     "two_line_titles_verified": true,
     "metadata_regular_type_verified": true,
     "reference_text_geometry_identical": true,
+    "shared_course_line_verified": true,
     "literature_only_references_verified": true
   }
 }
