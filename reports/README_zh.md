@@ -11,7 +11,7 @@
 
 報告採用 [OSDI 2024 投稿範本](https://www.usenix.org/conference/osdi24/requirements-authors)。
 
-兩份報告保留相同的兩行研究標題，其下依序置中列出作者、系所及 **Big Data Analytics Final Project | Spring 2024 | Advised by Prof. Shun-Lin Jeng**，共三行首頁資訊。最後一行在兩個版本均使用完全相同的英文文字及 10 pt 一般字體。所屬單位為**國立成功大學統計學系**／**Department of Statistics, National Cheng Kung University, Taiwan.**。兩份報告均依上表順序列出六位組員，洪稚鈞位於第二位。
+兩份報告採用對應的兩行研究標題，其下依序置中列出作者、系所及課程／學期／指導教授，共三行首頁資訊。最後一行中文版為 **巨量資料分析期末專題 | Spring 2024 | 指導教授： 鄭順林**，英文版為 **Big Data Analytics Final Project | Spring 2024 | Advised by Prof. Shun-Lin Jeng**，兩版均使用 10 pt 一般字體。所屬單位為**國立成功大學統計學系**／**Department of Statistics, National Cheng Kung University, Taiwan**。兩份報告均依上表順序列出六位組員，洪稚鈞位於第二位。
 
 最後的參考文獻頁僅保留 **Min-Yuh Day 與 Jian-Ting Lin（2019）**的研究論文，統一編為 **[1]**。專題簡報、自行產生的圖表、程式產出及格式資源改由專案說明與來源清冊記錄，不列入報告的文獻書目。
 

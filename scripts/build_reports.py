@@ -51,14 +51,17 @@ AUTHORS_ZH = ["蘇柏諺", "洪稚鈞", "佘梓平", "黃纓婷", "陳依琪", "
 AUTHORS_EN = ["Bo-Yan Su", "Zhi-Jun Hong", "Tzu-Ping She", "Ying-Ting Huang", "I-Chi Chen", "Tai-Jung Lin"]
 AFFILIATIONS = {
     "zh": "國立成功大學統計學系",
-    "en": "Department of Statistics, National Cheng Kung University, Taiwan.",
+    "en": "Department of Statistics, National Cheng Kung University, Taiwan",
 }
 TITLE_LINES = {
     "zh": ("超越 ETF", "股票預測與投資組合比較"),
     "en": ("Beyond ETFs", "Stock Forecasting and Portfolio Comparison"),
 }
-ADVISORS = {lang: "Advised by Prof. Shun-Lin Jeng" for lang in ("zh", "en")}
-COURSE_INFO = f"Big Data Analytics Final Project | {TERM} | {ADVISORS['en']}"
+ADVISORS = {"zh": "指導教授： 鄭順林", "en": "Advised by Prof. Shun-Lin Jeng"}
+COURSE_INFO = {
+    "zh": f"巨量資料分析期末專題 | {TERM} | {ADVISORS['zh']}",
+    "en": f"Big Data Analytics Final Project | {TERM} | {ADVISORS['en']}",
+}
 LITERATURE = [
     "[1] Min-Yuh Day and Jian-Ting Lin. 2019. Artificial Intelligence for ETF Market Prediction and Portfolio Optimization. "
     "In Proceedings of the 2019 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining "
@@ -582,7 +585,7 @@ def build_pdf(root: Path, e: dict, assets: dict, lang: str) -> Path:
         _, h = title_p.wrap(WIDTH, HEIGHT)
         title_p.drawOn(cv, LEFT, top - h); top -= h + 12
         names = ", ".join(AUTHORS_EN) if lang == "en" else "、".join(AUTHORS_ZH)
-        for text, gap in ((names, 5), (AFFILIATIONS[lang], 5), (COURSE_INFO, 18)):
+        for text, gap in ((names, 5), (AFFILIATIONS[lang], 5), (COURSE_INFO[lang], 18)):
             p = Paragraph(markup(text), s["center"])
             _, h = p.wrap(WIDTH, HEIGHT)
             p.drawOn(cv, LEFT, top - h)

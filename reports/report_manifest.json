@@ -22,13 +22,16 @@
   },
   "affiliations": {
     "zh": "國立成功大學統計學系",
-    "en": "Department of Statistics, National Cheng Kung University, Taiwan."
+    "en": "Department of Statistics, National Cheng Kung University, Taiwan"
   },
   "advisors": {
-    "zh": "Advised by Prof. Shun-Lin Jeng",
+    "zh": "指導教授： 鄭順林",
     "en": "Advised by Prof. Shun-Lin Jeng"
   },
-  "course_term_advisor_line": "Big Data Analytics Final Project | Spring 2024 | Advised by Prof. Shun-Lin Jeng",
+  "course_term_advisor_line": {
+    "zh": "巨量資料分析期末專題 | Spring 2024 | 指導教授： 鄭順林",
+    "en": "Big Data Analytics Final Project | Spring 2024 | Advised by Prof. Shun-Lin Jeng"
+  },
   "bibliography": {
     "entry_count": 1,
     "type": "research_literature_only",
@@ -2348,7 +2351,7 @@
     },
     {
       "path": "scripts/build_reports.py",
-      "sha256": "9dc0ee33d7a63b9c0b7819afa7a90d2a61cd072d74c364724f790f0853a2f167"
+      "sha256": "19ef697d06adbf0cb7c4657a24cf156d3b78bade794e83fb389e310e068c5a88"
     },
     {
       "path": "scripts/requirements-reports.txt",
@@ -2562,11 +2565,11 @@
   "outputs": [
     {
       "path": "reports/report_zh/report_zh.pdf",
-      "sha256": "899aadd62f895e63560792af6ed962813b44c893e6d0900b1a676760ce130ea1"
+      "sha256": "7641b17858bb953e31558e806f4609f95da8c445c0c1edb5560b8b009f204faa"
     },
     {
       "path": "reports/report_en/report_en.pdf",
-      "sha256": "599c16d76617cd706fd1e182f37e1f4a4be6ef2cfc5e95a1dc1a90534a3388fd"
+      "sha256": "a7dd3be86e51972f9851a01000c12327e9986a5d0d4ec94ba65b79821738b0dd"
     },
     {
       "path": "reports/assets/wealth.png",

@@ -12,9 +12,9 @@
       "author_order_verified": true,
       "affiliation": "國立成功大學統計學系",
       "title_block_order_verified": true,
-      "advisor": "Advised by Prof. Shun-Lin Jeng",
+      "advisor": "指導教授： 鄭順林",
       "literature_only_reference_count": 1,
-      "course_term_advisor_line": "Big Data Analytics Final Project | Spring 2024 | Advised by Prof. Shun-Lin Jeng",
+      "course_term_advisor_line": "巨量資料分析期末專題 | Spring 2024 | 指導教授： 鄭順林",
       "header_baselines_pt": [
         706.0,
         690.0,
@@ -29,7 +29,7 @@
       "pages_checked": [
         {
           "page": 1,
-          "extracted_characters": 1128,
+          "extracted_characters": 1092,
           "text_font_sizes_pt": [
             10.0,
             11.0,
@@ -239,7 +239,7 @@
       "author": "Bo-Yan Su; Zhi-Jun Hong; Tzu-Ping She; Ying-Ting Huang; I-Chi Chen; Tai-Jung Lin",
       "title": "Beyond ETFs: Stock Forecasting and Portfolio Comparison",
       "author_order_verified": true,
-      "affiliation": "Department of Statistics, National Cheng Kung University, Taiwan.",
+      "affiliation": "Department of Statistics, National Cheng Kung University, Taiwan",
       "title_block_order_verified": true,
       "advisor": "Advised by Prof. Shun-Lin Jeng",
       "literature_only_reference_count": 1,
@@ -258,7 +258,7 @@
       "pages_checked": [
         {
           "page": 1,
-          "extracted_characters": 2738,
+          "extracted_characters": 2737,
           "text_font_sizes_pt": [
             10.0,
             11.0,
@@ -440,7 +440,7 @@
     "two_line_titles_verified": true,
     "metadata_regular_type_verified": true,
     "reference_text_geometry_identical": true,
-    "shared_course_line_verified": true,
+    "localized_course_lines_verified": true,
     "literature_only_references_verified": true
   }
 }

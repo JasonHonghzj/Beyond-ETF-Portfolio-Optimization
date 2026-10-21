@@ -17,9 +17,9 @@ This record covers the two attributed Chinese and English reports, with 12 pages
 | 字型 | 全部實際使用的 Times New Roman、PMingLiU 及 Times 項目符號均內嵌；可擷取文字最小 10 pt |
 | 文字邊界 | 全部 24 頁逐字幾何檢查通過，邊界容差 0.5 pt，無文字越界 |
 | 作者及年代 | 中文署名順序為蘇柏諺、洪稚鈞、佘梓平、黃纓婷、陳依琪、林岱融；英文對應為 Bo-Yan Su, Zhi-Jun Hong, Tzu-Ping She, Ying-Ting Huang, I-Chi Chen, Tai-Jung Lin，Zhi-Jun Hong 維持第二位；署名版列 Spring 2024 |
-| 首頁格式一致性 | 中英文均為兩行研究標題，其下依序列作者、系所及課程／學期／指導教授合併資訊，共三行；最後一行均為 Big Data Analytics Final Project \| Spring 2024 \| Advised by Prof. Shun-Lin Jeng，使用置中 10 pt 一般字體 |
+| 首頁格式一致性 | 中英文均為兩行研究標題，其下依序列作者、系所及課程／學期／指導教授合併資訊，共三行；中文版最後一行為巨量資料分析期末專題 \| Spring 2024 \| 指導教授： 鄭順林，英文版為 Big Data Analytics Final Project \| Spring 2024 \| Advised by Prof. Shun-Lin Jeng，均使用置中 10 pt 一般字體 |
 | 中英文幾何核對 | 兩行研究標題及三行首頁資訊的對應位置、字級、字體樣式與間距一致；末頁文獻各字元的文字與位置也完全一致 |
-| 作者單位與指導教授 | 國立成功大學統計學系／Department of Statistics, National Cheng Kung University, Taiwan.；兩版皆在合併資訊列以 Advised by Prof. Shun-Lin Jeng 註明指導教授；六位作者順序不變 |
+| 作者單位與指導教授 | 國立成功大學統計學系／Department of Statistics, National Cheng Kung University, Taiwan；英文單位行末無句號；中文版在合併資訊列以「指導教授： 鄭順林」、英文版以「Advised by Prof. Shun-Lin Jeng」註明指導教授；六位作者順序不變 |
 | 參考文獻 | 最後一頁僅列 Day 與 Lin（2019）研究論文 [1]，內文引用編號一致；不列專題簡報、自製圖表、程式產出或格式資源，也不附版面與封存說明 |
 | 頁碼及文字擷取 | 全部 24 頁頁碼正確；文字可擷取，關鍵數字及作者順序核對通過 |
 | 彩色與灰階 | 保留彩色、線型或標記；MV／BL／1/N 為藍／橘／綠。cividis 相關矩陣固定 −1 至 1；256 色取樣的相對亮度嚴格遞增，灰階可辨識色階、線型與標記 |
@@ -29,7 +29,7 @@ This record covers the two attributed Chinese and English reports, with 12 pages
 
 報告採用 [OSDI 2024 投稿範本](https://www.usenix.org/conference/osdi24/requirements-authors)。
 
-The reports use the [OSDI 2024 submission template](https://www.usenix.org/conference/osdi24/requirements-authors). Both retain a two-line research title, followed by three centered lines for authors, department, and “Big Data Analytics Final Project | Spring 2024 | Advised by Prof. Shun-Lin Jeng”. The combined final line uses identical English wording and regular 10-point type in both reports. Corresponding front-matter positions, sizes, styles, and spacing match. The six-author order is unchanged. The final References page contains only Day and Lin's 2019 research paper, numbered [1], with corresponding in-text citations. Layout, fonts, text boundaries, author metadata, page numbering, and source/output hashes are checked across all 24 pages. The six shared figure groups are also reviewed in color and grayscale.
+The reports use the [OSDI 2024 submission template](https://www.usenix.org/conference/osdi24/requirements-authors). Both retain matching two-line research titles, followed by three centered lines for authors, department, and course / semester / advisor. The final line reads “巨量資料分析期末專題 | Spring 2024 | 指導教授： 鄭順林” in Chinese and “Big Data Analytics Final Project | Spring 2024 | Advised by Prof. Shun-Lin Jeng” in English. Both use regular 10-point type, with matching front-matter positions, sizes, styles, and spacing. The English affiliation ends in “Taiwan” without a period. The six-author order is unchanged. The final References page contains only Day and Lin's 2019 research paper, numbered [1], with corresponding in-text citations. Layout, fonts, text boundaries, author metadata, page numbering, and source/output hashes are checked across all 24 pages. The six shared figure groups are also reviewed in color and grayscale.
 
 ## 數值及來源 / Numerical evidence and provenance
 
